@@ -1,0 +1,110 @@
+features pseudo seed=11, n=7286
+features pseudo seed=29, n=7286
+features pseudo seed=47, n=7286
+features pseudo seed=83, n=7286
+features outer and actual; train=(29144, 39)
+01/54 outer=0.069391 released=0.072889 best_outer=0.069391 seconds=3.92
+02/54 outer=0.069510 released=0.072975 best_outer=0.069391 seconds=5.19
+03/54 outer=0.069346 released=0.073028 best_outer=0.069346 seconds=4.73
+04/54 outer=0.069554 released=0.073017 best_outer=0.069346 seconds=3.64
+05/54 outer=0.069458 released=0.073036 best_outer=0.069346 seconds=4.14
+06/54 outer=0.069492 released=0.073047 best_outer=0.069346 seconds=3.54
+07/54 outer=0.068143 released=0.071473 best_outer=0.068143 seconds=7.28
+08/54 outer=0.068022 released=0.071241 best_outer=0.068022 seconds=7.0
+09/54 outer=0.068110 released=0.071719 best_outer=0.068022 seconds=6.85
+10/54 outer=0.068320 released=0.071669 best_outer=0.068022 seconds=7.48
+11/54 outer=0.068265 released=0.071632 best_outer=0.068022 seconds=8.51
+12/54 outer=0.068144 released=0.071681 best_outer=0.068022 seconds=4.63
+13/54 outer=0.067555 released=0.071181 best_outer=0.067555 seconds=10.35
+14/54 outer=0.067512 released=0.070846 best_outer=0.067512 seconds=9.37
+15/54 outer=0.067660 released=0.070993 best_outer=0.067512 seconds=10.93
+16/54 outer=0.067740 released=0.071085 best_outer=0.067512 seconds=10.16
+17/54 outer=0.067800 released=0.071208 best_outer=0.067512 seconds=11.38
+18/54 outer=0.067741 released=0.071119 best_outer=0.067512 seconds=10.06
+19/54 outer=0.068345 released=0.071808 best_outer=0.067512 seconds=3.71
+20/54 outer=0.068228 released=0.071830 best_outer=0.067512 seconds=3.08
+21/54 outer=0.068106 released=0.071777 best_outer=0.067512 seconds=4.4
+22/54 outer=0.068069 released=0.071627 best_outer=0.067512 seconds=4.61
+23/54 outer=0.068123 released=0.071672 best_outer=0.067512 seconds=4.95
+24/54 outer=0.068100 released=0.071837 best_outer=0.067512 seconds=4.02
+25/54 outer=0.067103 released=0.070400 best_outer=0.067103 seconds=7.72
+26/54 outer=0.067030 released=0.070699 best_outer=0.067030 seconds=6.63
+27/54 outer=0.066907 released=0.070702 best_outer=0.066907 seconds=6.96
+28/54 outer=0.067091 released=0.070485 best_outer=0.066907 seconds=6.54
+29/54 outer=0.066885 released=0.070680 best_outer=0.066885 seconds=5.56
+30/54 outer=0.066946 released=0.070550 best_outer=0.066885 seconds=5.82
+31/54 outer=0.066487 released=0.070405 best_outer=0.066487 seconds=9.77
+32/54 outer=0.066811 released=0.070030 best_outer=0.066487 seconds=6.83
+33/54 outer=0.066710 released=0.070145 best_outer=0.066487 seconds=7.43
+34/54 outer=0.067017 released=0.070261 best_outer=0.066487 seconds=10.51
+35/54 outer=0.066705 released=0.069947 best_outer=0.066487 seconds=10.01
+36/54 outer=0.066906 released=0.069993 best_outer=0.066487 seconds=10.5
+37/54 outer=0.067488 released=0.070927 best_outer=0.066487 seconds=4.55
+38/54 outer=0.067127 released=0.070744 best_outer=0.066487 seconds=2.69
+39/54 outer=0.067076 released=0.070846 best_outer=0.066487 seconds=2.66
+40/54 outer=0.067286 released=0.070575 best_outer=0.066487 seconds=2.49
+41/54 outer=0.067184 released=0.070725 best_outer=0.066487 seconds=2.58
+42/54 outer=0.066878 released=0.070821 best_outer=0.066487 seconds=2.87
+43/54 outer=0.066510 released=0.069920 best_outer=0.066487 seconds=3.91
+44/54 outer=0.066560 released=0.069965 best_outer=0.066487 seconds=3.86
+45/54 outer=0.066541 released=0.070231 best_outer=0.066487 seconds=4.01
+46/54 outer=0.066893 released=0.070713 best_outer=0.066487 seconds=3.67
+47/54 outer=0.066143 released=0.070031 best_outer=0.066143 seconds=3.65
+48/54 outer=0.066176 released=0.070409 best_outer=0.066143 seconds=3.82
+49/54 outer=0.066344 released=0.070472 best_outer=0.066143 seconds=5.79
+50/54 outer=0.066100 released=0.070186 best_outer=0.066100 seconds=6.24
+51/54 outer=0.066372 released=0.070023 best_outer=0.066100 seconds=7.96
+52/54 outer=0.066792 released=0.069935 best_outer=0.066100 seconds=7.12
+53/54 outer=0.067031 released=0.070123 best_outer=0.066100 seconds=8.87
+54/54 outer=0.066251 released=0.070162 best_outer=0.066100 seconds=9.0
+{
+  "configurations": 54,
+  "feature_count": 39,
+  "train_rows": 29144,
+  "pseudo_seeds": [
+    11,
+    29,
+    47,
+    83
+  ],
+  "outer_seed": 20260905,
+  "outer_fraction": 0.15,
+  "selected_on_outer": {
+    "config": 50.0,
+    "learning_rate": 0.07,
+    "max_leaf_nodes": 96.0,
+    "min_samples_leaf": 35.0,
+    "l2_regularization": 8.0,
+    "max_iter": 300.0,
+    "n_iter": 300.0,
+    "outer_n": 2644.0,
+    "outer_rmse": 0.06610033601849931,
+    "outer_gap_score": 10.17,
+    "released_gt_n": 3112.0,
+    "released_gt_rmse": 0.07018597254095842,
+    "released_gt_gap_score": 8.94,
+    "fit_seconds": 6.24
+  },
+  "diagnostic_best_released": {
+    "config": 43.0,
+    "learning_rate": 0.07,
+    "max_leaf_nodes": 48.0,
+    "min_samples_leaf": 35.0,
+    "l2_regularization": 0.0,
+    "max_iter": 300.0,
+    "n_iter": 300.0,
+    "outer_n": 2644.0,
+    "outer_rmse": 0.06651018628873417,
+    "outer_gap_score": 10.05,
+    "released_gt_n": 3112.0,
+    "released_gt_rmse": 0.0699200949119316,
+    "released_gt_gap_score": 9.02,
+    "fit_seconds": 3.91
+  },
+  "elapsed_seconds": 386.9,
+  "gt_sha256": "50d694a92187b7e8a2fca8a2b72458d9a8042726bd9d85634eb7a85fa5174088",
+  "actual_gt_never_in_training": true,
+  "all_outer_and_pseudo_dynamic_fields_masked": true,
+  "submission_created": false,
+  "upload_performed": false
+}

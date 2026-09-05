@@ -1,0 +1,2 @@
+protocol,seed,n,rmse,mae,train_n,features
+private_all15,4,2644,0.07081709373894145,0.04232201988570498,45517,69

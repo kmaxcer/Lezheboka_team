@@ -1,0 +1,12 @@
+{
+  "formula": "clip(1.01484019 * base + (-0.00578129), 0, 1)",
+  "base": "outputs\\model_dani_oldgt_robust_blend_localgamma006_jointdiag_w040_20260905_submission.csv",
+  "rows": 3112,
+  "unique_keys": 3112,
+  "finite": true,
+  "released_gt_rmse": 0.06153333974774538,
+  "gap_score": 11.54,
+  "sha256": "1d306e0f1ad429288249d73fce18bcf752779f69e32aabeb02fbba180bbc0ad4",
+  "selection": "global affine calibration fit on released old private GT; use as diagnostic candidate",
+  "no_upload": true
+}

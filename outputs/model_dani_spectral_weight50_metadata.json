@@ -1,0 +1,16 @@
+{
+  "candidate": "model_dani_lag40_peer10_extwide40_v3_30_spectral50_historyonly_submission.csv",
+  "rows": 3112,
+  "spectral_weight": 0.5,
+  "routing": "history_only;zero_all2025",
+  "base_component": "model_dani_lag40_peer10_extwide40_v3_30_submission.csv",
+  "base_sha256": "5ec1d9c6ad4531a0c1983ea9582b385fab72f9359305306663223bb626644e32",
+  "spectral_checkpoint_sha256": "c451001dc7f9778dda708e4ec7315c5c70fdca918607ea9324983dea607d48c0",
+  "output_sha256": "63ada9677b2dce91cfdabbbacdb3844ae8a31a9381843b518319a083f1b112ac",
+  "min": 0.05542776,
+  "max": 0.89242949,
+  "mean": 0.3781506980816195,
+  "history_rows": 2187,
+  "all2025_rows": 925,
+  "production_baseline_overwritten": false
+}

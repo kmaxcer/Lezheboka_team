@@ -1,0 +1,75 @@
+{
+  "generated_utc": "2026-09-05T14:59:36.664607+00:00",
+  "criteria": {
+    "anomaly": {
+      "src\\anomaly.py": true,
+      "research\\outlier_handling_report_20260905.md": true,
+      "research\\anomaly_newtest_batch_report_20260905.md": true
+    },
+    "polygons": {
+      "app.py": true,
+      "src\\external_data.py": true,
+      "tests\\test_polygon_workflow.py": true,
+      "research\\polygon_workflow_report_20260905.md": true
+    },
+    "data_prep": {
+      "scripts\\prepare_region_context.py": true,
+      "src\\external_data.py": true
+    },
+    "adaptability": {
+      "scripts\\run_anomaly_batch.py": true,
+      "scripts\\reproducibility_audit.py": true,
+      "reports\\reproducibility_manifest_new_test_20260905.json": true
+    },
+    "research": {
+      "research\\baseline_experiment_report_20260905.md": true,
+      "reports\\criteria_coverage_matrix_20260905.md": true
+    },
+    "docs": {
+      "README.md": true,
+      "requirements.txt": true,
+      "Dockerfile": true,
+      "docker-compose.yml": true,
+      "scripts\\run_batch_inference.py": true
+    }
+  },
+  "old_candidate": {
+    "path": "C:\\Users\\kmaxc\\PycharmProjects\\hack\\_1\\_lezheboka\\outputs\\model_dani_oldgt_robust_blend_localgamma006_jointdiag_w040_20260905_submission.csv",
+    "exists": true,
+    "rows": 3112,
+    "columns": [
+      "anon_polygon_id",
+      "date",
+      "primary_ndvi_pred"
+    ],
+    "exact_columns": true,
+    "unique_keys": true,
+    "finite_predictions": true,
+    "sha256": "590bbf0e3f103577483e3292ccc57fb1d185ee861f61488e3e0bcbe5e4771e76",
+    "expected_rows": 3112,
+    "row_count_ok": true
+  },
+  "new_candidate": {
+    "path": "C:\\Users\\kmaxc\\PycharmProjects\\hack\\_1\\_lezheboka\\outputs\\test_20260905_1350\\model_newtest_extended_hgb_wide_20260905.csv",
+    "exists": true,
+    "rows": 2323,
+    "columns": [
+      "anon_polygon_id",
+      "date",
+      "primary_ndvi_pred"
+    ],
+    "exact_columns": true,
+    "unique_keys": true,
+    "finite_predictions": true,
+    "sha256": "65cde19191bc2a74afa01fe4d5db94ac25d1016838a3cffc8c5a7ba4576a9fc7",
+    "expected_rows": 2323,
+    "row_count_ok": true
+  },
+  "pytest": {
+    "command": "C:\\Users\\kmaxc\\PycharmProjects\\hack\\_1\\_lezheboka\\.venv\\Scripts\\python.exe -m pytest -q",
+    "returncode": 0,
+    "stdout_tail": "...............                                                          [100%]\n15 passed in 15.91s\n",
+    "stderr_tail": ""
+  },
+  "submission_uploaded": false
+}

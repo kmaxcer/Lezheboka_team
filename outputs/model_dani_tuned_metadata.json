@@ -1,0 +1,30 @@
+{
+  "name": "model_dani_tuned",
+  "kind": "hgb_histgradientboosting_plus_lag_local_cubic",
+  "train_path": "C:\\Users\\kmaxc\\PycharmProjects\\hack\\_1\\_lezheboka\\_archive_inspect\\agropulse_max_score\\data\\train_dataset.csv",
+  "private_path": "C:\\Users\\kmaxc\\PycharmProjects\\hack\\_1\\_lezheboka\\_archive_inspect\\agropulse_max_score\\data\\private_features.csv",
+  "train_sha256": "a75e530d0fb51581ad6800f84b3875233778801491f02236917862faf9b424ec",
+  "private_sha256": "3c5c0e27eef8266bcf6dce09c9b556c073cee3902c065a94e4ea7a59edb00993",
+  "rows_train": 99955,
+  "rows_private": 57185,
+  "rows_submission": 3112,
+  "synthetic_rows": 3112,
+  "hgb_seed": 42,
+  "lag_weight": 0.2,
+  "lag_parameters": {
+    "k": 16,
+    "degree": 3,
+    "bin_days": 30,
+    "date_weight": 1.0
+  },
+  "prediction_min": 0.03309657540962618,
+  "prediction_max": 0.8970928160242754,
+  "prediction_mean": 0.37986623329905916,
+  "prediction_std": 0.20461016083383085,
+  "columns": [
+    "anon_polygon_id",
+    "date",
+    "primary_ndvi_pred"
+  ],
+  "unique_keys": 3112
+}

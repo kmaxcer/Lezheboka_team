@@ -1,0 +1,18 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    70404
+  ],
+  "rows": 10576,
+  "private_hidden": 3112,
+  "artifacts": [
+    "source_expert_route_v2_fixed_radius_srcfix_rows.csv",
+    "source_expert_route_v2_fixed_radius_srcfix_metrics.csv",
+    "source_expert_route_v2_fixed_radius_srcfix_source_accuracy.csv",
+    "source_expert_route_v2_fixed_radius_srcfix_pooled.csv",
+    "source_expert_route_v2_fixed_radius_srcfix_loo.csv"
+  ],
+  "production_baseline_overwritten": false
+}

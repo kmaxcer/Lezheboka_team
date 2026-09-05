@@ -1,0 +1,32 @@
+{
+  "config_names": [
+    "archive_default",
+    "regularized",
+    "smooth",
+    "capacity",
+    "fast",
+    "absolute",
+    "archive_no_early_stop"
+  ],
+  "seeds": [
+    0
+  ],
+  "years": [
+    2025
+  ],
+  "inner_rounds": 1,
+  "meta_rows": [
+    {
+      "seed": 0,
+      "focus_year": 2025,
+      "selected": 925,
+      "original_gaps": 3112,
+      "selected_2025": 925,
+      "reference_rows": 157140,
+      "valid_rows": 925,
+      "train_rows": 7554,
+      "feature_build_seconds": 17.051,
+      "year": 2025
+    }
+  ]
+}

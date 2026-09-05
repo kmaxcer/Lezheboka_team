@@ -1,0 +1,15 @@
+{
+  "candidate": "model_dani_source_expert_route_v2_distance_adaptive_submission.csv",
+  "formula": "(1-alpha)*history_peer12 + alpha*routed_source_expert; alpha=.50 if nearest visible same-crop numeric AOI distance<=2, .40 if 3..8, .30 otherwise",
+  "rows": 3112,
+  "hidden_rows": 3112,
+  "near_le_2": 2227,
+  "mid_3_8": 440,
+  "far_or_none": 445,
+  "finite": true,
+  "unique_keys": 3112,
+  "base_sha256": "8362c1280266b56b334725f6bd2e3346b75d9b65f0781ab0110914be259d8948",
+  "source_route_sha256": "728153e07d98de92e561fcd155ae12ac2091805b669e2aab79ea740a42f6b440",
+  "candidate_sha256": "2cf4a14a7540696b6056dec45e9aa1a915d9c399e3378e580d4c16853e7dcc14",
+  "production_baseline_overwritten": false
+}

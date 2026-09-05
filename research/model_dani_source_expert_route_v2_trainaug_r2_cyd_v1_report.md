@@ -1,0 +1,29 @@
+# Train-augmented fixed-r2 source expert candidate v1
+
+Route uses train + visible private rows only; hidden actual gaps are excluded. Four-mask source-route audit selected fixed r2 with cohort/year/distance alpha policy.
+
+{
+  "candidate": "model_dani_source_expert_route_v2_trainaug_r2_cyd_v1_submission.csv",
+  "formula": "baseline=history_peer12; source=three OOF HGB experts routed by train+visible-private same-date/same-crop fixed radius2 mode, fallback observable schedule posterior; alpha=.50 if r2 peer, .40 if r3-8 peer, .30 otherwise, override new2025=.60/shared2025=.35",
+  "rows": 3112,
+  "finite": true,
+  "unique_keys": 3112,
+  "sha256": "cb4119f23a6dc986ee4e7da26290791032b852e5929b2cf922f041bc18030795",
+  "actual_gap_rows": 3112,
+  "route_r2_peer": 3042,
+  "route_r8_peer": 3089,
+  "alpha_counts": {
+    "0.3": 18,
+    "0.35": 464,
+    "0.4": 18,
+    "0.5": 2151,
+    "0.6": 461
+  },
+  "production_baseline_overwritten": false,
+  "no_upload": true,
+  "seconds": 202.5
+}
+
+Candidate: `outputs/model_dani_source_expert_route_v2_trainaug_r2_cyd_v1_submission.csv`
+
+No submission was uploaded; existing outputs were not overwritten.

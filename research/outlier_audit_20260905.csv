@@ -1,0 +1,3 @@
+ndvi_outlier_reason,value_source,rows
+physical_range;robust_zscore;vegetation_range,observed,4
+robust_zscore;vegetation_range,observed,7

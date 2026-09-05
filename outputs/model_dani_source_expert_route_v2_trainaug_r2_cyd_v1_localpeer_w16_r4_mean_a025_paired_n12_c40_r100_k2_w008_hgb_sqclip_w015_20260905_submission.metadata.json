@@ -1,0 +1,9 @@
+{
+  "formula": "pair08 = finite(peer) ? 0.92*base25 + 0.08*peer : base25; final = clip(0.85*pair08 + 0.15*hgb_sq_clip, [-0.2, 1.1])",
+  "base": "C:\\Users\\kmaxc\\PycharmProjects\\hack\\_1\\_lezheboka\\outputs\\model_dani_source_expert_route_v2_trainaug_r2_cyd_v1_localpeer_w16_r4_mean_a025_paired_n12_c40_r100_k2_w008_20260905_submission.csv",
+  "hgb": "C:\\Users\\kmaxc\\PycharmProjects\\hack\\_1\\_lezheboka\\research\\hgb_actual_sqclip_predictions_20260905.csv",
+  "rows": 3112,
+  "coverage_hgb": 1.0,
+  "sha256": "8271d32dfaaa258021e6605dcda7a2e7835e581837b40aef61028e4a6ad50059",
+  "upload_performed": false
+}

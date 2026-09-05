@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-09-05",
+  "submission": {
+    "path": "outputs/model_dani_tuned_submission.csv",
+    "sha256": "0A2DFE461DF0EAA73FEACB904F931B61A4998B6550AE42434A24757F6439445E",
+    "rows": 3112,
+    "columns": ["anon_polygon_id", "date", "primary_ndvi_pred"]
+  },
+  "other_outputs": {
+    "model_dani_tuned_hgb.csv": "97E18187BBC642F85A2F23E5FDD5935BCEEFB32C232D8C1852C454347FCCFC97",
+    "model_dani_tuned_lag.csv": "8D509647978419022F3C9D3BA0FDACEB847CA279BF40969206DAAFD107E9F718",
+    "model_dani_tuned_metadata.json": "192D16D395C82325116F4C69F2BCE16ED0A27D9854AE8DC7FB71D3836AD308DF",
+    "model_dani_tuned.joblib": "17A10DD091E1772175B3A3214506B741A51405782CAC255E84906F6F414D7234"
+  },
+  "contract_check": "scripts/check_model_dani_tuned.py: OK (3112 rows, 3 columns, unique finite hidden keys)",
+  "note": "Hashes are unchanged after reverse and overnight research; research scripts do not write outputs/."
+}

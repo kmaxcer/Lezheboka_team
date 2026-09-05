@@ -1,0 +1,15 @@
+{
+  "candidate": "model_dani_source_expert_route_v2_trainaug_r2_cyd_v1_localpeer_w16_r4_mean_a025_paired_n12_c40_r100_k2_w008_20260905_submission.csv",
+  "formula": "base=model_dani_source_expert_route_v2_trainaug_r2_cyd_v1_localpeer_w16_r4_mean_a025_submission.csv; paired correction: if finite private-only n12_c40_r100_k2 peer, pred=clip(0.92*base+0.08*peer,[-0.2,1.1]), else base",
+  "rows": 3112,
+  "finite": true,
+  "unique_keys": 3112,
+  "paired_config": "n12_c40_r100_k2",
+  "paired_weight": 0.08,
+  "paired_peer_finite": 2346,
+  "paired_coverage": 0.7538560411311054,
+  "base_sha256": "f116f0455d8fd2589f87d3141dd63e156fb1cf0fe504aedd999a48b9acbf5668",
+  "candidate_sha256": "69a525e610e0d6a6a2bfe6d404374cea58ad7cbaf82a9c5e2b4e2d75efccd21b",
+  "production_baseline_overwritten": false,
+  "no_upload": true
+}

@@ -1,0 +1,48 @@
+{
+  "archive_sha256": "61e3d1c637592fa18b6fb75cc382b0124df3243229bb1618d3b038d7bbf7c6aa",
+  "archived_submission": {
+    "rows": 2323,
+    "columns": [
+      "anon_polygon_id",
+      "date",
+      "primary_ndvi_pred"
+    ],
+    "duplicates": 0,
+    "finite": true,
+    "min": -0.0078472505376265,
+    "max": 0.8984445128259737,
+    "sha256": "6ca8608336100762e243296e5d5233f7c04af43b32431ba91f5515309591f1f0",
+    "released_gt_overlap": 0
+  },
+  "released_inference": {
+    "primary_ndvi_pred": {
+      "rmse": 0.07114619237141133,
+      "gap_score": 8.66
+    },
+    "member_0_CatBoostRegressor": {
+      "rmse": 0.07114619237141133,
+      "gap_score": 8.66
+    },
+    "rows": 3112,
+    "file": "C:\\Users\\kmaxc\\PycharmProjects\\hack\\_1\\_lezheboka\\research\\teammate_zip2_released_predictions_20260905.csv",
+    "sha256": "5679d4c3eecc6999f8b2d23c8e745dcc7dcd491ec6a12544c80a541942893009"
+  },
+  "model": {
+    "types": [
+      "CatBoostRegressor"
+    ],
+    "weights": [
+      1.0
+    ],
+    "augmentation": null
+  },
+  "dataset_hashes": {
+    "train_dataset.csv": "a75e530d0fb51581ad6800f84b3875233778801491f02236917862faf9b424ec",
+    "test_features.csv": "f7ba087818175ea644fc9fe652c6a3874b5bfcde7df197d3e7541cb95876f855",
+    "private_test_ground_truth.csv": "50d694a92187b7e8a2fca8a2b72458d9a8042726bd9d85634eb7a85fa5174088"
+  },
+  "submission_reproduction": {
+    "rows": 2323,
+    "max_abs_delta": 9.71445146547012e-17
+  }
+}

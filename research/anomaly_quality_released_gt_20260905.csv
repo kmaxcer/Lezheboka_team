@@ -1,0 +1,2 @@
+n_gap,true_anomaly_n,pred_anomaly_n,precision,recall,f1,tn,fp,fn,tp,true_critical_n,pred_critical_n
+3112,525,453,0.8520971302428256,0.7352380952380952,0.7893660531697342,2520,67,139,386,57,29

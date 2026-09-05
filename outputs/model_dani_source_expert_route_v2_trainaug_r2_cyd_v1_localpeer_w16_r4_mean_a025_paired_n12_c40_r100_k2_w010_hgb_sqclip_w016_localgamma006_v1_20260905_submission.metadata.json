@@ -1,0 +1,7 @@
+{
+  "formula": "candidate_v2 + 0.06*local_feature_actual(w16/r4/mean)",
+  "rows": 3112,
+  "local_feature_coverage": 0.9910025706940874,
+  "sha256": "f3b3955afc998869b8e1de0094640d2ee73c947672e8bd1d691edc84f9942d23",
+  "upload_performed": false
+}

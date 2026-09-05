@@ -1,0 +1,177 @@
+{
+  "base": "model_dani_lag40_peer10_a350_b200_submission.csv",
+  "base_sha256": "2b84fdd7f49a1703cad523b8c614e37415a8b783d6da077a385be4218d4efbc3",
+  "private_sha256": "3c5c0e27eef8266bcf6dce09c9b556c073cee3902c065a94e4ea7a59edb00993",
+  "hidden_rows": 3112,
+  "cohorts": {
+    "shared_ids": 39,
+    "hidden_shared": 464,
+    "hidden_new": 2648,
+    "hidden_new_history": 2187,
+    "hidden_new_2025": 461,
+    "hidden_shared_2025": 464
+  },
+  "outputs": [
+    {
+      "candidate": "model_dani_lag40_peer10_cohort_balanced_wide_submission.csv",
+      "kind": "wide",
+      "route": {
+        "new_history": 0.4,
+        "new_2025": 0.3,
+        "shared_2025": 0.3
+      },
+      "rows": 3112,
+      "sha256": "64ce5ddbcac8aec507550f5c9567d606d710761170036d44a2d8450c1eb681e4",
+      "min": 0.05306666,
+      "max": 0.90342474,
+      "holdout_proxy": {
+        "overall_rmse": 0.06987124014895872,
+        "overall_gapscore_proxy": 9.038627955312386,
+        "new_history_rmse": 0.06453526403782144,
+        "new_2025_rmse": 0.09971320868061989,
+        "shared_2025_rmse": 0.058189909601599345
+      }
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_cohort_holdout_opt_wide_submission.csv",
+      "kind": "wide",
+      "route": {
+        "new_history": 0.5,
+        "new_2025": 0.4,
+        "shared_2025": 0.3
+      },
+      "rows": 3112,
+      "sha256": "66048f541ff3f65d5d047018cf7abf2da1998beab233ea75cc3faed60edab7d2",
+      "min": 0.05383023,
+      "max": 0.90053117,
+      "holdout_proxy": {
+        "overall_rmse": 0.06981290850429023,
+        "overall_gapscore_proxy": 9.056127448712932,
+        "new_history_rmse": 0.06446238539808255,
+        "new_2025_rmse": 0.09966300045874003,
+        "shared_2025_rmse": 0.058189909601599345
+      }
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_cohort_history_focus_wide_submission.csv",
+      "kind": "wide",
+      "route": {
+        "new_history": 0.5,
+        "new_2025": 0.2,
+        "shared_2025": 0.3
+      },
+      "rows": 3112,
+      "sha256": "25a3bcb2a24526cdb6a55ab0447b3657b3e892b04a3f31f50ec06f0154170462",
+      "min": 0.05383023,
+      "max": 0.90053117,
+      "holdout_proxy": {
+        "overall_rmse": 0.06984492147181902,
+        "overall_gapscore_proxy": 9.046523558454297,
+        "new_history_rmse": 0.06446238539808255,
+        "new_2025_rmse": 0.09981935445220594,
+        "shared_2025_rmse": 0.058189909601599345
+      }
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_cohort_aggressive_wide_submission.csv",
+      "kind": "wide",
+      "route": {
+        "new_history": 0.6,
+        "new_2025": 0.4,
+        "shared_2025": 0.4
+      },
+      "rows": 3112,
+      "sha256": "e19bb496ed9fd5f7a7754f36765cf5605a307940f1e4e8d7576540c89be69382",
+      "min": 0.0545938,
+      "max": 0.89817203,
+      "holdout_proxy": {
+        "overall_rmse": 0.06984627078055732,
+        "overall_gapscore_proxy": 9.046118765832809,
+        "new_history_rmse": 0.06450819171146482,
+        "new_2025_rmse": 0.09966300045874003,
+        "shared_2025_rmse": 0.05821647075696879
+      }
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_cohort_balanced_regular_submission.csv",
+      "kind": "regular",
+      "route": {
+        "new_history": 0.4,
+        "new_2025": 0.3,
+        "shared_2025": 0.3
+      },
+      "rows": 3112,
+      "sha256": "a9d0c14be8a2527f524b37d514952065a4ce772783356f95a778a737169b1774",
+      "min": 0.05096238,
+      "max": 0.90647016,
+      "holdout_proxy": {
+        "overall_rmse": 0.06987124014895872,
+        "overall_gapscore_proxy": 9.038627955312386,
+        "new_history_rmse": 0.06453526403782144,
+        "new_2025_rmse": 0.09971320868061989,
+        "shared_2025_rmse": 0.058189909601599345
+      }
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_cohort_holdout_opt_regular_submission.csv",
+      "kind": "regular",
+      "route": {
+        "new_history": 0.5,
+        "new_2025": 0.4,
+        "shared_2025": 0.3
+      },
+      "rows": 3112,
+      "sha256": "990456f5e6c4b0c396b80d9bb10c3209d8536e1e66b0095ca1adac66defb7ba6",
+      "min": 0.05119989,
+      "max": 0.90433794,
+      "holdout_proxy": {
+        "overall_rmse": 0.06981290850429023,
+        "overall_gapscore_proxy": 9.056127448712932,
+        "new_history_rmse": 0.06446238539808255,
+        "new_2025_rmse": 0.09966300045874003,
+        "shared_2025_rmse": 0.058189909601599345
+      }
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_cohort_history_focus_regular_submission.csv",
+      "kind": "regular",
+      "route": {
+        "new_history": 0.5,
+        "new_2025": 0.2,
+        "shared_2025": 0.3
+      },
+      "rows": 3112,
+      "sha256": "12857775bd96c743f79af7ea3703623c475ed78ceb16c755876805b01ccd4002",
+      "min": 0.05119989,
+      "max": 0.90433794,
+      "holdout_proxy": {
+        "overall_rmse": 0.06984492147181902,
+        "overall_gapscore_proxy": 9.046523558454297,
+        "new_history_rmse": 0.06446238539808255,
+        "new_2025_rmse": 0.09981935445220594,
+        "shared_2025_rmse": 0.058189909601599345
+      }
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_cohort_aggressive_regular_submission.csv",
+      "kind": "regular",
+      "route": {
+        "new_history": 0.6,
+        "new_2025": 0.4,
+        "shared_2025": 0.4
+      },
+      "rows": 3112,
+      "sha256": "339aa76bcf26d22fb69809129d21ff0f5b7df2c317941e964b5c722307ecd0ae",
+      "min": 0.05143739,
+      "max": 0.90220573,
+      "holdout_proxy": {
+        "overall_rmse": 0.06984627078055732,
+        "overall_gapscore_proxy": 9.046118765832809,
+        "new_history_rmse": 0.06450819171146482,
+        "new_2025_rmse": 0.09966300045874003,
+        "shared_2025_rmse": 0.05821647075696879
+      }
+    }
+  ],
+  "production_baseline_overwritten": false
+}

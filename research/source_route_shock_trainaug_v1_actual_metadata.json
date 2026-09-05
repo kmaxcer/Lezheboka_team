@@ -1,0 +1,41 @@
+[
+  {
+    "candidate": "model_dani_source_expert_route_v2_cohort_year_dist_shock_trainaug_global15_submission.csv",
+    "formula": "base=source_route_cohort_year_dist; shock=visible+train 24day date_crop; policy=global15",
+    "rows": 3112,
+    "finite": true,
+    "shock_finite": 3027,
+    "shock_mean": 0.002813339705568931,
+    "shock_std": 0.04185015043894659,
+    "base_sha256": "0e8c18dac88df173c08040d9b16b5a21163d85f10593f498231c8d6377a617ee",
+    "candidate_sha256": "b390f5ad11a0f9064570486ddc685a71cb6bb8c5a59c5c3d6d8f08e7e06a5a92",
+    "production_baseline_overwritten": false,
+    "no_upload": true
+  },
+  {
+    "candidate": "model_dani_source_expert_route_v2_cohort_year_dist_shock_trainaug_new25_05_submission.csv",
+    "formula": "base=source_route_cohort_year_dist; shock=visible+train 24day date_crop; policy=new25_05",
+    "rows": 3112,
+    "finite": true,
+    "shock_finite": 3027,
+    "shock_mean": 0.002813339705568931,
+    "shock_std": 0.04185015043894659,
+    "base_sha256": "0e8c18dac88df173c08040d9b16b5a21163d85f10593f498231c8d6377a617ee",
+    "candidate_sha256": "5b529d2aff12d197381d91db58bb5532d78f247b684dac45e3500b18ae9a5495",
+    "production_baseline_overwritten": false,
+    "no_upload": true
+  },
+  {
+    "candidate": "model_dani_source_expert_route_v2_cohort_year_dist_shock_trainaug_new25_00_submission.csv",
+    "formula": "base=source_route_cohort_year_dist; shock=visible+train 24day date_crop; policy=new25_00",
+    "rows": 3112,
+    "finite": true,
+    "shock_finite": 3027,
+    "shock_mean": 0.002813339705568931,
+    "shock_std": 0.04185015043894659,
+    "base_sha256": "0e8c18dac88df173c08040d9b16b5a21163d85f10593f498231c8d6377a617ee",
+    "candidate_sha256": "5f792cfe7954a6fbb8edaba521465468900cfa8b59fe854aa371dc8d95fce15d",
+    "production_baseline_overwritten": false,
+    "no_upload": true
+  }
+]

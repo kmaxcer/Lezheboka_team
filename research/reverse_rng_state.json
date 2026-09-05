@@ -1,0 +1,31 @@
+{
+  "numpy_version": "2.5.2",
+  "private_path": "C:\\Users\\kmaxc\\PycharmProjects\\hack\\_1\\_lezheboka\\_archive_inspect\\agropulse_max_score\\data\\private_features.csv",
+  "private_sha256": "3c5c0e27eef8266bcf6dce09c9b556c073cee3902c065a94e4ea7a59edb00993",
+  "seed": 43,
+  "fraction": 0.15,
+  "n_eligible": 20753,
+  "n_hidden": 3112,
+  "exact": true,
+  "selected_position_sha256_sorted": "3da40b947dbcd093cc89b2419e5046a677aa5095afeff272d712057a017f9957",
+  "selected_position_sha256_choice_order": "18b19ad1001f83ee5583b43bd779d81405bf285717d9ff8a5614eb9e2258b8db",
+  "initial_bit_generator_state": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 82603460112531164776355945615041298124,
+      "inc": 25065611243303971628957076795638243391
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "final_bit_generator_state": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 229415313518152214363441410220803777792,
+      "inc": 25065611243303971628957076795638243391
+    },
+    "has_uint32": 0,
+    "uinteger": 1387826893
+  },
+  "scalar_bounded_draws_state_equivalent": true
+}

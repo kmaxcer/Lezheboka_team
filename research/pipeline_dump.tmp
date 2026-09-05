@@ -1,0 +1,338 @@
+"""Обучение и inference для восстановления временного ряда primary_ndvi.
+
+Принципиальное ограничение: в строках is_synthetic_gap=True организаторы
+маскируют все динамические признаки. Поэтому модель использует только признаки,
+которые можно честно восстановить из даты, соседних наблюдений и других полей.
+"""
+
+from __future__ import annotations
+
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Iterable
+
+import joblib
+import numpy as np
+import pandas as pd
+from sklearn.ensemble import HistGradientBoostingRegressor
+from sklearn.metrics import mean_absolute_error, mean_squared_error
+
+ID = "anon_polygon_id"
+DATE = "date"
+TARGET = "primary_ndvi"
+GAP = "is_synthetic_gap"
+SENSOR_COLS = ["s2_ndvi", "landsat_ndvi", "modis_ndvi"]
+DYNAMIC_COLS = [
+    "era5_temp_c", "era5_precip_mm", "ndvi_climatology_mean",
+    "ndvi_climatology_std",
+]
+
+BASIC_FEATURES = [
+    "prev1", "next1", "dprev1", "dnext1", "span", "linear",
+    "anchor_mean", "anchor_diff", "local_slope", "doy", "year",
+    "sin_doy", "cos_doy", "crop_code",
+]
+ANCHOR_FEATURES = BASIC_FEATURES + [
+    "prev2", "prev3", "next2", "next3", "dprev2", "dprev3",
+    "dnext2", "dnext3", "prev_slope", "next_slope",
+]
+SEASON_FEATURES = ANCHOR_FEATURES + [
+    "field_season_7", "field_season_15", "field_season_30",
+    "era5_temp_c_interp", "era5_precip_mm_interp",
+    "ndvi_climatology_mean_interp", "ndvi_climatology_std_interp",
+]
+FULL_FEATURES = SEASON_FEATURES + [
+    "prev_source", "next_source", "peer_ndvi", "date_crop_ndvi",
+    "date_all_ndvi", "peer_s2_count", "peer_landsat_count",
+    "peer_modis_count",
+]
+
+
+def _rmse(y_true: Iterable[float], y_pred: Iterable[float]) -> float:
+    return float(np.sqrt(mean_squared_error(y_true, y_pred)))
+
+
+def load_competition_data(
+    train_path: str | Path,
+    test_path: str | Path,
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Читает файлы и объединяет историю одинаковых полигонов.
+
+    В train есть история части AOI до 2024 года, а в private_features - их сезон
+    2025 года. Объединение необходимо для корректного сезонного профиля.
+    """
+    train = pd.read_csv(train_path, parse_dates=[DATE]).assign(_origin="train")
+    test = pd.read_csv(test_path, parse_dates=[DATE]).assign(_origin="test")
+    test["_test_order"] = np.arange(len(test))
+    train["_test_order"] = np.nan
+    if GAP not in train:
+        train[GAP] = False
+    reference = pd.concat([train, test], ignore_index=True, sort=False)
+    reference = reference.sort_values([ID, DATE, "_origin"]).reset_index(drop=True)
+    reference["year"] = reference["year"].fillna(reference[DATE].dt.year).astype(int)
+    reference["doy"] = reference["doy"].fillna(reference[DATE].dt.dayofyear).astype(int)
+    return train, test, reference
+
+
+def verify_target_construction(train: pd.DataFrame) -> dict[str, float]:
+    """Проверяет правило построения primary_ndvi из спутниковых источников."""
+    known = train.dropna(subset=[TARGET]).copy()
+    priority = known["s2_ndvi"].fillna(known["landsat_ndvi"]).fillna(known["modis_ndvi"])
+    delta = (known[TARGET] - priority).abs()
+    return {
+        "checked_rows": int(delta.notna().sum()),
+        "max_abs_difference": float(delta.max()),
+        "exact_share": float((delta == 0).mean()),
+    }
+
+
+def _seasonal_profile(doy: np.ndarray, values: np.ndarray, radius: int) -> np.ndarray:
+    profile = np.full(367, np.nan)
+    good = np.isfinite(values)
+    if not good.any():
+        return profile
+    gd, gv = doy[good].astype(int), values[good]
+    for day in range(1, 367):
+        distance = np.abs(gd - day)
+        distance = np.minimum(distance, 366 - distance)
+        nearby = gv[distance <= radius]
+        if len(nearby):
+            profile[day] = np.median(nearby)
+    return profile
+
+
+def _take_anchor(
+    known_times: np.ndarray,
+    known_values: np.ndarray,
+    query_times: np.ndarray,
+    positions: np.ndarray,
+) -> tuple[np.ndarray, np.ndarray]:
+    values = np.full(len(query_times), np.nan)
+    days = np.full(len(query_times), np.nan)
+    valid = (positions >= 0) & (positions < len(known_values))
+    values[valid] = known_values[positions[valid]]
+    days[valid] = np.abs(query_times[valid] - known_times[positions[valid]])
+    return values, days
+
+
+def build_features(
+    frame: pd.DataFrame,
+    observed_target: pd.Series,
+    masked_rows: pd.Series,
+) -> pd.DataFrame:
+    """Создаёт признаки без утечки из маскируемых строк."""
+    df = frame.copy()
+    observed = observed_target.reindex(df.index)
+    masked = masked_rows.reindex(df.index).fillna(False).astype(bool)
+
+    source = pd.Series(
+        np.select(
+            [df["s2_ndvi"].notna(), df["landsat_ndvi"].notna(), df["modis_ndvi"].notna()],
+            [3, 2, 1], default=0,
+        ),
+        index=df.index,
+    ).where(observed.notna())
+
+    # Число доступных наблюдений других полей в этот день. Собственная строка
+    # вычитается, поэтому индикатор не раскрывает скрытый источник target.
+    peer_counts: dict[str, pd.Series] = {}
+    for sensor in SENSOR_COLS:
+        available = df[sensor].notna().astype(int)
+        peer_counts[sensor] = available.groupby(df[DATE]).transform("sum") - available
+
+    target_table = pd.DataFrame({DATE: df[DATE], ID: df[ID], "value": observed})
+    pivot = target_table.pivot_table(index=DATE, columns=ID, values="value")
+    correlation = pivot.corr(min_periods=25)
+    id_crop = df.groupby(ID)["crop_type"].first().astype(str).to_dict()
+    peer_signal: dict[str, pd.Series] = {}
+    for polygon in correlation.columns:
+        order = correlation[polygon].drop(index=polygon, errors="ignore").dropna().sort_values(ascending=False)
+        same_crop = [p for p in order.index if id_crop.get(p) == id_crop.get(polygon)][:5]
+        peers = same_crop if len(same_crop) >= 2 else list(order.index[:5])
+        if peers:
+            weights = np.clip(order.loc[peers].to_numpy(), 0.05, 1.0)
+            values = pivot[peers]
+            denominator = values.notna().mul(weights, axis=1).sum(axis=1)
+            peer_signal[str(polygon)] = values.mul(weights, axis=1).sum(axis=1).div(denominator).replace([np.inf, -np.inf], np.nan)
+
+    crop_date = pd.DataFrame({DATE: df[DATE], "crop": df["crop_type"].astype(str), "value": observed})
+    date_crop_signal = crop_date.groupby([DATE, "crop"])["value"].median()
+    date_all_signal = target_table.groupby(DATE)["value"].median()
+    crop_mapping = {c: i for i, c in enumerate(sorted(df["crop_type"].astype(str).unique()))}
+
+    blocks = []
+    for polygon, indices in df.groupby(ID, sort=False).groups.items():
+        ix = np.asarray(list(indices), dtype=int)
+        part = df.loc[ix]
+        obs = observed.loc[ix]
+        query_time = part[DATE].astype("int64").to_numpy() / 86_400e9
+        known_mask = obs.notna().to_numpy()
+        known_time = query_time[known_mask]
+        known_value = obs.to_numpy()[known_mask]
+        left = np.searchsorted(known_time, query_time, side="left")
+        right = np.searchsorted(known_time, query_time, side="right")
+
+        z = pd.DataFrame(index=ix)
+        for rank in (1, 2, 3):
+            prev, dprev = _take_anchor(known_time, known_value, query_time, left - rank)
+            nxt, dnext = _take_anchor(known_time, known_value, query_time, right + rank - 1)
+            z[f"prev{rank}"] = prev
+            z[f"next{rank}"] = nxt
+            z[f"dprev{rank}"] = dprev
+            z[f"dnext{rank}"] = dnext
+
+        span = z["dprev1"] + z["dnext1"]
+        z["span"] = span
+        z["linear"] = z["prev1"] + (z["next1"] - z["prev1"]) * z["dprev1"] / span
+        z["anchor_mean"] = (z["prev1"] + z["next1"]) / 2
+        z["anchor_diff"] = z["next1"] - z["prev1"]
+        z["local_slope"] = z["anchor_diff"] / span
+        z["prev_slope"] = (z["prev1"] - z["prev2"]) / (z["dprev2"] - z["dprev1"])
+        z["next_slope"] = (z["next2"] - z["next1"]) / (z["dnext2"] - z["dnext1"])
+
+        for radius in (7, 15, 30):
+            profile = _seasonal_profile(part["doy"].to_numpy(), obs.to_numpy(), radius)
+            z[f"field_season_{radius}"] = profile[part["doy"].to_numpy()]
+
+        # Валидационные/pseudo-gap строки маскируются до интерполяции, как в private.
+        for col in DYNAMIC_COLS:
+            clean = part[col].mask(masked.loc[ix])
+            z[f"{col}_interp"] = clean.interpolate(limit_direction="both").to_numpy()
+
+        source_part = source.loc[ix]
+        z["prev_source"] = source_part.ffill().to_numpy()
+        z["next_source"] = source_part.bfill().to_numpy()
+        z["doy"] = part["doy"].to_numpy()
+        z["year"] = part["year"].to_numpy()
+        z["sin_doy"] = np.sin(2 * np.pi * part["doy"] / 366).to_numpy()
+        z["cos_doy"] = np.cos(2 * np.pi * part["doy"] / 366).to_numpy()
+        z["crop_code"] = part["crop_type"].astype(str).map(crop_mapping).to_numpy()
+        peer = peer_signal.get(str(polygon), pd.Series(dtype=float))
+        z["peer_ndvi"] = part[DATE].map(peer).to_numpy()
+        z["date_crop_ndvi"] = [date_crop_signal.get((d, str(c)), np.nan) for d, c in zip(part[DATE], part["crop_type"])]
+        z["date_all_ndvi"] = part[DATE].map(date_all_signal).to_numpy()
+        z["peer_s2_count"] = peer_counts["s2_ndvi"].loc[ix].to_numpy()
+        z["peer_landsat_count"] = peer_counts["landsat_ndvi"].loc[ix].to_numpy()
+        z["peer_modis_count"] = peer_counts["modis_ndvi"].loc[ix].to_numpy()
+        blocks.append(z)
+
+    return pd.concat(blocks).sort_index()[FULL_FEATURES]
+
+
+def create_model(random_state: int = 42) -> HistGradientBoostingRegressor:
+    return HistGradientBoostingRegressor(
+        loss="squared_error",
+        learning_rate=0.035,
+        max_iter=300,
+        max_leaf_nodes=48,
+        min_samples_leaf=35,
+        l2_regularization=8.0,
+        random_state=random_state,
+    )
+
+
+def _stratified_random_mask(
+    frame: pd.DataFrame,
+    pool: pd.Series,
+    fraction: float,
+    seed: int,
+) -> pd.Series:
+    rng = np.random.default_rng(seed)
+    mask = pd.Series(False, index=frame.index)
+    for _, indices in frame.loc[pool].groupby(ID).groups.items():
+        ix = np.asarray(list(indices), dtype=int)
+        count = max(1, int(round(fraction * len(ix))))
+        mask.loc[rng.choice(ix, size=count, replace=False)] = True
+    return mask
+
+
+@dataclass
+class ValidationArtifacts:
+    metrics: pd.DataFrame
+    feature_sets: dict[str, list[str]]
+
+
+def validate_solution(reference: pd.DataFrame, seed: int = 2026) -> ValidationArtifacts:
+    """Честная outer-validation на известных строках private_features."""
+    known = reference[TARGET].notna()
+    test_known = known & reference["_origin"].eq("test")
+    outer = _stratified_random_mask(reference, test_known, 0.18, seed)
+    train_pool = known & ~outer
+
+    train_x, train_y = [], []
+    for inner_seed in (11, 29, 47, 83):
+        pseudo = _stratified_random_mask(reference, train_pool, 0.18, inner_seed)
+        hidden = outer | pseudo
+        observed = reference[TARGET].mask(hidden)
+        x = build_features(reference, observed, hidden)
+        train_x.append(x.loc[pseudo])
+        train_y.append(reference.loc[pseudo, TARGET])
+    x_train, y_train = pd.concat(train_x), pd.concat(train_y)
+    x_valid = build_features(reference, reference[TARGET].mask(outer), outer).loc[outer]
+    y_valid = reference.loc[outer, TARGET]
+
+    linear = x_valid["linear"].fillna(x_valid["field_season_15"]).fillna(x_valid["date_crop_ndvi"]).fillna(0.35)
+    rows = [{"experiment": "Линейная интерполяция", "features": "2 соседние точки", "rmse": _rmse(y_valid, linear), "mae": float(mean_absolute_error(y_valid, linear))}]
+    feature_sets = {
+        "ML: базовые временные": BASIC_FEATURES,
+        "ML: + дополнительные опоры": ANCHOR_FEATURES,
+        "ML: + сезонность и погода": SEASON_FEATURES,
+        "ML: полный набор": FULL_FEATURES,
+    }
+    for name, columns in feature_sets.items():
+        model = create_model(seed)
+        model.fit(x_train[columns], y_train)
+        pred = np.clip(model.predict(x_valid[columns]), -0.2, 1.1)
+        rows.append({"experiment": name, "features": f"{len(columns)} признаков", "rmse": _rmse(y_valid, pred), "mae": float(mean_absolute_error(y_valid, pred))})
+    metrics = pd.DataFrame(rows)
+    metrics["gap_score"] = (30 * np.maximum(0, 1 - metrics["rmse"] / 0.10)).round(2)
+    metrics["n_validation"] = int(outer.sum())
+    return ValidationArtifacts(metrics=metrics, feature_sets=feature_sets)
+
+
+def fit_final_model(reference: pd.DataFrame, seed: int = 42) -> tuple[HistGradientBoostingRegressor, pd.DataFrame]:
+    """Обучает модель на OOF-признаках каждой известной точки."""
+    known_indices = reference.index[reference[TARGET].notna()].to_numpy()
+    rng = np.random.default_rng(seed)
+    folds = pd.Series(-1, index=reference.index)
+    for _, indices in reference.loc[known_indices].groupby(ID).groups.items():
+        ix = np.asarray(list(indices), dtype=int).copy()
+        rng.shuffle(ix)
+        folds.loc[ix] = np.arange(len(ix)) % 5
+
+    blocks, targets = [], []
+    for fold in range(5):
+        pseudo = folds.eq(fold)
+        observed = reference[TARGET].mask(pseudo)
+        features = build_features(reference, observed, pseudo)
+        blocks.append(features.loc[pseudo])
+        targets.append(reference.loc[pseudo, TARGET])
+    x_train, y_train = pd.concat(blocks), pd.concat(targets)
+    model = create_model(seed)
+    model.fit(x_train[FULL_FEATURES], y_train)
+    return model, x_train
+
+
+def predict_submission(
+    reference: pd.DataFrame,
+    model: HistGradientBoostingRegressor,
+    output_path: str | Path,
+) -> pd.DataFrame:
+    gaps = reference["_origin"].eq("test") & reference[GAP].fillna(False)
+    observed = reference[TARGET].where(~gaps)
+    features = build_features(reference, observed, gaps)
+    prediction = np.clip(model.predict(features.loc[gaps, FULL_FEATURES]), -0.2, 1.1)
+    submission = reference.loc[gaps, [ID, DATE, "_test_order"]].copy()
+    submission["primary_ndvi_pred"] = prediction
+    submission = submission.sort_values("_test_order").drop(columns="_test_order")
+    submission[DATE] = submission[DATE].dt.strftime("%Y-%m-%d")
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    submission.to_csv(output_path, index=False)
+    return submission
+
+
+def save_model(model: HistGradientBoostingRegressor, path: str | Path) -> None:
+    Path(path).parent.mkdir(parents=True, exist_ok=True)
+    joblib.dump({"model": model, "features": FULL_FEATURES}, path)
+

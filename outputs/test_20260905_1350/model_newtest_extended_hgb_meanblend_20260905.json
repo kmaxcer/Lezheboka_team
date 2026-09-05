@@ -1,0 +1,9 @@
+{
+  "candidate": "outputs\\test_20260905_1350\\model_newtest_extended_hgb_meanblend_20260905.csv",
+  "formula": "0.5*regular HGB + 0.5*wide HGB, clipped [-0.2,1.1]",
+  "rows": 2323,
+  "finite": true,
+  "unique_keys": 2323,
+  "sha256": "d33b28fb7f7fc5bb79f2a5dc8e49d6da3cdb0e7aca3fc627ccc4d028abf1a57e",
+  "no_upload": true
+}

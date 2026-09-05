@@ -1,0 +1,69 @@
+OOF fold 0: 9134
+OOF fold 1: 9119
+OOF fold 2: 9106
+OOF fold 3: 9088
+OOF fold 4: 9070
+fit expert s2: 17880
+fit expert landsat: 19085
+fit expert modis: 8552
+C:\Users\kmaxc\PycharmProjects\hack\_1\_lezheboka\research\source_expert_q1.py:183: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  q[name]=p; rows.append({"method":name,"n":len(q),"rmse":_metric(q.truth,p)})
+C:\Users\kmaxc\PycharmProjects\hack\_1\_lezheboka\research\source_expert_q1.py:185: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  q["year"] = q[DATE].dt.year.astype(int); q["cohort"] = np.where(q[ID].isin(set(tr[ID])), "shared", "new")
+                      method    n     rmse
+               expert_oracle 2644 0.068369
+blend_ext40_expert_hard_0.25 2644 0.069538
+blend_ext40_expert_hard_0.30 2644 0.069543
+blend_ext40_expert_hard_0.20 2644 0.069556
+blend_ext40_expert_hard_0.35 2644 0.069572
+blend_ext40_expert_hard_0.15 2644 0.069598
+blend_ext40_expert_hard_0.40 2644 0.069624
+blend_ext40_expert_soft_0.30 2644 0.069633
+blend_ext40_expert_soft_0.25 2644 0.069634
+blend_ext40_expert_soft_0.35 2644 0.069646
+blend_ext40_expert_soft_0.20 2644 0.069650
+blend_ext40_expert_hard_0.10 2644 0.069663
+blend_ext40_expert_soft_0.40 2644 0.069675
+blend_ext40_expert_soft_0.15 2644 0.069682
+blend_ext40_expert_hard_0.45 2644 0.069700
+blend_ext40_expert_soft_0.45 2644 0.069718
+blend_ext40_expert_soft_0.10 2644 0.069728
+blend_ext40_expert_hard_0.05 2644 0.069752
+blend_ext40_expert_soft_0.50 2644 0.069776
+blend_ext40_expert_soft_0.05 2644 0.069788
+    cohort        method    n     rmse
+       all         ext40 2644 0.069864
+       all   expert_soft 2644 0.071160
+       all   expert_hard 2644 0.072044
+       all expert_oracle 2644 0.068369
+       all   matrix_soft 2644 0.079253
+       all   matrix_hard 2644 0.080089
+       all matrix_oracle 2644 0.076779
+   history         ext40 1888 0.064535
+   history   expert_soft 1888 0.065636
+   history   expert_hard 1888 0.066594
+   history expert_oracle 1888 0.063575
+   history   matrix_soft 1888 0.076020
+   history   matrix_hard 1888 0.077017
+   history matrix_oracle 1888 0.073859
+      2025         ext40  756 0.081668
+      2025   expert_soft  756 0.083372
+      2025   expert_hard  756 0.084128
+      2025 expert_oracle  756 0.079083
+      2025   matrix_soft  756 0.086803
+      2025   matrix_hard  756 0.087290
+      2025 matrix_oracle  756 0.083625
+   new2025         ext40  379 0.099663
+   new2025   expert_soft  379 0.101523
+   new2025   expert_hard  379 0.102465
+   new2025 expert_oracle  379 0.096278
+   new2025   matrix_soft  379 0.102676
+   new2025   matrix_hard  379 0.103366
+   new2025 matrix_oracle  379 0.099444
+shared2025         ext40  377 0.058216
+shared2025   expert_soft  377 0.059809
+shared2025   expert_hard  377 0.060313
+shared2025 expert_oracle  377 0.056771
+shared2025   matrix_soft  377 0.067165
+shared2025   matrix_hard  377 0.067368
+shared2025 matrix_oracle  377 0.063888

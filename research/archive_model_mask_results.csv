@@ -1,0 +1,2 @@
+scenario,seed,frac,n,rmse,mae,seconds,path
+all,0,0.15,2644,0.0738059325387686,0.04362190292329903,59.45,C:\Users\kmaxc\PycharmProjects\hack\_1\_lezheboka\research\archive_model_pred_all_seed0.csv

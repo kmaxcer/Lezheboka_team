@@ -1,0 +1,10 @@
+services:
+  agropulse:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      AGROPULSE_DATA_DIR: /data
+      AGROPULSE_PREDICTIONS: /app/outputs/model_dani_oldgt_robust_blend_localgamma006_jointdiag_w040_20260905_submission.csv
+    volumes:
+      - ./data:/data:ro

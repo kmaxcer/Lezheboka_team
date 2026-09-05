@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "C:\Users\kmaxc\PycharmProjects\hack\_1\_lezheboka\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 583, in pandas._libs.index.StringObjectEngine._check_type
+KeyError: Timestamp('2019-06-26 00:00:00')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\kmaxc\Documents\Codex\2026-09-04\ml\research\source_schedule_v2.py", line 84, in <module>
+    if __name__=="__main__":main()
+                            ~~~~^^
+  File "C:\Users\kmaxc\Documents\Codex\2026-09-04\ml\research\source_schedule_v2.py", line 77, in main
+    orig=pr.set_index([ID,DATE]); true=np.array([lab(pd.DataFrame([orig.loc[(a,b)]])).item() for a,b in f.loc[q,[ID,DATE]].itertuples(index=False,name=None)],int)
+                                                                   ~~~~~~~~^^^^^^^
+  File "C:\Users\kmaxc\PycharmProjects\hack\_1\_lezheboka\.venv\Lib\site-packages\pandas\core\indexing.py", line 1200, in __getitem__
+    return self._getitem_tuple(key)
+           ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\kmaxc\PycharmProjects\hack\_1\_lezheboka\.venv\Lib\site-packages\pandas\core\indexing.py", line 1386, in _getitem_tuple
+    return self._getitem_lowerdim(tup)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\kmaxc\PycharmProjects\hack\_1\_lezheboka\.venv\Lib\site-packages\pandas\core\indexing.py", line 1093, in _getitem_lowerdim
+    section = self._getitem_axis(key, axis=i)
+  File "C:\Users\kmaxc\PycharmProjects\hack\_1\_lezheboka\.venv\Lib\site-packages\pandas\core\indexing.py", line 1449, in _getitem_axis
+    return self._get_label(key, axis=axis)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\kmaxc\PycharmProjects\hack\_1\_lezheboka\.venv\Lib\site-packages\pandas\core\indexing.py", line 1399, in _get_label
+    return self.obj.xs(label, axis=axis)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kmaxc\PycharmProjects\hack\_1\_lezheboka\.venv\Lib\site-packages\pandas\core\generic.py", line 4227, in xs
+    return self[key]
+           ~~~~^^^^^
+  File "C:\Users\kmaxc\PycharmProjects\hack\_1\_lezheboka\.venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\kmaxc\PycharmProjects\hack\_1\_lezheboka\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: Timestamp('2019-06-26 00:00:00')

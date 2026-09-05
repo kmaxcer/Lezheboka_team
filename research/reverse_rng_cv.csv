@@ -1,0 +1,2 @@
+protocol,seed,frac,n_eligible,n_hidden,rmse,mae,n_scored,method
+train_full_known_exact_rng_mask,43,0.15,30520,4578,0.07468802056603459,0.051559944664665215,4578,"src.infer.predict_private(k=8,bin_days=30)"

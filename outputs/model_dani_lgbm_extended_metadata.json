@@ -1,0 +1,10 @@
+{
+  "rows": 3112,
+  "features": 69,
+  "pseudo_masks": 2,
+  "model": "LGBMRegressor deep",
+  "private_sha256": "3c5c0e27eef8266bcf6dce09c9b556c073cee3902c065a94e4ea7a59edb00993",
+  "sha256": "8045e11a91e83653a1338b400dbfe6930ca9511c4242e548b02c56f2d3931a71",
+  "seconds": 285.2,
+  "production_baseline_overwritten": false
+}

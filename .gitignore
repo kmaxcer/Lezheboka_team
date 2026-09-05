@@ -1,0 +1,37 @@
+# Локальные окружения и кэш
+.venv/
+__pycache__/
+.pytest_cache/
+.idea/
+
+# Приватные и временные данные
+_tmp*
+tmp/
+_zip*/
+_archive_inspect/
+_teammate_agropulse/
+anomaly_enriched.csv
+anomaly_periods.csv
+*_test_ground_truth.csv
+private_features.csv
+train_dataset.csv
+test_features.csv
+
+# Архивы и бинарные модели
+*.zip
+*.joblib
+
+# Крупные сырые prediction-таблицы; итоговые метаданные и отчёты остаются
+research/*predictions*.csv
+research/meta_residual_v2_route_predictions.csv
+research/meta_residual_v2_predictions.csv
+research/source_expert_q1_predictions.csv
+research/source_expert_route_v2_hparam_probe_v1_predictions.csv
+research/paired_aoi_v2_private_only_actual_peer_predictions_20260905.csv
+tmp_*
+submission*.csv
+_exp_current_submission.csv
+1E-12
+research/*.html
+research/*.htm
+research/*.pkl

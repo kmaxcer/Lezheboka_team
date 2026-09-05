@@ -1,0 +1,12 @@
+{
+  "candidate": "model_dani_extwide40_v3_30_peerblend10_c60_history_shock10_state05_submission.csv",
+  "formula": "ext40 + 0.10*(n16_c60_r125_k2-ext40) + history_noncanon*(0.10*shock-0.05*state)",
+  "rows": 3112,
+  "hidden_rows": 3112,
+  "peer_config": "n16_c60_r125_k2",
+  "peer_finite": 2371,
+  "production_baseline_overwritten": false,
+  "base_sha256": "5ec1d9c6ad4531a0c1983ea9582b385fab72f9359305306663223bb626644e32",
+  "peer_pairs": 10944,
+  "candidate_sha256": "03d6bc0775df908bf9c78cf991d95da9b6eb1aab459cc67ff3936510e9d35eb7"
+}

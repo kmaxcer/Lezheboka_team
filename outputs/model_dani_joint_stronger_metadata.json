@@ -1,0 +1,40 @@
+{
+  "candidate": "model_dani_joint_stronger_submission.csv",
+  "generated_by": "ensemble_cv_v2_apply.py",
+  "formula": "baseline=0.8*hgb+0.2*lag; if canon=False: baseline+0.3*shock-0.15*state; else baseline",
+  "shock_coef": 0.3,
+  "state_coef": -0.15,
+  "clip": [
+    -0.5,
+    1.2
+  ],
+  "rows": 3112,
+  "hidden_rows_in_private": 3112,
+  "known_rows_used_for_features": 17641,
+  "key_match_hidden": true,
+  "canon_true": 727,
+  "canon_false": 2385,
+  "shock_finite": 2887,
+  "shock_at_least_3_peers": 2887,
+  "state_finite": 3112,
+  "correction_nonzero": 2385,
+  "correction_min": -0.03980207883295857,
+  "correction_max": 0.06895646493350359,
+  "correction_mean": -0.0012116303618612257,
+  "baseline_min": 0.03309658,
+  "baseline_max": 0.89709282,
+  "candidate_min": 0.032665467479051996,
+  "candidate_max": 0.8999918576662906,
+  "input_sha256": {
+    "private_features.csv": "3c5c0e27eef8266bcf6dce09c9b556c073cee3902c065a94e4ea7a59edb00993",
+    "model_dani_tuned_submission.csv": "0a2dfe461df0eaa73feacb904f931b61a4998b6550ae42434a24757f6439445e",
+    "model_dani_tuned_hgb.csv": "97e18187bbc642f85a2f23e5fdd5935bceefb32c232d8c1852c454347fccfc97",
+    "model_dani_tuned_lag.csv": "8d509647978419022f3c9d3ba0fdaceb847ca279bf40969206daafd107e9f718",
+    "model_dani_joint_stronger_submission.csv": "867506adc789cb7f7d09dafa8e378c3f608097fe7adbf59b6fb37316fd1ab495"
+  },
+  "label_columns_read": [
+    "primary_ndvi"
+  ],
+  "hidden_label_columns_read": [],
+  "production_baseline_overwritten": false
+}

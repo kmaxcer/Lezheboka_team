@@ -1,0 +1,32 @@
+{
+  "candidate": "model_dani_lag32_peer10_a325_b150_submission.csv",
+  "generated_by": "ensemble_cv_v2_local.py",
+  "formula": "base=(1-0.325)*hgb+0.325*lag; peer10=0.9*base+0.1*raw_peer when visible; canon=False +0.325*shock-0.15*state",
+  "lag_weight": 0.325,
+  "peer_weight": 0.1,
+  "peer_config": "n16_c60_r125_k2",
+  "shock_coef": 0.325,
+  "state_coef": -0.15,
+  "rows": 3112,
+  "hidden_rows_in_private": 3112,
+  "known_rows_used_for_features": 17641,
+  "peer_coverage": 0.7618894601542416,
+  "shock_finite": 2887,
+  "state_finite": 3112,
+  "canon_true": 727,
+  "canon_false": 2385,
+  "candidate_min": 0.04703594051232538,
+  "candidate_max": 0.9103621849832224,
+  "correction_min": -0.04298546188027505,
+  "correction_max": 0.07488056549571824,
+  "sha256": {
+    "private_features.csv": "3C5C0E27EEF8266BCF6DCE09C9B556C073CEE3902C065A94E4EA7A59EDB00993",
+    "model_dani_tuned_hgb.csv": "97E18187BBC642F85A2F23E5FDD5935BCEEFB32C232D8C1852C454347FCCFC97",
+    "model_dani_tuned_lag.csv": "8D509647978419022F3C9D3BA0FDACEB847CA279BF40969206DAAFD107E9F718",
+    "paired_aoi_v2_private_hgb_lag30_peer10.csv": "21DF69D1101659CFD616DB2341B4376E308ECA18C5C5D4946CBFAE01D5712BCC",
+    "paired_aoi_v2_private_hgb_lag30.csv": "9EA48BD434D8551EC351D2112EF77980EAE400111E0842E728AF7D1360F4C543",
+    "model_dani_lag32_peer10_a325_b150_submission.csv": "A8028D367B34F85EEB8D7067F52FD8C8C5E1E3F5CD1107B1A73F5425E0EDC040"
+  },
+  "hidden_label_columns_read": [],
+  "production_baseline_overwritten": false
+}

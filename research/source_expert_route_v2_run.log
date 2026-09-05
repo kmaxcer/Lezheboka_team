@@ -1,0 +1,118 @@
+fit source experts seed=0
+OOF fold 0: 9134
+OOF fold 1: 9119
+OOF fold 2: 9106
+OOF fold 3: 9088
+OOF fold 4: 9070
+fit expert s2: 17894
+fit expert landsat: 19053
+fit expert modis: 8570
+ seed                      method    n     rmse          slice
+    0                    baseline 2644 0.071366            NaN
+    0 blend_crop_hier_n1_p67_0.40 2644 0.070447            NaN
+    0                    baseline 2644 0.071366            all
+    0                    baseline 1888 0.078063        history
+    0                    baseline  756 0.050933           2025
+    0                    baseline 2267 0.074696            new
+    0                    baseline  377 0.046564         shared
+    0                    baseline 1741 0.069333           near
+    0                    baseline  420 0.071708            mid
+    0                    baseline  483 0.077986    far_or_none
+    0                    baseline 1156 0.063485      source_s2
+    0                    baseline 1035 0.081564 source_landsat
+    0                    baseline  453 0.065130   source_modis
+    0 blend_crop_hier_n1_p67_0.40 2644 0.070447            all
+    0 blend_crop_hier_n1_p67_0.40 1888 0.077320        history
+    0 blend_crop_hier_n1_p67_0.40  756 0.049260           2025
+    0 blend_crop_hier_n1_p67_0.40 2267 0.073762            new
+    0 blend_crop_hier_n1_p67_0.40  377 0.045697         shared
+    0 blend_crop_hier_n1_p67_0.40 1741 0.068081           near
+    0 blend_crop_hier_n1_p67_0.40  420 0.071259            mid
+    0 blend_crop_hier_n1_p67_0.40  483 0.077745    far_or_none
+    0 blend_crop_hier_n1_p67_0.40 1156 0.062679      source_s2
+    0 blend_crop_hier_n1_p67_0.40 1035 0.080540 source_landsat
+    0 blend_crop_hier_n1_p67_0.40  453 0.064185   source_modis
+fit source experts seed=1
+OOF fold 0: 9134
+OOF fold 1: 9119
+OOF fold 2: 9106
+OOF fold 3: 9088
+OOF fold 4: 9070
+fit expert s2: 17869
+fit expert landsat: 19086
+fit expert modis: 8562
+ seed                      method    n     rmse          slice
+    1                    baseline 2644 0.064468            NaN
+    1 blend_crop_hier_n1_p67_0.40 2644 0.063107            NaN
+    1                    baseline 2644 0.064468            all
+    1                    baseline 1888 0.068017        history
+    1                    baseline  756 0.054607           2025
+    1                    baseline 2267 0.066470            new
+    1                    baseline  377 0.050789         shared
+    1                    baseline 1706 0.058551           near
+    1                    baseline  441 0.076887            mid
+    1                    baseline  497 0.071394    far_or_none
+    1                    baseline 1181 0.072000      source_s2
+    1                    baseline 1002 0.054415 source_landsat
+    1                    baseline  461 0.064192   source_modis
+    1 blend_crop_hier_n1_p67_0.40 2644 0.063107            all
+    1 blend_crop_hier_n1_p67_0.40 1888 0.066669        history
+    1 blend_crop_hier_n1_p67_0.40  756 0.053180           2025
+    1 blend_crop_hier_n1_p67_0.40 2267 0.065125            new
+    1 blend_crop_hier_n1_p67_0.40  377 0.049253         shared
+    1 blend_crop_hier_n1_p67_0.40 1706 0.056593           near
+    1 blend_crop_hier_n1_p67_0.40  441 0.075853            mid
+    1 blend_crop_hier_n1_p67_0.40  497 0.071324    far_or_none
+    1 blend_crop_hier_n1_p67_0.40 1181 0.071138      source_s2
+    1 blend_crop_hier_n1_p67_0.40 1002 0.052807 source_landsat
+    1 blend_crop_hier_n1_p67_0.40  461 0.061769   source_modis
+fit source experts seed=70404
+OOF fold 0: 9134
+OOF fold 1: 9119
+OOF fold 2: 9106
+OOF fold 3: 9088
+OOF fold 4: 9070
+fit expert s2: 17880
+fit expert landsat: 19085
+fit expert modis: 8552
+ seed                      method    n     rmse          slice
+70404                    baseline 2644 0.069475            NaN
+70404 blend_crop_hier_n1_p67_0.40 2644 0.068368            NaN
+70404                    baseline 2644 0.069475            all
+70404                    baseline 1888 0.063944        history
+70404                    baseline  756 0.081668           2025
+70404                    baseline 2267 0.071175            new
+70404                    baseline  377 0.058216         shared
+70404                    baseline 1718 0.070994           near
+70404                    baseline  425 0.070071            mid
+70404                    baseline  501 0.063439    far_or_none
+70404                    baseline 1170 0.067203      source_s2
+70404                    baseline 1003 0.072209 source_landsat
+70404                    baseline  471 0.069090   source_modis
+70404 blend_crop_hier_n1_p67_0.40 2644 0.068368            all
+70404 blend_crop_hier_n1_p67_0.40 1888 0.062998        history
+70404 blend_crop_hier_n1_p67_0.40  756 0.080223           2025
+70404 blend_crop_hier_n1_p67_0.40 2267 0.069977            new
+70404 blend_crop_hier_n1_p67_0.40  377 0.057752         shared
+70404 blend_crop_hier_n1_p67_0.40 1718 0.069776           near
+70404 blend_crop_hier_n1_p67_0.40  425 0.068786            mid
+70404 blend_crop_hier_n1_p67_0.40  501 0.062913    far_or_none
+70404 blend_crop_hier_n1_p67_0.40 1170 0.066326      source_s2
+70404 blend_crop_hier_n1_p67_0.40 1003 0.070965 source_landsat
+70404 blend_crop_hier_n1_p67_0.40  471 0.067724   source_modis
+OOF fold 0: 9666
+OOF fold 1: 9646
+OOF fold 2: 9632
+OOF fold 3: 9613
+OOF fold 4: 9604
+fit expert s2: 19050
+fit expert landsat: 20088
+fit expert modis: 9023
+                       method    n     rmse                             per_seed
+  blend_crop_hier_n1_p67_0.40 7932 0.067378 0:0.070447;1:0.063107;70404:0.068368
+ blend_soft_all_r2_l0_p4_0.40 7932 0.067402 0:0.070406;1:0.063208;70404:0.068387
+ blend_soft_all_r1_l0_p4_0.40 7932 0.067468 0:0.070532;1:0.063307;70404:0.068362
+blend_soft_crop_r1_l0_p4_0.40 7932 0.067474 0:0.070525;1:0.063282;70404:0.068410
+blend_soft_all_r32_l0_p4_0.40 7932 0.068295 0:0.071224;1:0.064330;70404:0.069148
+         blend_post_mode_0.40 7932 0.068377 0:0.071240;1:0.064422;70404:0.069289
+                     baseline 7932 0.068498 0:0.071366;1:0.064468;70404:0.069475

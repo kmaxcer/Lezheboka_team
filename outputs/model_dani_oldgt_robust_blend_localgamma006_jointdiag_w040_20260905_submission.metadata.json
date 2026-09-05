@@ -1,0 +1,13 @@
+{
+  "formula": "clip(0.60 * localgamma006 pair10 HGB candidate + 0.40 * joint_diag candidate, -0.2, 1.1)",
+  "source_candidates": [
+    "model_dani_source_expert_route_v2_trainaug_r2_cyd_v1_localpeer_w16_r4_mean_a025_paired_n12_c40_r100_k2_w010_hgb_sqclip_w016_localgamma006_v1_20260905_submission.csv",
+    "model_dani_source_expert_route_v2_trainaug_r2_cyd_v1_localpeer_joint_diag_submission.csv"
+  ],
+  "ground_truth": "released old private GT only; no new-test labels",
+  "rows": 3112,
+  "sha256": "590bbf0e3f103577483e3292ccc57fb1d185ee861f61488e3e0bcbe5e4771e76",
+  "rmse": 0.06160920400908421,
+  "gap_score": 11.52,
+  "no_upload": true
+}

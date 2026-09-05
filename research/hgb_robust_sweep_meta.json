@@ -1,0 +1,23 @@
+[
+  {
+    "seed": 0,
+    "n_masks": 2,
+    "features": 130,
+    "train_rows": 16408,
+    "seconds": 182.8
+  },
+  {
+    "seed": 1,
+    "n_masks": 2,
+    "features": 130,
+    "train_rows": 16408,
+    "seconds": 178.0
+  },
+  {
+    "seed": 70404,
+    "n_masks": 3,
+    "features": 130,
+    "train_rows": 24612,
+    "seconds": 243.5
+  }
+]

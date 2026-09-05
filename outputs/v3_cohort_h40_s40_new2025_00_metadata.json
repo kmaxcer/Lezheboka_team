@@ -1,0 +1,13 @@
+{
+  "candidate": "v3_cohort_h40_s40_new2025_00_submission.csv",
+  "history_v3_weight": 0.4,
+  "shared_2025_v3_weight": 0.4,
+  "new_2025_v3_weight": 0.0,
+  "rows": 3112,
+  "shared_rows": 464,
+  "new2025_rows": 461,
+  "sha256": "f87978452db1f173c8214fc634d0b23c8c2ae3714c680a632b8b19af74116f1d",
+  "baseline_sha256": "2b84fdd7f49a1703cad523b8c614e37415a8b783d6da077a385be4218d4efbc3",
+  "v3_sha256": "dc51551ee049c916e4b27315d1b082f75053cb01f5be5a4dc66a04446dc95c56",
+  "production_baseline_overwritten": false
+}

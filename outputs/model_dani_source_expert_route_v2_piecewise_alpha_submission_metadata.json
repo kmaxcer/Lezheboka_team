@@ -1,0 +1,17 @@
+{
+  "candidate": "model_dani_source_expert_route_v2_piecewise_alpha_submission.csv",
+  "formula": "B + alpha*(P-B), P=(route_v2_alpha040-0.60*B)/0.40; alpha=0.50 if same-crop near<=2, 0.40 if 2<near<=8, 0.25 otherwise",
+  "rows": 3112,
+  "near_counts": {
+    "near": 2227,
+    "mid": 440,
+    "far_or_none": 445
+  },
+  "finite": true,
+  "unique_keys": 3112,
+  "baseline_sha256": "8362c1280266b56b334725f6bd2e3346b75d9b65f0781ab0110914be259d8948",
+  "route_alpha040_sha256": "728153e07d98de92e561fcd155ae12ac2091805b669e2aab79ea740a42f6b440",
+  "candidate_sha256": "29633321f468d6e550dbb5bc758a2268a50cd4ce22495fb2c91dbff6bf808394",
+  "source_expert_clipping_detected": false,
+  "no_upload": true
+}

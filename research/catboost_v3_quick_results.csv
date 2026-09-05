@@ -1,0 +1,2 @@
+protocol,depth,n,features,finite_pred,finite_y,rmse,mae
+random,7,4571,130,4571,4571,0.0691316384980986,0.04804869772462216

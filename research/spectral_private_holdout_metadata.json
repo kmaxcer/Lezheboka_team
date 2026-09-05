@@ -1,0 +1,10 @@
+{
+  "holdout_seed": 70404,
+  "holdout_rows": 2644,
+  "actual_hidden_rows": 3112,
+  "n_masks": 2,
+  "features": 219,
+  "train_rows": 16408,
+  "seconds": 512.8,
+  "seconds_total": 515.1
+}

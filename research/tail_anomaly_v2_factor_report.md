@@ -1,0 +1,103 @@
+# Tail anomaly v2 factor
+
+           protocol            candidate    n  rmse_pooled  mae_pooled  parts
+   exact_hidden_doy      factor_z_w0.025 1114     0.062557    0.042902      6
+   exact_hidden_doy   factor_peer_w0.025 1114     0.062577    0.043001      6
+   exact_hidden_doy    factor_abs_w0.000 1114     0.062606    0.042855      6
+   exact_hidden_doy      factor_z_w0.000 1114     0.062606    0.042855      6
+   exact_hidden_doy factor_robust_w0.000 1114     0.062606    0.042855      6
+   exact_hidden_doy   factor_peer_w0.000 1114     0.062606    0.042855      6
+   exact_hidden_doy      factor_z_w0.050 1114     0.062658    0.043085      6
+   exact_hidden_doy   factor_peer_w0.050 1114     0.062692    0.043279      6
+   exact_hidden_doy      factor_z_w0.075 1114     0.062907    0.043331      6
+   exact_hidden_doy   factor_peer_w0.075 1114     0.062951    0.043624      6
+   exact_hidden_doy      factor_z_w0.100 1114     0.063303    0.043661      6
+   exact_hidden_doy   factor_peer_w0.100 1114     0.063351    0.044049      6
+   exact_hidden_doy    factor_abs_w0.025 1114     0.063684    0.044197      6
+   exact_hidden_doy factor_robust_w0.025 1114     0.063735    0.044238      6
+   exact_hidden_doy      factor_z_w0.125 1114     0.063843    0.044106      6
+   exact_hidden_doy   factor_peer_w0.125 1114     0.063890    0.044549      6
+   exact_hidden_doy      factor_z_w0.150 1114     0.064523    0.044684      6
+   exact_hidden_doy   factor_peer_w0.150 1114     0.064564    0.045181      6
+   exact_hidden_doy      factor_z_w0.175 1114     0.065339    0.045365      6
+   exact_hidden_doy   factor_peer_w0.175 1114     0.065370    0.045928      6
+   exact_hidden_doy      factor_z_w0.200 1114     0.066287    0.046165      6
+   exact_hidden_doy   factor_peer_w0.200 1114     0.066302    0.046767      6
+   exact_hidden_doy    factor_abs_w0.050 1114     0.066518    0.047213      6
+   exact_hidden_doy factor_robust_w0.050 1114     0.066659    0.047337      6
+   exact_hidden_doy   factor_peer_w0.225 1114     0.067356    0.047683      6
+   exact_hidden_doy      factor_z_w0.225 1114     0.067360    0.047050      6
+   exact_hidden_doy   factor_peer_w0.250 1114     0.068525    0.048656      6
+   exact_hidden_doy      factor_z_w0.250 1114     0.068553    0.048001      6
+   exact_hidden_doy   factor_peer_w0.275 1114     0.069804    0.049697      6
+   exact_hidden_doy      factor_z_w0.275 1114     0.069859    0.049022      6
+   exact_hidden_doy    factor_abs_w0.075 1114     0.070899    0.051676      6
+   exact_hidden_doy factor_robust_w0.075 1114     0.071156    0.051886      6
+   exact_hidden_doy   factor_peer_w0.300 1114     0.071187    0.050816      6
+   exact_hidden_doy      factor_z_w0.300 1114     0.071272    0.050089      6
+   exact_hidden_doy   factor_peer_w0.325 1114     0.072668    0.051993      6
+   exact_hidden_doy      factor_z_w0.325 1114     0.072787    0.051204      6
+   exact_hidden_doy   factor_peer_w0.350 1114     0.074241    0.053206      6
+   exact_hidden_doy      factor_z_w0.350 1114     0.074396    0.052357      6
+   exact_hidden_doy   factor_peer_w0.375 1114     0.075900    0.054442      6
+   exact_hidden_doy      factor_z_w0.375 1114     0.076094    0.053554      6
+   exact_hidden_doy    factor_abs_w0.100 1114     0.076562    0.057357      6
+   exact_hidden_doy factor_robust_w0.100 1114     0.076951    0.057679      6
+   exact_hidden_doy   factor_peer_w0.400 1114     0.077641    0.055722      6
+   exact_hidden_doy      factor_z_w0.400 1114     0.077876    0.054784      6
+   exact_hidden_doy   factor_peer_w0.425 1114     0.079457    0.057056      6
+   exact_hidden_doy      factor_z_w0.425 1114     0.079734    0.056063      6
+   exact_hidden_doy   factor_peer_w0.450 1114     0.081343    0.058409      6
+   exact_hidden_doy      factor_z_w0.450 1114     0.081665    0.057393      6
+   exact_hidden_doy    factor_abs_w0.125 1114     0.083244    0.063866      6
+   exact_hidden_doy   factor_peer_w0.475 1114     0.083295    0.059798      6
+   exact_hidden_doy      factor_z_w0.475 1114     0.083663    0.058760      6
+   exact_hidden_doy factor_robust_w0.125 1114     0.083775    0.064314      6
+   exact_hidden_doy   factor_peer_w0.500 1114     0.085308    0.061240      6
+   exact_hidden_doy      factor_z_w0.500 1114     0.085724    0.060173      6
+   exact_hidden_doy    factor_abs_w0.150 1114     0.090722    0.071082      6
+   exact_hidden_doy factor_robust_w0.150 1114     0.091399    0.071663      6
+   exact_hidden_doy    factor_abs_w0.175 1114     0.098815    0.078744      6
+   exact_hidden_doy factor_robust_w0.175 1114     0.099638    0.079483      6
+   exact_hidden_doy    factor_abs_w0.200 1114     0.107384    0.086735      6
+   exact_hidden_doy factor_robust_w0.200 1114     0.108352    0.087594      6
+   exact_hidden_doy    factor_abs_w0.225 1114     0.116323    0.095024      6
+   exact_hidden_doy factor_robust_w0.225 1114     0.117437    0.096057      6
+   exact_hidden_doy    factor_abs_w0.250 1114     0.125554    0.103604      6
+   exact_hidden_doy factor_robust_w0.250 1114     0.126811    0.104792      6
+   exact_hidden_doy    factor_abs_w0.275 1114     0.135017    0.112387      6
+   exact_hidden_doy factor_robust_w0.275 1114     0.136416    0.113706      6
+   exact_hidden_doy    factor_abs_w0.300 1114     0.144666    0.121259      6
+   exact_hidden_doy factor_robust_w0.300 1114     0.146206    0.122721      6
+   exact_hidden_doy    factor_abs_w0.325 1114     0.154466    0.130245      6
+   exact_hidden_doy factor_robust_w0.325 1114     0.156146    0.131883      6
+   exact_hidden_doy    factor_abs_w0.350 1114     0.164391    0.139364      6
+   exact_hidden_doy factor_robust_w0.350 1114     0.166209    0.141205      6
+   exact_hidden_doy    factor_abs_w0.375 1114     0.174419    0.148621      6
+   exact_hidden_doy factor_robust_w0.375 1114     0.176374    0.150648      6
+   exact_hidden_doy    factor_abs_w0.400 1114     0.184534    0.157949      6
+   exact_hidden_doy factor_robust_w0.400 1114     0.186625    0.160146      6
+   exact_hidden_doy    factor_abs_w0.425 1114     0.194721    0.167329      6
+   exact_hidden_doy factor_robust_w0.425 1114     0.196948    0.169701      6
+   exact_hidden_doy    factor_abs_w0.450 1114     0.204970    0.176748      6
+   exact_hidden_doy factor_robust_w0.450 1114     0.207332    0.179296      6
+   exact_hidden_doy    factor_abs_w0.475 1114     0.215272    0.186204      6
+   exact_hidden_doy factor_robust_w0.475 1114     0.217769    0.188925      6
+   exact_hidden_doy    factor_abs_w0.500 1114     0.225620    0.195721      6
+   exact_hidden_doy factor_robust_w0.500 1114     0.228251    0.198586      6
+random_private_like    factor_abs_w0.000 7932     0.069449    0.042557      3
+random_private_like      factor_z_w0.000 7932     0.069449    0.042557      3
+random_private_like factor_robust_w0.000 7932     0.069449    0.042557      3
+random_private_like   factor_peer_w0.000 7932     0.069449    0.042557      3
+random_private_like      factor_z_w0.025 7932     0.069488    0.042849      3
+random_private_like   factor_peer_w0.025 7932     0.069522    0.042894      3
+random_private_like      factor_z_w0.050 7932     0.069715    0.043355      3
+random_private_like   factor_peer_w0.050 7932     0.069773    0.043449      3
+random_private_like      factor_z_w0.075 7932     0.070127    0.044052      3
+random_private_like   factor_peer_w0.075 7932     0.070198    0.044192      3
+random_private_like    factor_abs_w0.025 7932     0.070347    0.044139      3
+random_private_like factor_robust_w0.025 7932     0.070355    0.044141      3
+random_private_like      factor_z_w0.100 7932     0.070723    0.044854      3
+random_private_like   factor_peer_w0.100 7932     0.070796    0.045058      3
+random_private_like      factor_z_w0.125 7932     0.071496    0.045787      3
+random_private_like   factor_peer_w0.125 7932     0.071562    0.046044      3

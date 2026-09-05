@@ -1,0 +1,400 @@
+family,dataset,partition,method,n,rmse,mae,eligible_for_core_meta,note
+postcorr,random_private_like,random0,hgb_raw,2644,0.073805933,0.043621903,True,fixed/observable
+postcorr,random_private_like,random0,hgb_clip_01,2644,0.073805933,0.043621903,True,fixed/observable
+postcorr,random_private_like,random0,hgb_affine,2644,0.073843149,0.043602835,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random0,hgb_affine_winsor,2644,0.073815535,0.043608897,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random0,hgb_bias_median,2644,0.073800691,0.043601655,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random0,hgb_shrink_0.95,2644,0.074198369,0.045175952,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random0,hgb_peer_0.10,2644,0.076175228,0.047153051,True,fixed/observable
+postcorr,random_private_like,random0,blend_lag_0.10,2644,0.073509476,0.043444886,True,fixed/observable
+postcorr,random_private_like,random0,blend_lag_0.20,2644,0.073409327,0.043469915,True,fixed/observable
+postcorr,random_private_like,random0,blend_lag_fit_global,2644,0.073413327,0.043444743,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random0,blend_lag_fit_canon,2644,0.073497298,0.043468268,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random0,blend_lag_fit_hidden_doy,2644,0.073413327,0.043444743,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random0,blend_lag_fit_span,2644,0.073404301,0.043487907,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random0,hgb_groupbias_canon,2644,0.073794325,0.043592549,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random0,hgb_groupbias_span,2644,0.073833358,0.043618787,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random1,hgb_raw,2644,0.067084333,0.043710699,True,fixed/observable
+postcorr,random_private_like,random1,hgb_clip_01,2644,0.067084333,0.043710699,True,fixed/observable
+postcorr,random_private_like,random1,hgb_affine,2644,0.067139141,0.043777036,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random1,hgb_affine_winsor,2644,0.067165248,0.043857386,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random1,hgb_bias_median,2644,0.067140012,0.043721057,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random1,hgb_shrink_0.95,2644,0.067978662,0.045559283,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random1,hgb_peer_0.10,2644,0.069222902,0.047375620,True,fixed/observable
+postcorr,random_private_like,random1,blend_lag_0.10,2644,0.066704189,0.043443133,True,fixed/observable
+postcorr,random_private_like,random1,blend_lag_0.20,2644,0.066541059,0.043364775,True,fixed/observable
+postcorr,random_private_like,random1,blend_lag_fit_global,2644,0.066567926,0.043366408,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random1,blend_lag_fit_canon,2644,0.066561118,0.043363531,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random1,blend_lag_fit_hidden_doy,2644,0.066567926,0.043366408,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random1,blend_lag_fit_span,2644,0.066523041,0.043405005,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random1,hgb_groupbias_canon,2644,0.067139720,0.043713399,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random1,hgb_groupbias_span,2644,0.067156953,0.043756481,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random2,hgb_raw,2644,0.068407333,0.041072911,True,fixed/observable
+postcorr,random_private_like,random2,hgb_clip_01,2644,0.068407333,0.041072911,True,fixed/observable
+postcorr,random_private_like,random2,hgb_affine,2644,0.068437478,0.041168516,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random2,hgb_affine_winsor,2644,0.068454407,0.041246045,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random2,hgb_bias_median,2644,0.068393236,0.041050246,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random2,hgb_shrink_0.95,2644,0.069353083,0.043134178,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random2,hgb_peer_0.10,2644,0.070900491,0.045445224,True,fixed/observable
+postcorr,random_private_like,random2,blend_lag_0.10,2644,0.068191029,0.040826132,True,fixed/observable
+postcorr,random_private_like,random2,blend_lag_0.20,2644,0.068212086,0.040835018,True,fixed/observable
+postcorr,random_private_like,random2,blend_lag_fit_global,2644,0.068231860,0.040851452,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random2,blend_lag_fit_canon,2644,0.068229192,0.040852736,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random2,blend_lag_fit_hidden_doy,2644,0.068231860,0.040851452,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random2,blend_lag_fit_span,2644,0.068228105,0.040875005,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random2,hgb_groupbias_canon,2644,0.068413201,0.041048218,False,crossfit label-fitted; excluded from second-level fit
+postcorr,random_private_like,random2,hgb_groupbias_span,2644,0.068390858,0.041042315,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2019,hgb_raw,249,0.057749371,0.039727019,True,fixed/observable
+postcorr,exact_hidden_doy,exact2019,hgb_clip_01,249,0.057749371,0.039727019,True,fixed/observable
+postcorr,exact_hidden_doy,exact2019,hgb_affine,249,0.057778865,0.039757310,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2019,hgb_affine_winsor,249,0.057851927,0.039844023,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2019,hgb_bias_median,249,0.057771361,0.039750951,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2019,hgb_shrink_0.95,249,0.059707014,0.042189085,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2019,hgb_peer_0.10,249,0.060949746,0.043011404,True,fixed/observable
+postcorr,exact_hidden_doy,exact2019,blend_lag_0.10,249,0.057340402,0.039537995,True,fixed/observable
+postcorr,exact_hidden_doy,exact2019,blend_lag_0.20,249,0.057181056,0.039427368,True,fixed/observable
+postcorr,exact_hidden_doy,exact2019,blend_lag_fit_global,249,0.057312593,0.039411708,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2019,blend_lag_fit_canon,249,0.057314746,0.039420397,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2019,blend_lag_fit_hidden_doy,249,0.057312593,0.039411708,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2019,blend_lag_fit_span,249,0.057191906,0.039293506,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2019,hgb_groupbias_canon,249,0.057776637,0.039779978,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2019,hgb_groupbias_span,249,0.057893932,0.039710712,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2020,hgb_raw,222,0.055966933,0.037613409,True,fixed/observable
+postcorr,exact_hidden_doy,exact2020,hgb_clip_01,222,0.055966933,0.037613409,True,fixed/observable
+postcorr,exact_hidden_doy,exact2020,hgb_affine,222,0.056243809,0.037727051,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2020,hgb_affine_winsor,222,0.056203418,0.037728115,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2020,hgb_bias_median,222,0.055982246,0.037620671,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2020,hgb_shrink_0.95,222,0.057305813,0.039570400,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2020,hgb_peer_0.10,222,0.057992422,0.039913709,True,fixed/observable
+postcorr,exact_hidden_doy,exact2020,blend_lag_0.10,222,0.055516145,0.037501587,True,fixed/observable
+postcorr,exact_hidden_doy,exact2020,blend_lag_0.20,222,0.055310928,0.037629656,True,fixed/observable
+postcorr,exact_hidden_doy,exact2020,blend_lag_fit_global,222,0.055365570,0.037953895,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2020,blend_lag_fit_canon,222,0.055399828,0.037972003,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2020,blend_lag_fit_hidden_doy,222,0.055365570,0.037953895,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2020,blend_lag_fit_span,222,0.055814337,0.038479951,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2020,hgb_groupbias_canon,222,0.056306031,0.037832752,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2020,hgb_groupbias_span,222,0.055897845,0.037548497,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2021,hgb_raw,130,0.077495517,0.057193278,True,fixed/observable
+postcorr,exact_hidden_doy,exact2021,hgb_clip_01,130,0.077495517,0.057193278,True,fixed/observable
+postcorr,exact_hidden_doy,exact2021,hgb_affine,130,0.077534666,0.057128679,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2021,hgb_affine_winsor,130,0.077583437,0.057170693,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2021,hgb_bias_median,130,0.077536857,0.057184385,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2021,hgb_shrink_0.95,130,0.078549173,0.058366345,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2021,hgb_peer_0.10,130,0.075945570,0.057162111,True,fixed/observable
+postcorr,exact_hidden_doy,exact2021,blend_lag_0.10,130,0.077229796,0.056813268,True,fixed/observable
+postcorr,exact_hidden_doy,exact2021,blend_lag_0.20,130,0.077222748,0.056872824,True,fixed/observable
+postcorr,exact_hidden_doy,exact2021,blend_lag_fit_global,130,0.077560216,0.057398545,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2021,blend_lag_fit_canon,130,0.077587053,0.057387387,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2021,blend_lag_fit_hidden_doy,130,0.077560216,0.057398545,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2021,blend_lag_fit_span,130,0.077240809,0.057141053,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2021,hgb_groupbias_canon,130,0.077553569,0.057191315,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2021,hgb_groupbias_span,130,0.077631272,0.057297481,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2022,hgb_raw,192,0.067843195,0.048510951,True,fixed/observable
+postcorr,exact_hidden_doy,exact2022,hgb_clip_01,192,0.067843195,0.048510951,True,fixed/observable
+postcorr,exact_hidden_doy,exact2022,hgb_affine,192,0.068482062,0.048954700,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2022,hgb_affine_winsor,192,0.068285899,0.048822503,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2022,hgb_bias_median,192,0.067964138,0.048657370,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2022,hgb_shrink_0.95,192,0.067438336,0.048824675,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2022,hgb_peer_0.10,192,0.068889429,0.049919081,True,fixed/observable
+postcorr,exact_hidden_doy,exact2022,blend_lag_0.10,192,0.067153032,0.048052335,True,fixed/observable
+postcorr,exact_hidden_doy,exact2022,blend_lag_0.20,192,0.066598087,0.047668607,True,fixed/observable
+postcorr,exact_hidden_doy,exact2022,blend_lag_fit_global,192,0.066348777,0.047498232,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2022,blend_lag_fit_canon,192,0.066391192,0.047547653,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2022,blend_lag_fit_hidden_doy,192,0.066348777,0.047498232,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2022,blend_lag_fit_span,192,0.066260025,0.047568011,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2022,hgb_groupbias_canon,192,0.068385290,0.049199905,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2022,hgb_groupbias_span,192,0.067944793,0.048644553,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2023,hgb_raw,169,0.072534562,0.046282499,True,fixed/observable
+postcorr,exact_hidden_doy,exact2023,hgb_clip_01,169,0.072534562,0.046282499,True,fixed/observable
+postcorr,exact_hidden_doy,exact2023,hgb_affine,169,0.073129606,0.046390836,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2023,hgb_affine_winsor,169,0.073084570,0.046517522,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2023,hgb_bias_median,169,0.072798601,0.046429067,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2023,hgb_shrink_0.95,169,0.073223015,0.049243494,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2023,hgb_peer_0.10,169,0.076216613,0.051870953,True,fixed/observable
+postcorr,exact_hidden_doy,exact2023,blend_lag_0.10,169,0.071607070,0.045634208,True,fixed/observable
+postcorr,exact_hidden_doy,exact2023,blend_lag_0.20,169,0.070857216,0.045073108,True,fixed/observable
+postcorr,exact_hidden_doy,exact2023,blend_lag_fit_global,169,0.070583653,0.044928846,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2023,blend_lag_fit_canon,169,0.070744551,0.044859370,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2023,blend_lag_fit_hidden_doy,169,0.070583653,0.044928846,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2023,blend_lag_fit_span,169,0.070885623,0.045198591,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2023,hgb_groupbias_canon,169,0.072772705,0.046501160,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2023,hgb_groupbias_span,169,0.073475699,0.047109253,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2024,hgb_raw,152,0.051247265,0.035366091,True,fixed/observable
+postcorr,exact_hidden_doy,exact2024,hgb_clip_01,152,0.051247265,0.035366091,True,fixed/observable
+postcorr,exact_hidden_doy,exact2024,hgb_affine,152,0.051204212,0.035235385,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2024,hgb_affine_winsor,152,0.051269128,0.035446102,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2024,hgb_bias_median,152,0.051308079,0.035562098,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2024,hgb_shrink_0.95,152,0.052894160,0.038465564,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2024,hgb_peer_0.10,152,0.052909679,0.037208652,True,fixed/observable
+postcorr,exact_hidden_doy,exact2024,blend_lag_0.10,152,0.051114929,0.035393142,True,fixed/observable
+postcorr,exact_hidden_doy,exact2024,blend_lag_0.20,152,0.051154478,0.035562736,True,fixed/observable
+postcorr,exact_hidden_doy,exact2024,blend_lag_fit_global,152,0.051388712,0.035865319,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2024,blend_lag_fit_canon,152,0.051450070,0.035842624,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2024,blend_lag_fit_hidden_doy,152,0.051388712,0.035865319,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2024,blend_lag_fit_span,152,0.051149679,0.035726744,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2024,hgb_groupbias_canon,152,0.051457064,0.035884435,False,crossfit label-fitted; excluded from second-level fit
+postcorr,exact_hidden_doy,exact2024,hgb_groupbias_span,152,0.051475305,0.035955764,False,crossfit label-fitted; excluded from second-level fit
+shock_state,exact_hidden_doy,exact2019,baseline,249,0.057181056,0.039427368,True,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2019,shock_cf,249,0.056877015,0.039137776,False,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2019,state_cf,249,0.057216282,0.039444329,False,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2019,joint_cf,249,0.056895197,0.039133451,False,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2020,baseline,222,0.055310928,0.037629656,True,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2020,shock_cf,222,0.055261261,0.037528515,False,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2020,state_cf,222,0.055448711,0.037623990,False,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2020,joint_cf,222,0.055251115,0.037486799,False,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2021,baseline,130,0.077222748,0.056872824,True,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2021,shock_cf,130,0.077051999,0.056726230,False,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2021,state_cf,130,0.077254279,0.056838920,False,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2021,joint_cf,130,0.077033419,0.056722244,False,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2022,baseline,192,0.066598087,0.047668607,True,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2022,shock_cf,192,0.066770995,0.047800210,False,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2022,state_cf,192,0.066913897,0.047995743,False,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2022,joint_cf,192,0.066880130,0.047887565,False,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2023,baseline,169,0.070857216,0.045073108,True,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2023,shock_cf,169,0.071006438,0.045156390,False,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2023,state_cf,169,0.071237248,0.045312706,False,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2023,joint_cf,169,0.070992649,0.045144588,False,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2024,baseline,152,0.051154478,0.035562736,True,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2024,shock_cf,152,0.051385685,0.035792162,False,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2024,state_cf,152,0.051148152,0.035546150,False,raw observable shock/state audited separately
+shock_state,exact_hidden_doy,exact2024,joint_cf,152,0.051368281,0.035731672,False,raw observable shock/state audited separately
+shock_state,random_private_like,random0,baseline,2644,0.073409327,0.043469915,True,raw observable shock/state audited separately
+shock_state,random_private_like,random0,shock_cf,2644,0.073296087,0.043315842,False,raw observable shock/state audited separately
+shock_state,random_private_like,random0,state_cf,2644,0.073304655,0.043363098,False,raw observable shock/state audited separately
+shock_state,random_private_like,random0,joint_cf,2644,0.073194282,0.043199303,False,raw observable shock/state audited separately
+shock_state,random_private_like,random1,baseline,2644,0.066541059,0.043364775,True,raw observable shock/state audited separately
+shock_state,random_private_like,random1,shock_cf,2644,0.066254224,0.043080449,False,raw observable shock/state audited separately
+shock_state,random_private_like,random1,state_cf,2644,0.066516172,0.043229192,False,raw observable shock/state audited separately
+shock_state,random_private_like,random1,joint_cf,2644,0.066215141,0.042978892,False,raw observable shock/state audited separately
+shock_state,random_private_like,random2,baseline,2644,0.068212086,0.040835018,True,raw observable shock/state audited separately
+shock_state,random_private_like,random2,shock_cf,2644,0.067955978,0.040572213,False,raw observable shock/state audited separately
+shock_state,random_private_like,random2,state_cf,2644,0.068155135,0.040733057,False,raw observable shock/state audited separately
+shock_state,random_private_like,random2,joint_cf,2644,0.067902562,0.040480290,False,raw observable shock/state audited separately
+overnight_corrections,exact_hidden_doy,exact2019,safe_loo_date_w10,249,0.064945492,0.047028211,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2019,safe_loo_date_w20,249,0.064861083,0.046898482,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2019,safe_loo_crop_doy_w10,249,0.064952590,0.047060685,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2019,safe_loo_crop_doy_w20,249,0.064874133,0.046969582,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2019,safe_loo_doy_w10,249,0.064943012,0.047110086,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2019,safe_loo_doy_w20,249,0.064852690,0.047065410,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2019,safe_pca_rank1_b0.5,249,0.064434062,0.046665933,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2019,safe_pca_rank1_b1.0,249,0.065483002,0.047984440,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2019,safe_pca_rank2_b0.5,249,0.064492787,0.046167546,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2019,safe_pca_rank2_b1.0,249,0.065539600,0.047547215,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2020,safe_loo_date_w10,222,0.064183283,0.046669644,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2020,safe_loo_date_w20,222,0.064095446,0.046562537,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2020,safe_loo_crop_doy_w10,222,0.064048568,0.046655537,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2020,safe_loo_crop_doy_w20,222,0.063840981,0.046557067,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2020,safe_loo_doy_w10,222,0.064161945,0.046696200,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2020,safe_loo_doy_w20,222,0.064061281,0.046612428,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2020,safe_pca_rank1_b0.5,222,0.062106223,0.043649442,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2020,safe_pca_rank1_b1.0,222,0.062950473,0.043412119,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2020,safe_pca_rank2_b0.5,222,0.062082969,0.043620074,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2020,safe_pca_rank2_b1.0,222,0.062981922,0.043374339,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2021,safe_loo_date_w10,130,0.089805980,0.066833391,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2021,safe_loo_date_w20,130,0.089365652,0.066535288,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2021,safe_loo_crop_doy_w10,130,0.090046787,0.066971904,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2021,safe_loo_crop_doy_w20,130,0.089843216,0.066806338,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2021,safe_loo_doy_w10,130,0.090071222,0.066981977,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2021,safe_loo_doy_w20,130,0.089890701,0.066816024,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2021,safe_pca_rank1_b0.5,130,0.090389786,0.066543974,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2021,safe_pca_rank1_b1.0,130,0.092260344,0.067770390,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2021,safe_pca_rank2_b0.5,130,0.090512162,0.067129178,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2021,safe_pca_rank2_b1.0,130,0.092847149,0.068737635,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2022,safe_loo_date_w10,192,0.072263363,0.053015734,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2022,safe_loo_date_w20,192,0.072294324,0.053021981,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2022,safe_loo_crop_doy_w10,192,0.072302492,0.053018185,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2022,safe_loo_crop_doy_w20,192,0.072380847,0.053001161,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2022,safe_loo_doy_w10,192,0.072268044,0.053006377,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2022,safe_loo_doy_w20,192,0.072306718,0.052980464,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2022,safe_pca_rank1_b0.5,192,0.070261063,0.051378857,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2022,safe_pca_rank1_b1.0,192,0.069867292,0.050884358,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2022,safe_pca_rank2_b0.5,192,0.070186973,0.050969150,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2022,safe_pca_rank2_b1.0,192,0.069857292,0.049870950,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2023,safe_loo_date_w10,169,0.076062647,0.052357191,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2023,safe_loo_date_w20,169,0.075973315,0.052323249,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2023,safe_loo_crop_doy_w10,169,0.076250267,0.052389376,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2023,safe_loo_crop_doy_w20,169,0.076353784,0.052365063,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2023,safe_loo_doy_w10,169,0.076236651,0.052393284,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2023,safe_loo_doy_w20,169,0.076321896,0.052372879,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2023,safe_pca_rank1_b0.5,169,0.075304858,0.051901429,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2023,safe_pca_rank1_b1.0,169,0.076327928,0.053038952,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2023,safe_pca_rank2_b0.5,169,0.074823811,0.051476339,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2023,safe_pca_rank2_b1.0,169,0.075353601,0.052041223,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2024,safe_loo_date_w10,152,0.059200663,0.042453946,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2024,safe_loo_date_w20,152,0.059180730,0.042355480,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2024,safe_loo_crop_doy_w10,152,0.059195031,0.042433153,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2024,safe_loo_crop_doy_w20,152,0.059176500,0.042313722,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2024,safe_loo_doy_w10,152,0.059289087,0.042519196,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2024,safe_loo_doy_w20,152,0.059360155,0.042484337,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2024,safe_pca_rank1_b0.5,152,0.057521896,0.039236131,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2024,safe_pca_rank1_b1.0,152,0.058664233,0.038909344,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2024,safe_pca_rank2_b0.5,152,0.058225299,0.039757628,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,exact_hidden_doy,exact2024,safe_pca_rank2_b1.0,152,0.060285070,0.039755582,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random0,safe_loo_date_w10,2644,0.081143013,0.051369348,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random0,safe_loo_date_w20,2644,0.081113004,0.051341560,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random0,safe_loo_crop_doy_w10,2644,0.081190916,0.051401969,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random0,safe_loo_crop_doy_w20,2644,0.081217164,0.051414407,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random0,safe_loo_doy_w10,2644,0.081199457,0.051406975,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random0,safe_loo_doy_w20,2644,0.081234450,0.051424290,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random0,safe_pca_rank1_b0.5,2644,0.080227641,0.050697563,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random0,safe_pca_rank1_b1.0,2644,0.081297523,0.052110297,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random0,safe_pca_rank2_b0.5,2644,0.079890248,0.050260534,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random0,safe_pca_rank2_b1.0,2644,0.080529572,0.051015186,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random1,safe_loo_date_w10,2644,0.075927177,0.051375251,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random1,safe_loo_date_w20,2644,0.075909729,0.051346104,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random1,safe_loo_crop_doy_w10,2644,0.075870576,0.051346891,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random1,safe_loo_crop_doy_w20,2644,0.075809741,0.051304265,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random1,safe_loo_doy_w10,2644,0.075851906,0.051321815,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random1,safe_loo_doy_w20,2644,0.075770870,0.051253383,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random1,safe_pca_rank1_b0.5,2644,0.074093797,0.049895042,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random1,safe_pca_rank1_b1.0,2644,0.074758761,0.050764717,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random1,safe_pca_rank2_b0.5,2644,0.074013811,0.049522612,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random1,safe_pca_rank2_b1.0,2644,0.074282701,0.049528850,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random2,safe_loo_date_w10,2644,0.078516831,0.050057459,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random2,safe_loo_date_w20,2644,0.078522537,0.050061571,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random2,safe_loo_crop_doy_w10,2644,0.078457708,0.050031895,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random2,safe_loo_crop_doy_w20,2644,0.078414285,0.050025096,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random2,safe_loo_doy_w10,2644,0.078436248,0.050000375,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random2,safe_loo_doy_w20,2644,0.078375664,0.049966702,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random2,safe_pca_rank1_b0.5,2644,0.076974309,0.048741559,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random2,safe_pca_rank1_b1.0,2644,0.077712303,0.049535481,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random2,safe_pca_rank2_b0.5,2644,0.076818071,0.048332493,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,random_private_like,random2,safe_pca_rank2_b1.0,2644,0.077235064,0.048432592,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_0,safe_loo_date_w10,925,0.067406079,0.043661629,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_0,safe_loo_date_w20,925,0.067327194,0.043561263,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_0,safe_loo_crop_doy_w10,925,0.067477306,0.043774984,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_0,safe_loo_crop_doy_w20,925,0.067465326,0.043795073,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_0,safe_loo_doy_w10,925,0.067486786,0.043758817,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_0,safe_loo_doy_w20,925,0.067482110,0.043752351,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_0,safe_pca_rank1_b0.5,925,0.066311550,0.042929286,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_0,safe_pca_rank1_b1.0,925,0.067409967,0.043839810,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_0,safe_pca_rank2_b0.5,925,0.065640024,0.042069112,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_0,safe_pca_rank2_b1.0,925,0.065775860,0.041735556,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_1,safe_loo_date_w10,925,0.085289796,0.046033181,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_1,safe_loo_date_w20,925,0.085175176,0.045873510,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_1,safe_loo_crop_doy_w10,925,0.085450908,0.046193511,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_1,safe_loo_crop_doy_w20,925,0.085497394,0.046204198,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_1,safe_loo_doy_w10,925,0.085455144,0.046177085,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_1,safe_loo_doy_w20,925,0.085507452,0.046166805,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_1,safe_pca_rank1_b0.5,925,0.084646739,0.045558028,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_1,safe_pca_rank1_b1.0,925,0.085606836,0.046709590,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_1,safe_pca_rank2_b0.5,925,0.084462801,0.044774244,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_1,safe_pca_rank2_b1.0,925,0.085082669,0.045029925,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_2,safe_loo_date_w10,925,0.068707965,0.044694275,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_2,safe_loo_date_w20,925,0.068673953,0.044649803,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_2,safe_loo_crop_doy_w10,925,0.068752867,0.044739786,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_2,safe_loo_crop_doy_w20,925,0.068758238,0.044744302,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_2,safe_loo_doy_w10,925,0.068734779,0.044712213,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_2,safe_loo_doy_w20,925,0.068719869,0.044683987,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_2,safe_pca_rank1_b0.5,925,0.067702821,0.044212720,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_2,safe_pca_rank1_b1.0,925,0.069065690,0.046042818,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_2,safe_pca_rank2_b0.5,925,0.066605531,0.043129505,False,crossfit/PCA correction; incompatible second-level fit
+overnight_corrections,date25,date25_2,safe_pca_rank2_b1.0,925,0.066759493,0.043124523,False,crossfit/PCA correction; incompatible second-level fit
+exact_local,exact_hidden_doy,exact2019,base_k6,249,0.066028223,0.047499750,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2019,base_k8,249,0.065044986,0.047158964,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2019,base_k12,249,0.067042184,0.048912741,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2019,lag_k12_d2,249,0.065379675,0.046269660,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2019,lag_k16_d3,249,0.064507315,0.045785213,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2019,lag_k24_d2,249,0.065903659,0.047672000,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2019,hgb,249,0.057749371,0.039727019,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2020,base_k6,222,0.065024844,0.047290835,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2020,base_k8,222,0.064274265,0.046779972,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2020,base_k12,222,0.063904739,0.046694206,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2020,lag_k12_d2,222,0.062682619,0.045492930,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2020,lag_k16_d3,222,0.062191370,0.045612551,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2020,lag_k24_d2,222,0.062131702,0.044639992,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2020,hgb,222,0.055966933,0.037613409,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2021,base_k6,130,0.089244737,0.065424136,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2021,base_k8,130,0.090260333,0.067155785,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2021,base_k12,130,0.093379101,0.070368200,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2021,lag_k12_d2,130,0.085386193,0.063776646,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2021,lag_k16_d3,130,0.085997409,0.063277292,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2021,lag_k24_d2,130,0.090738178,0.066610405,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2021,hgb,130,0.077495517,0.057193278,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2022,base_k6,192,0.072366364,0.052532773,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2022,base_k8,192,0.072240605,0.053035210,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2022,base_k12,192,0.072190758,0.054299856,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2022,lag_k12_d2,192,0.067867717,0.048238232,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2022,lag_k16_d3,192,0.067257140,0.048312874,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2022,lag_k24_d2,192,0.070075987,0.050006555,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2022,hgb,192,0.067843195,0.048510951,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2023,base_k6,169,0.075400610,0.051900449,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2023,base_k8,169,0.076162219,0.052413688,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2023,base_k12,169,0.076218630,0.053328611,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2023,lag_k12_d2,169,0.073331759,0.050737881,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2023,lag_k16_d3,169,0.071646233,0.049747518,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2023,lag_k24_d2,169,0.072127955,0.049630601,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2023,hgb,169,0.072534562,0.046282499,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2024,base_k6,152,0.058346048,0.041476640,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2024,base_k8,152,0.059231819,0.042563748,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2024,base_k12,152,0.060458708,0.043816876,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2024,lag_k12_d2,152,0.058663512,0.042006290,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2024,lag_k16_d3,152,0.057292335,0.041122600,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2024,lag_k24_d2,152,0.057113147,0.041322997,False,exact-only; no common random protocol
+exact_local,exact_hidden_doy,exact2024,hgb,152,0.051247265,0.035366091,False,exact-only; no common random protocol
+smooth,exact,exact2019,gauss_5_1,249,0.068675452,0.048348699,False,exact-only smoother
+smooth,exact,exact2019,gauss_8_0,249,0.067476134,0.048244280,False,exact-only smoother
+smooth,exact,exact2019,tricube_8_1,249,0.075966251,0.052600866,False,exact-only smoother
+smooth,exact,exact2019,median_8_0,249,0.068485451,0.047909198,False,exact-only smoother
+smooth,exact,exact2020,gauss_5_1,222,0.066330976,0.046580278,False,exact-only smoother
+smooth,exact,exact2020,gauss_8_0,222,0.062486478,0.043797473,False,exact-only smoother
+smooth,exact,exact2020,tricube_8_1,222,0.068079944,0.048066946,False,exact-only smoother
+smooth,exact,exact2020,median_8_0,222,0.064882938,0.044647804,False,exact-only smoother
+smooth,exact,exact2021,gauss_5_1,130,0.101883073,0.072990989,False,exact-only smoother
+smooth,exact,exact2021,gauss_8_0,130,0.101281725,0.072496347,False,exact-only smoother
+smooth,exact,exact2021,tricube_8_1,130,0.107479109,0.076135787,False,exact-only smoother
+smooth,exact,exact2021,median_8_0,130,0.106047244,0.071957046,False,exact-only smoother
+smooth,exact,exact2022,gauss_5_1,192,0.078265911,0.056185828,False,exact-only smoother
+smooth,exact,exact2022,gauss_8_0,192,0.076710475,0.057028076,False,exact-only smoother
+smooth,exact,exact2022,tricube_8_1,192,0.083630949,0.059236368,False,exact-only smoother
+smooth,exact,exact2022,median_8_0,192,0.083481538,0.058578931,False,exact-only smoother
+smooth,exact,exact2023,gauss_5_1,169,0.090292322,0.062522945,False,exact-only smoother
+smooth,exact,exact2023,gauss_8_0,169,0.088604335,0.062617846,False,exact-only smoother
+smooth,exact,exact2023,tricube_8_1,169,0.098033867,0.065617902,False,exact-only smoother
+smooth,exact,exact2023,median_8_0,169,0.090297184,0.061820873,False,exact-only smoother
+smooth,exact,exact2024,gauss_5_1,152,0.060919280,0.041546948,False,exact-only smoother
+smooth,exact,exact2024,gauss_8_0,152,0.061705565,0.042877234,False,exact-only smoother
+smooth,exact,exact2024,tricube_8_1,152,0.067819702,0.045817615,False,exact-only smoother
+smooth,exact,exact2024,median_8_0,152,0.062476869,0.042039364,False,exact-only smoother
+seed_ensemble,all,seed0,base_k6,2644,0.081025929,0.050881765,False,partial seed/mode coverage
+seed_ensemble,all,seed0,lag_k16_d3,2644,0.079458995,0.049940579,False,partial seed/mode coverage
+seed_ensemble,all,seed0,hgb_seed42,2644,0.073805933,0.043621903,False,partial seed/mode coverage
+seed_ensemble,all,seed0,hgb_seed7,2644,0.073232468,0.043367304,False,partial seed/mode coverage
+seed_ensemble,all,seed0,hgb_seed123,2644,0.073799112,0.043712732,False,partial seed/mode coverage
+seed_ensemble,all,seed0,hgb_seed_mean,2644,0.073405671,0.043364315,False,partial seed/mode coverage
+seed_ensemble,all,seed0,blend_hgb80_lag20,2644,0.073126999,0.043329571,False,partial seed/mode coverage
+seed_ensemble,2025,seed0,base_k6,756,0.059889226,0.039704853,False,partial seed/mode coverage
+seed_ensemble,2025,seed0,lag_k16_d3,756,0.058283109,0.038683172,False,partial seed/mode coverage
+seed_ensemble,2025,seed0,hgb_seed42,756,0.054515102,0.035009016,False,partial seed/mode coverage
+seed_ensemble,2025,seed0,hgb_seed7,756,0.055252906,0.035556385,False,partial seed/mode coverage
+seed_ensemble,2025,seed0,hgb_seed123,756,0.055140626,0.035552241,False,partial seed/mode coverage
+seed_ensemble,2025,seed0,hgb_seed_mean,756,0.054687231,0.035189143,False,partial seed/mode coverage
+seed_ensemble,2025,seed0,blend_hgb80_lag20,756,0.053924914,0.034761833,False,partial seed/mode coverage
+seed_ensemble,2025,seed1,base_k6,756,0.063699509,0.041846158,False,partial seed/mode coverage
+seed_ensemble,2025,seed1,lag_k16_d3,756,0.062366212,0.040637961,False,partial seed/mode coverage
+seed_ensemble,2025,seed1,hgb_seed42,756,0.057984739,0.036653209,False,partial seed/mode coverage
+seed_ensemble,2025,seed1,hgb_seed7,756,0.058717712,0.036983442,False,partial seed/mode coverage
+seed_ensemble,2025,seed1,hgb_seed123,756,0.058204305,0.036974668,False,partial seed/mode coverage
+seed_ensemble,2025,seed1,hgb_seed_mean,756,0.058068009,0.036681959,False,partial seed/mode coverage
+seed_ensemble,2025,seed1,blend_hgb80_lag20,756,0.057499943,0.036191679,False,partial seed/mode coverage
+aoi_pair,exact_hidden_doy,exact2019,n16_c60_r125_k2,219,0.073760338,0.053038969,False,"observable peer map; fixed config, not used in core fit"
+aoi_pair,exact_hidden_doy,exact2020,n16_c60_r125_k2,209,0.074115754,0.051602522,False,"observable peer map; fixed config, not used in core fit"
+aoi_pair,exact_hidden_doy,exact2021,n16_c60_r125_k2,115,0.099794580,0.068620771,False,"observable peer map; fixed config, not used in core fit"
+aoi_pair,exact_hidden_doy,exact2022,n16_c60_r125_k2,156,0.076340671,0.055663878,False,"observable peer map; fixed config, not used in core fit"
+aoi_pair,exact_hidden_doy,exact2023,n16_c60_r125_k2,162,0.081842234,0.057681399,False,"observable peer map; fixed config, not used in core fit"
+aoi_pair,exact_hidden_doy,exact2024,n16_c60_r125_k2,141,0.065279219,0.042449884,False,"observable peer map; fixed config, not used in core fit"
+aoi_pair,random_private_like,random0,n16_c60_r125_k2,1839,0.089291184,0.055183977,False,"observable peer map; fixed config, not used in core fit"
+aoi_pair,random_private_like,random1,n16_c60_r125_k2,1830,0.088315951,0.057283903,False,"observable peer map; fixed config, not used in core fit"
+aoi_pair,random_private_like,random2,n16_c60_r125_k2,1769,0.090084177,0.055842944,False,"observable peer map; fixed config, not used in core fit"
+source,exact_doy,2019,prod,249,0.065044986,0.047158964,False,partial protocol; oracle excluded
+source,exact_doy,2019,soft,249,0.065044986,0.047158964,False,partial protocol; oracle excluded
+source,exact_doy,2019,hard,249,0.065521770,0.046374230,False,partial protocol; oracle excluded
+source,exact_doy,2019,uniform,249,0.077923892,0.061256494,False,partial protocol; oracle excluded
+source,exact_doy,2019,oracle_true,249,0.059959463,0.042656317,False,partial protocol; oracle excluded
+source,exact_doy,2019,lag,249,0.064507315,0.045785213,False,partial protocol; oracle excluded
+source,private_random,0,prod,2476,0.071484384,0.049754181,False,partial protocol; oracle excluded
+source,private_random,0,soft,2476,0.071484384,0.049754181,False,partial protocol; oracle excluded
+source,private_random,0,hard,2476,0.072550077,0.050044006,False,partial protocol; oracle excluded
+source,private_random,0,uniform,2476,0.082294229,0.062734724,False,partial protocol; oracle excluded
+source,private_random,0,oracle_true,2476,0.068483133,0.046666954,False,partial protocol; oracle excluded
+source,private_random,0,lag,2476,0.069711020,0.047797992,False,partial protocol; oracle excluded

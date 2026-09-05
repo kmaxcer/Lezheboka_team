@@ -1,0 +1,129 @@
+{
+  "base": "model_dani_lag40_peer10_a350_b200_submission.csv",
+  "base_sha256": "2b84fdd7f49a1703cad523b8c614e37415a8b783d6da077a385be4218d4efbc3",
+  "private_sha256": "3c5c0e27eef8266bcf6dce09c9b556c073cee3902c065a94e4ea7a59edb00993",
+  "hidden_rows": 3112,
+  "outputs": [
+    {
+      "candidate": "model_dani_lag40_peer10_extregular20_submission.csv",
+      "kind": "regular",
+      "ext_weight": 0.2,
+      "year2025_ext_weight": 0.2,
+      "rows": 3112,
+      "sha256": "e6c61ea5b3c038f80d0df15a4e04e43ec21eaa3f1cae17f24c0743266d9a77f8",
+      "min": 0.050487382000000004,
+      "max": 0.910734584
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_extregular20_no2025_submission.csv",
+      "kind": "regular",
+      "ext_weight": 0.2,
+      "year2025_ext_weight": 0.0,
+      "rows": 3112,
+      "sha256": "7db4b8c14d2fca0a152cebf5dd2aaad9ffcdcab0a4ea7359c02f05f04987f3d9",
+      "min": 0.050487382000000004,
+      "max": 0.910734584
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_extregular30_submission.csv",
+      "kind": "regular",
+      "ext_weight": 0.3,
+      "year2025_ext_weight": 0.3,
+      "rows": 3112,
+      "sha256": "adfc5d9efce23411b6e100ad1738ccf9624a15d29eb36d861aa3c4a59a5f4e17",
+      "min": 0.050724883,
+      "max": 0.908602371
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_extregular30_no2025_submission.csv",
+      "kind": "regular",
+      "ext_weight": 0.3,
+      "year2025_ext_weight": 0.0,
+      "rows": 3112,
+      "sha256": "36cb8dbb5e0022b547b39692f003d2b91f252112f91bc06e65232b641ff06be5",
+      "min": 0.050724883,
+      "max": 0.908602371
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_extregular40_submission.csv",
+      "kind": "regular",
+      "ext_weight": 0.4,
+      "year2025_ext_weight": 0.4,
+      "rows": 3112,
+      "sha256": "6b677f4ce47e0ac105c2115317a7911438932feddb3c8749b3e5ceb7a356882d",
+      "min": 0.050962384,
+      "max": 0.906470158
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_extregular40_no2025_submission.csv",
+      "kind": "regular",
+      "ext_weight": 0.4,
+      "year2025_ext_weight": 0.0,
+      "rows": 3112,
+      "sha256": "8eb903363592a8e312caa110b3f392d83a73a6a9b8aa0af644ddf6e5d36a461a",
+      "min": 0.050962384,
+      "max": 0.906470158
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_extwide20_submission.csv",
+      "kind": "wide",
+      "ext_weight": 0.2,
+      "year2025_ext_weight": 0.2,
+      "rows": 3112,
+      "sha256": "602fbcab620c72ffa82092743766faee2610b8a4f104f1fbc3f2f8206a34c9be",
+      "min": 0.051539520000000005,
+      "max": 0.9092118739999999
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_extwide20_no2025_submission.csv",
+      "kind": "wide",
+      "ext_weight": 0.2,
+      "year2025_ext_weight": 0.0,
+      "rows": 3112,
+      "sha256": "88c2717c4ff8b834386036b79fe64a725e49f64a7c2b6ebc5a69bbe3058ce3c1",
+      "min": 0.051539520000000005,
+      "max": 0.9092118739999999
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_extwide30_submission.csv",
+      "kind": "wide",
+      "ext_weight": 0.3,
+      "year2025_ext_weight": 0.3,
+      "rows": 3112,
+      "sha256": "912e352ae483e626a6fcdcd6dcdeb95e30c2fe01c3c545c8f3ccfbaa27a8566c",
+      "min": 0.052303089999999997,
+      "max": 0.906318306
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_extwide30_no2025_submission.csv",
+      "kind": "wide",
+      "ext_weight": 0.3,
+      "year2025_ext_weight": 0.0,
+      "rows": 3112,
+      "sha256": "b911a874f882447fff032aa5d4eebdf853624b27ce80b5d144f5410815947f35",
+      "min": 0.052303089999999997,
+      "max": 0.906318306
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_extwide40_submission.csv",
+      "kind": "wide",
+      "ext_weight": 0.4,
+      "year2025_ext_weight": 0.4,
+      "rows": 3112,
+      "sha256": "79e6f967986658a879c72927555c24b7d462ef6edcb76d819a6dc31647cdb8b4",
+      "min": 0.05306666,
+      "max": 0.903424738
+    },
+    {
+      "candidate": "model_dani_lag40_peer10_extwide40_no2025_submission.csv",
+      "kind": "wide",
+      "ext_weight": 0.4,
+      "year2025_ext_weight": 0.0,
+      "rows": 3112,
+      "sha256": "1a36e653b4b9faba481e7859a18d99f5c7a03bdaf5a671db727cb5f29125136d",
+      "min": 0.05306666,
+      "max": 0.903424738
+    }
+  ],
+  "production_baseline_overwritten": false
+}

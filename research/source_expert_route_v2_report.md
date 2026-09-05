@@ -1,0 +1,2028 @@
+# Source-expert route v2 audit
+
+Masks: private-like seeds 0, 1, 70404; true source is evaluation-only.
+
+## Pooled shortlist
+
+                       method    n     rmse                             per_seed
+  blend_crop_hier_n1_p67_0.40 7932 0.067378 0:0.070447;1:0.063107;70404:0.068368
+ blend_soft_all_r2_l0_p4_0.40 7932 0.067402 0:0.070406;1:0.063208;70404:0.068387
+ blend_soft_all_r1_l0_p4_0.40 7932 0.067468 0:0.070532;1:0.063307;70404:0.068362
+blend_soft_crop_r1_l0_p4_0.40 7932 0.067474 0:0.070525;1:0.063282;70404:0.068410
+blend_soft_all_r32_l0_p4_0.40 7932 0.068295 0:0.071224;1:0.064330;70404:0.069148
+         blend_post_mode_0.40 7932 0.068377 0:0.071240;1:0.064422;70404:0.069289
+                     baseline 7932 0.068498 0:0.071366;1:0.064468;70404:0.069475
+
+## Slice metrics (all rows)
+
+ seed                            method    n     rmse          slice
+    0                          baseline 2644 0.071366            NaN
+    0                         post_mode 2644 0.073745            NaN
+    0              blend_post_mode_0.20 2644 0.071121            NaN
+    0              blend_post_mode_0.30 2644 0.071135            NaN
+    0              blend_post_mode_0.40 2644 0.071240            NaN
+    0              blend_post_mode_0.50 2644 0.071437            NaN
+    0                  crop_hier_n1_p00 2644 0.072534            NaN
+    0       blend_crop_hier_n1_p00_0.20 2644 0.070678            NaN
+    0       blend_crop_hier_n1_p00_0.30 2644 0.070506            NaN
+    0       blend_crop_hier_n1_p00_0.40 2644 0.070451            NaN
+    0       blend_crop_hier_n1_p00_0.50 2644 0.070512            NaN
+    0                  crop_hier_n1_p67 2644 0.072518            NaN
+    0       blend_crop_hier_n1_p67_0.20 2644 0.070676            NaN
+    0       blend_crop_hier_n1_p67_0.30 2644 0.070504            NaN
+    0       blend_crop_hier_n1_p67_0.40 2644 0.070447            NaN
+    0       blend_crop_hier_n1_p67_0.50 2644 0.070506            NaN
+    0                  crop_hier_n1_p80 2644 0.072531            NaN
+    0       blend_crop_hier_n1_p80_0.20 2644 0.070679            NaN
+    0       blend_crop_hier_n1_p80_0.30 2644 0.070507            NaN
+    0       blend_crop_hier_n1_p80_0.40 2644 0.070452            NaN
+    0       blend_crop_hier_n1_p80_0.50 2644 0.070513            NaN
+    0                  crop_hier_n2_p00 2644 0.072829            NaN
+    0       blend_crop_hier_n2_p00_0.20 2644 0.070767            NaN
+    0       blend_crop_hier_n2_p00_0.30 2644 0.070635            NaN
+    0       blend_crop_hier_n2_p00_0.40 2644 0.070615            NaN
+    0       blend_crop_hier_n2_p00_0.50 2644 0.070708            NaN
+    0                  crop_hier_n2_p67 2644 0.072345            NaN
+    0       blend_crop_hier_n2_p67_0.20 2644 0.070744            NaN
+    0       blend_crop_hier_n2_p67_0.30 2644 0.070585            NaN
+    0       blend_crop_hier_n2_p67_0.40 2644 0.070530            NaN
+    0       blend_crop_hier_n2_p67_0.50 2644 0.070578            NaN
+    0                  crop_hier_n2_p80 2644 0.072383            NaN
+    0       blend_crop_hier_n2_p80_0.20 2644 0.070757            NaN
+    0       blend_crop_hier_n2_p80_0.30 2644 0.070604            NaN
+    0       blend_crop_hier_n2_p80_0.40 2644 0.070554            NaN
+    0       blend_crop_hier_n2_p80_0.50 2644 0.070606            NaN
+    0                  crop_hier_n3_p00 2644 0.073529            NaN
+    0       blend_crop_hier_n3_p00_0.20 2644 0.070927            NaN
+    0       blend_crop_hier_n3_p00_0.30 2644 0.070872            NaN
+    0       blend_crop_hier_n3_p00_0.40 2644 0.070927            NaN
+    0       blend_crop_hier_n3_p00_0.50 2644 0.071093            NaN
+    0                  crop_hier_n3_p67 2644 0.073015            NaN
+    0       blend_crop_hier_n3_p67_0.20 2644 0.070912            NaN
+    0       blend_crop_hier_n3_p67_0.30 2644 0.070833            NaN
+    0       blend_crop_hier_n3_p67_0.40 2644 0.070852            NaN
+    0       blend_crop_hier_n3_p67_0.50 2644 0.070971            NaN
+    0                  crop_hier_n3_p80 2644 0.073192            NaN
+    0       blend_crop_hier_n3_p80_0.20 2644 0.070959            NaN
+    0       blend_crop_hier_n3_p80_0.30 2644 0.070901            NaN
+    0       blend_crop_hier_n3_p80_0.40 2644 0.070941            NaN
+    0       blend_crop_hier_n3_p80_0.50 2644 0.071078            NaN
+    0                soft_crop_r1_l0_p1 2644 0.072047            NaN
+    0     blend_soft_crop_r1_l0_p1_0.20 2644 0.070764            NaN
+    0     blend_soft_crop_r1_l0_p1_0.30 2644 0.070600            NaN
+    0     blend_soft_crop_r1_l0_p1_0.40 2644 0.070530            NaN
+    0     blend_soft_crop_r1_l0_p1_0.50 2644 0.070553            NaN
+    0                soft_crop_r1_l0_p2 2644 0.072130            NaN
+    0     blend_soft_crop_r1_l0_p2_0.20 2644 0.070735            NaN
+    0     blend_soft_crop_r1_l0_p2_0.30 2644 0.070565            NaN
+    0     blend_soft_crop_r1_l0_p2_0.40 2644 0.070495            NaN
+    0     blend_soft_crop_r1_l0_p2_0.50 2644 0.070523            NaN
+    0                soft_crop_r1_l0_p4 2644 0.072340            NaN
+    0     blend_soft_crop_r1_l0_p4_0.20 2644 0.070740            NaN
+    0     blend_soft_crop_r1_l0_p4_0.30 2644 0.070581            NaN
+    0     blend_soft_crop_r1_l0_p4_0.40 2644 0.070525            NaN
+    0     blend_soft_crop_r1_l0_p4_0.50 2644 0.070572            NaN
+    0             soft_crop_r1_l0.25_p1 2644 0.071893            NaN
+    0  blend_soft_crop_r1_l0.25_p1_0.20 2644 0.070819            NaN
+    0  blend_soft_crop_r1_l0.25_p1_0.30 2644 0.070668            NaN
+    0  blend_soft_crop_r1_l0.25_p1_0.40 2644 0.070598            NaN
+    0  blend_soft_crop_r1_l0.25_p1_0.50 2644 0.070610            NaN
+    0             soft_crop_r1_l0.25_p2 2644 0.072107            NaN
+    0  blend_soft_crop_r1_l0.25_p2_0.20 2644 0.070745            NaN
+    0  blend_soft_crop_r1_l0.25_p2_0.30 2644 0.070578            NaN
+    0  blend_soft_crop_r1_l0.25_p2_0.40 2644 0.070508            NaN
+    0  blend_soft_crop_r1_l0.25_p2_0.50 2644 0.070534            NaN
+    0             soft_crop_r1_l0.25_p4 2644 0.072346            NaN
+    0  blend_soft_crop_r1_l0.25_p4_0.20 2644 0.070742            NaN
+    0  blend_soft_crop_r1_l0.25_p4_0.30 2644 0.070583            NaN
+    0  blend_soft_crop_r1_l0.25_p4_0.40 2644 0.070527            NaN
+    0  blend_soft_crop_r1_l0.25_p4_0.50 2644 0.070575            NaN
+    0                soft_crop_r1_l1_p1 2644 0.071886            NaN
+    0     blend_soft_crop_r1_l1_p1_0.20 2644 0.070913            NaN
+    0     blend_soft_crop_r1_l1_p1_0.30 2644 0.070791            NaN
+    0     blend_soft_crop_r1_l1_p1_0.40 2644 0.070739            NaN
+    0     blend_soft_crop_r1_l1_p1_0.50 2644 0.070756            NaN
+    0                soft_crop_r1_l1_p2 2644 0.072039            NaN
+    0     blend_soft_crop_r1_l1_p2_0.20 2644 0.070826            NaN
+    0     blend_soft_crop_r1_l1_p2_0.30 2644 0.070683            NaN
+    0     blend_soft_crop_r1_l1_p2_0.40 2644 0.070623            NaN
+    0     blend_soft_crop_r1_l1_p2_0.50 2644 0.070649            NaN
+    0                soft_crop_r1_l1_p4 2644 0.072359            NaN
+    0     blend_soft_crop_r1_l1_p4_0.20 2644 0.070797            NaN
+    0     blend_soft_crop_r1_l1_p4_0.30 2644 0.070656            NaN
+    0     blend_soft_crop_r1_l1_p4_0.40 2644 0.070612            NaN
+    0     blend_soft_crop_r1_l1_p4_0.50 2644 0.070664            NaN
+    0                 soft_all_r1_l0_p1 2644 0.072057            NaN
+    0      blend_soft_all_r1_l0_p1_0.20 2644 0.070768            NaN
+    0      blend_soft_all_r1_l0_p1_0.30 2644 0.070606            NaN
+    0      blend_soft_all_r1_l0_p1_0.40 2644 0.070537            NaN
+    0      blend_soft_all_r1_l0_p1_0.50 2644 0.070561            NaN
+    0                 soft_all_r1_l0_p2 2644 0.072141            NaN
+    0      blend_soft_all_r1_l0_p2_0.20 2644 0.070739            NaN
+    0      blend_soft_all_r1_l0_p2_0.30 2644 0.070572            NaN
+    0      blend_soft_all_r1_l0_p2_0.40 2644 0.070502            NaN
+    0      blend_soft_all_r1_l0_p2_0.50 2644 0.070532            NaN
+    0                 soft_all_r1_l0_p4 2644 0.072352            NaN
+    0      blend_soft_all_r1_l0_p4_0.20 2644 0.070745            NaN
+    0      blend_soft_all_r1_l0_p4_0.30 2644 0.070587            NaN
+    0      blend_soft_all_r1_l0_p4_0.40 2644 0.070532            NaN
+    0      blend_soft_all_r1_l0_p4_0.50 2644 0.070581            NaN
+    0              soft_all_r1_l0.25_p1 2644 0.071902            NaN
+    0   blend_soft_all_r1_l0.25_p1_0.20 2644 0.070822            NaN
+    0   blend_soft_all_r1_l0.25_p1_0.30 2644 0.070671            NaN
+    0   blend_soft_all_r1_l0.25_p1_0.40 2644 0.070602            NaN
+    0   blend_soft_all_r1_l0.25_p1_0.50 2644 0.070616            NaN
+    0              soft_all_r1_l0.25_p2 2644 0.072119            NaN
+    0   blend_soft_all_r1_l0.25_p2_0.20 2644 0.070749            NaN
+    0   blend_soft_all_r1_l0.25_p2_0.30 2644 0.070584            NaN
+    0   blend_soft_all_r1_l0.25_p2_0.40 2644 0.070515            NaN
+    0   blend_soft_all_r1_l0.25_p2_0.50 2644 0.070543            NaN
+    0              soft_all_r1_l0.25_p4 2644 0.072359            NaN
+    0   blend_soft_all_r1_l0.25_p4_0.20 2644 0.070746            NaN
+    0   blend_soft_all_r1_l0.25_p4_0.30 2644 0.070590            NaN
+    0   blend_soft_all_r1_l0.25_p4_0.40 2644 0.070536            NaN
+    0   blend_soft_all_r1_l0.25_p4_0.50 2644 0.070585            NaN
+    0                 soft_all_r1_l1_p1 2644 0.071889            NaN
+    0      blend_soft_all_r1_l1_p1_0.20 2644 0.070914            NaN
+    0      blend_soft_all_r1_l1_p1_0.30 2644 0.070791            NaN
+    0      blend_soft_all_r1_l1_p1_0.40 2644 0.070739            NaN
+    0      blend_soft_all_r1_l1_p1_0.50 2644 0.070757            NaN
+    0                 soft_all_r1_l1_p2 2644 0.072052            NaN
+    0      blend_soft_all_r1_l1_p2_0.20 2644 0.070829            NaN
+    0      blend_soft_all_r1_l1_p2_0.30 2644 0.070686            NaN
+    0      blend_soft_all_r1_l1_p2_0.40 2644 0.070629            NaN
+    0      blend_soft_all_r1_l1_p2_0.50 2644 0.070656            NaN
+    0                 soft_all_r1_l1_p4 2644 0.072383            NaN
+    0      blend_soft_all_r1_l1_p4_0.20 2644 0.070802            NaN
+    0      blend_soft_all_r1_l1_p4_0.30 2644 0.070664            NaN
+    0      blend_soft_all_r1_l1_p4_0.40 2644 0.070622            NaN
+    0      blend_soft_all_r1_l1_p4_0.50 2644 0.070677            NaN
+    0                soft_crop_r2_l0_p1 2644 0.071863            NaN
+    0     blend_soft_crop_r2_l0_p1_0.20 2644 0.070708            NaN
+    0     blend_soft_crop_r2_l0_p1_0.30 2644 0.070519            NaN
+    0     blend_soft_crop_r2_l0_p1_0.40 2644 0.070427            NaN
+    0     blend_soft_crop_r2_l0_p1_0.50 2644 0.070429            NaN
+    0                soft_crop_r2_l0_p2 2644 0.071873            NaN
+    0     blend_soft_crop_r2_l0_p2_0.20 2644 0.070670            NaN
+    0     blend_soft_crop_r2_l0_p2_0.30 2644 0.070470            NaN
+    0     blend_soft_crop_r2_l0_p2_0.40 2644 0.070370            NaN
+    0     blend_soft_crop_r2_l0_p2_0.50 2644 0.070372            NaN
+    0                soft_crop_r2_l0_p4 2644 0.072031            NaN
+    0     blend_soft_crop_r2_l0_p4_0.20 2644 0.070669            NaN
+    0     blend_soft_crop_r2_l0_p4_0.30 2644 0.070475            NaN
+    0     blend_soft_crop_r2_l0_p4_0.40 2644 0.070385            NaN
+    0     blend_soft_crop_r2_l0_p4_0.50 2644 0.070401            NaN
+    0             soft_crop_r2_l0.25_p1 2644 0.071713            NaN
+    0  blend_soft_crop_r2_l0.25_p1_0.20 2644 0.070760            NaN
+    0  blend_soft_crop_r2_l0.25_p1_0.30 2644 0.070582            NaN
+    0  blend_soft_crop_r2_l0.25_p1_0.40 2644 0.070490            NaN
+    0  blend_soft_crop_r2_l0.25_p1_0.50 2644 0.070482            NaN
+    0             soft_crop_r2_l0.25_p2 2644 0.071850            NaN
+    0  blend_soft_crop_r2_l0.25_p2_0.20 2644 0.070679            NaN
+    0  blend_soft_crop_r2_l0.25_p2_0.30 2644 0.070482            NaN
+    0  blend_soft_crop_r2_l0.25_p2_0.40 2644 0.070383            NaN
+    0  blend_soft_crop_r2_l0.25_p2_0.50 2644 0.070383            NaN
+    0             soft_crop_r2_l0.25_p4 2644 0.072047            NaN
+    0  blend_soft_crop_r2_l0.25_p4_0.20 2644 0.070675            NaN
+    0  blend_soft_crop_r2_l0.25_p4_0.30 2644 0.070484            NaN
+    0  blend_soft_crop_r2_l0.25_p4_0.40 2644 0.070396            NaN
+    0  blend_soft_crop_r2_l0.25_p4_0.50 2644 0.070413            NaN
+    0                soft_crop_r2_l1_p1 2644 0.071698            NaN
+    0     blend_soft_crop_r2_l1_p1_0.20 2644 0.070856            NaN
+    0     blend_soft_crop_r2_l1_p1_0.30 2644 0.070708            NaN
+    0     blend_soft_crop_r2_l1_p1_0.40 2644 0.070633            NaN
+    0     blend_soft_crop_r2_l1_p1_0.50 2644 0.070630            NaN
+    0                soft_crop_r2_l1_p2 2644 0.071745            NaN
+    0     blend_soft_crop_r2_l1_p2_0.20 2644 0.070746            NaN
+    0     blend_soft_crop_r2_l1_p2_0.30 2644 0.070565            NaN
+    0     blend_soft_crop_r2_l1_p2_0.40 2644 0.070472            NaN
+    0     blend_soft_crop_r2_l1_p2_0.50 2644 0.070467            NaN
+    0                soft_crop_r2_l1_p4 2644 0.071993            NaN
+    0     blend_soft_crop_r2_l1_p4_0.20 2644 0.070707            NaN
+    0     blend_soft_crop_r2_l1_p4_0.30 2644 0.070524            NaN
+    0     blend_soft_crop_r2_l1_p4_0.40 2644 0.070439            NaN
+    0     blend_soft_crop_r2_l1_p4_0.50 2644 0.070454            NaN
+    0                 soft_all_r2_l0_p1 2644 0.071888            NaN
+    0      blend_soft_all_r2_l0_p1_0.20 2644 0.070721            NaN
+    0      blend_soft_all_r2_l0_p1_0.30 2644 0.070538            NaN
+    0      blend_soft_all_r2_l0_p1_0.40 2644 0.070450            NaN
+    0      blend_soft_all_r2_l0_p1_0.50 2644 0.070456            NaN
+    0                 soft_all_r2_l0_p2 2644 0.071904            NaN
+    0      blend_soft_all_r2_l0_p2_0.20 2644 0.070682            NaN
+    0      blend_soft_all_r2_l0_p2_0.30 2644 0.070487            NaN
+    0      blend_soft_all_r2_l0_p2_0.40 2644 0.070392            NaN
+    0      blend_soft_all_r2_l0_p2_0.50 2644 0.070397            NaN
+    0                 soft_all_r2_l0_p4 2644 0.072069            NaN
+    0      blend_soft_all_r2_l0_p4_0.20 2644 0.070680            NaN
+    0      blend_soft_all_r2_l0_p4_0.30 2644 0.070491            NaN
+    0      blend_soft_all_r2_l0_p4_0.40 2644 0.070406            NaN
+    0      blend_soft_all_r2_l0_p4_0.50 2644 0.070426            NaN
+    0              soft_all_r2_l0.25_p1 2644 0.071740            NaN
+    0   blend_soft_all_r2_l0.25_p1_0.20 2644 0.070770            NaN
+    0   blend_soft_all_r2_l0.25_p1_0.30 2644 0.070596            NaN
+    0   blend_soft_all_r2_l0.25_p1_0.40 2644 0.070507            NaN
+    0   blend_soft_all_r2_l0.25_p1_0.50 2644 0.070503            NaN
+    0              soft_all_r2_l0.25_p2 2644 0.071884            NaN
+    0   blend_soft_all_r2_l0.25_p2_0.20 2644 0.070692            NaN
+    0   blend_soft_all_r2_l0.25_p2_0.30 2644 0.070500            NaN
+    0   blend_soft_all_r2_l0.25_p2_0.40 2644 0.070406            NaN
+    0   blend_soft_all_r2_l0.25_p2_0.50 2644 0.070409            NaN
+    0              soft_all_r2_l0.25_p4 2644 0.072094            NaN
+    0   blend_soft_all_r2_l0.25_p4_0.20 2644 0.070689            NaN
+    0   blend_soft_all_r2_l0.25_p4_0.30 2644 0.070503            NaN
+    0   blend_soft_all_r2_l0.25_p4_0.40 2644 0.070421            NaN
+    0   blend_soft_all_r2_l0.25_p4_0.50 2644 0.070444            NaN
+    0                 soft_all_r2_l1_p1 2644 0.071718            NaN
+    0      blend_soft_all_r2_l1_p1_0.20 2644 0.070860            NaN
+    0      blend_soft_all_r2_l1_p1_0.30 2644 0.070714            NaN
+    0      blend_soft_all_r2_l1_p1_0.40 2644 0.070641            NaN
+    0      blend_soft_all_r2_l1_p1_0.50 2644 0.070640            NaN
+    0                 soft_all_r2_l1_p2 2644 0.071779            NaN
+    0      blend_soft_all_r2_l1_p2_0.20 2644 0.070755            NaN
+    0      blend_soft_all_r2_l1_p2_0.30 2644 0.070578            NaN
+    0      blend_soft_all_r2_l1_p2_0.40 2644 0.070489            NaN
+    0      blend_soft_all_r2_l1_p2_0.50 2644 0.070487            NaN
+    0                 soft_all_r2_l1_p4 2644 0.072057            NaN
+    0      blend_soft_all_r2_l1_p4_0.20 2644 0.070723            NaN
+    0      blend_soft_all_r2_l1_p4_0.30 2644 0.070547            NaN
+    0      blend_soft_all_r2_l1_p4_0.40 2644 0.070470            NaN
+    0      blend_soft_all_r2_l1_p4_0.50 2644 0.070491            NaN
+    0                soft_crop_r4_l0_p1 2644 0.071827            NaN
+    0     blend_soft_crop_r4_l0_p1_0.20 2644 0.070696            NaN
+    0     blend_soft_crop_r4_l0_p1_0.30 2644 0.070503            NaN
+    0     blend_soft_crop_r4_l0_p1_0.40 2644 0.070405            NaN
+    0     blend_soft_crop_r4_l0_p1_0.50 2644 0.070404            NaN
+    0                soft_crop_r4_l0_p2 2644 0.072021            NaN
+    0     blend_soft_crop_r4_l0_p2_0.20 2644 0.070694            NaN
+    0     blend_soft_crop_r4_l0_p2_0.30 2644 0.070508            NaN
+    0     blend_soft_crop_r4_l0_p2_0.40 2644 0.070423            NaN
+    0     blend_soft_crop_r4_l0_p2_0.50 2644 0.070439            NaN
+    0                soft_crop_r4_l0_p4 2644 0.072316            NaN
+    0     blend_soft_crop_r4_l0_p4_0.20 2644 0.070716            NaN
+    0     blend_soft_crop_r4_l0_p4_0.30 2644 0.070548            NaN
+    0     blend_soft_crop_r4_l0_p4_0.40 2644 0.070486            NaN
+    0     blend_soft_crop_r4_l0_p4_0.50 2644 0.070529            NaN
+    0             soft_crop_r4_l0.25_p1 2644 0.071725            NaN
+    0  blend_soft_crop_r4_l0.25_p1_0.20 2644 0.070746            NaN
+    0  blend_soft_crop_r4_l0.25_p1_0.30 2644 0.070565            NaN
+    0  blend_soft_crop_r4_l0.25_p1_0.40 2644 0.070471            NaN
+    0  blend_soft_crop_r4_l0.25_p1_0.50 2644 0.070464            NaN
+    0             soft_crop_r4_l0.25_p2 2644 0.071970            NaN
+    0  blend_soft_crop_r4_l0.25_p2_0.20 2644 0.070698            NaN
+    0  blend_soft_crop_r4_l0.25_p2_0.30 2644 0.070511            NaN
+    0  blend_soft_crop_r4_l0.25_p2_0.40 2644 0.070423            NaN
+    0  blend_soft_crop_r4_l0.25_p2_0.50 2644 0.070435            NaN
+    0             soft_crop_r4_l0.25_p4 2644 0.072278            NaN
+    0  blend_soft_crop_r4_l0.25_p4_0.20 2644 0.070713            NaN
+    0  blend_soft_crop_r4_l0.25_p4_0.30 2644 0.070542            NaN
+    0  blend_soft_crop_r4_l0.25_p4_0.40 2644 0.070477            NaN
+    0  blend_soft_crop_r4_l0.25_p4_0.50 2644 0.070517            NaN
+    0                soft_crop_r4_l1_p1 2644 0.071732            NaN
+    0     blend_soft_crop_r4_l1_p1_0.20 2644 0.070840            NaN
+    0     blend_soft_crop_r4_l1_p1_0.30 2644 0.070688            NaN
+    0     blend_soft_crop_r4_l1_p1_0.40 2644 0.070612            NaN
+    0     blend_soft_crop_r4_l1_p1_0.50 2644 0.070612            NaN
+    0                soft_crop_r4_l1_p2 2644 0.071847            NaN
+    0     blend_soft_crop_r4_l1_p2_0.20 2644 0.070750            NaN
+    0     blend_soft_crop_r4_l1_p2_0.30 2644 0.070575            NaN
+    0     blend_soft_crop_r4_l1_p2_0.40 2644 0.070489            NaN
+    0     blend_soft_crop_r4_l1_p2_0.50 2644 0.070493            NaN
+    0                soft_crop_r4_l1_p4 2644 0.072101            NaN
+    0     blend_soft_crop_r4_l1_p4_0.20 2644 0.070722            NaN
+    0     blend_soft_crop_r4_l1_p4_0.30 2644 0.070548            NaN
+    0     blend_soft_crop_r4_l1_p4_0.40 2644 0.070473            NaN
+    0     blend_soft_crop_r4_l1_p4_0.50 2644 0.070498            NaN
+    0                 soft_all_r4_l0_p1 2644 0.072366            NaN
+    0      blend_soft_all_r4_l0_p1_0.20 2644 0.070816            NaN
+    0      blend_soft_all_r4_l0_p1_0.30 2644 0.070681            NaN
+    0      blend_soft_all_r4_l0_p1_0.40 2644 0.070641            NaN
+    0      blend_soft_all_r4_l0_p1_0.50 2644 0.070695            NaN
+    0                 soft_all_r4_l0_p2 2644 0.072485            NaN
+    0      blend_soft_all_r4_l0_p2_0.20 2644 0.070793            NaN
+    0      blend_soft_all_r4_l0_p2_0.30 2644 0.070655            NaN
+    0      blend_soft_all_r4_l0_p2_0.40 2644 0.070618            NaN
+    0      blend_soft_all_r4_l0_p2_0.50 2644 0.070682            NaN
+    0                 soft_all_r4_l0_p4 2644 0.072706            NaN
+    0      blend_soft_all_r4_l0_p4_0.20 2644 0.070792            NaN
+    0      blend_soft_all_r4_l0_p4_0.30 2644 0.070663            NaN
+    0      blend_soft_all_r4_l0_p4_0.40 2644 0.070640            NaN
+    0      blend_soft_all_r4_l0_p4_0.50 2644 0.070723            NaN
+    0              soft_all_r4_l0.25_p1 2644 0.072167            NaN
+    0   blend_soft_all_r4_l0.25_p1_0.20 2644 0.070845            NaN
+    0   blend_soft_all_r4_l0.25_p1_0.30 2644 0.070712            NaN
+    0   blend_soft_all_r4_l0.25_p1_0.40 2644 0.070665            NaN
+    0   blend_soft_all_r4_l0.25_p1_0.50 2644 0.070703            NaN
+    0              soft_all_r4_l0.25_p2 2644 0.072427            NaN
+    0   blend_soft_all_r4_l0.25_p2_0.20 2644 0.070797            NaN
+    0   blend_soft_all_r4_l0.25_p2_0.30 2644 0.070658            NaN
+    0   blend_soft_all_r4_l0.25_p2_0.40 2644 0.070618            NaN
+    0   blend_soft_all_r4_l0.25_p2_0.50 2644 0.070677            NaN
+    0              soft_all_r4_l0.25_p4 2644 0.072670            NaN
+    0   blend_soft_all_r4_l0.25_p4_0.20 2644 0.070791            NaN
+    0   blend_soft_all_r4_l0.25_p4_0.30 2644 0.070660            NaN
+    0   blend_soft_all_r4_l0.25_p4_0.40 2644 0.070634            NaN
+    0   blend_soft_all_r4_l0.25_p4_0.50 2644 0.070714            NaN
+    0                 soft_all_r4_l1_p1 2644 0.072025            NaN
+    0      blend_soft_all_r4_l1_p1_0.20 2644 0.070904            NaN
+    0      blend_soft_all_r4_l1_p1_0.30 2644 0.070784            NaN
+    0      blend_soft_all_r4_l1_p1_0.40 2644 0.070739            NaN
+    0      blend_soft_all_r4_l1_p1_0.50 2644 0.070768            NaN
+    0                 soft_all_r4_l1_p2 2644 0.072218            NaN
+    0      blend_soft_all_r4_l1_p2_0.20 2644 0.070835            NaN
+    0      blend_soft_all_r4_l1_p2_0.30 2644 0.070700            NaN
+    0      blend_soft_all_r4_l1_p2_0.40 2644 0.070654            NaN
+    0      blend_soft_all_r4_l1_p2_0.50 2644 0.070697            NaN
+    0                 soft_all_r4_l1_p4 2644 0.072471            NaN
+    0      blend_soft_all_r4_l1_p4_0.20 2644 0.070802            NaN
+    0      blend_soft_all_r4_l1_p4_0.30 2644 0.070667            NaN
+    0      blend_soft_all_r4_l1_p4_0.40 2644 0.070631            NaN
+    0      blend_soft_all_r4_l1_p4_0.50 2644 0.070694            NaN
+    0                soft_crop_r8_l0_p1 2644 0.071877            NaN
+    0     blend_soft_crop_r8_l0_p1_0.20 2644 0.070701            NaN
+    0     blend_soft_crop_r8_l0_p1_0.30 2644 0.070511            NaN
+    0     blend_soft_crop_r8_l0_p1_0.40 2644 0.070418            NaN
+    0     blend_soft_crop_r8_l0_p1_0.50 2644 0.070422            NaN
+    0                soft_crop_r8_l0_p2 2644 0.072153            NaN
+    0     blend_soft_crop_r8_l0_p2_0.20 2644 0.070720            NaN
+    0     blend_soft_crop_r8_l0_p2_0.30 2644 0.070547            NaN
+    0     blend_soft_crop_r8_l0_p2_0.40 2644 0.070475            NaN
+    0     blend_soft_crop_r8_l0_p2_0.50 2644 0.070504            NaN
+    0                soft_crop_r8_l0_p4 2644 0.072530            NaN
+    0     blend_soft_crop_r8_l0_p4_0.20 2644 0.070763            NaN
+    0     blend_soft_crop_r8_l0_p4_0.30 2644 0.070618            NaN
+    0     blend_soft_crop_r8_l0_p4_0.40 2644 0.070578            NaN
+    0     blend_soft_crop_r8_l0_p4_0.50 2644 0.070644            NaN
+    0             soft_crop_r8_l0.25_p1 2644 0.071734            NaN
+    0  blend_soft_crop_r8_l0.25_p1_0.20 2644 0.070746            NaN
+    0  blend_soft_crop_r8_l0.25_p1_0.30 2644 0.070566            NaN
+    0  blend_soft_crop_r8_l0.25_p1_0.40 2644 0.070472            NaN
+    0  blend_soft_crop_r8_l0.25_p1_0.50 2644 0.070465            NaN
+    0             soft_crop_r8_l0.25_p2 2644 0.072088            NaN
+    0  blend_soft_crop_r8_l0.25_p2_0.20 2644 0.070723            NaN
+    0  blend_soft_crop_r8_l0.25_p2_0.30 2644 0.070548            NaN
+    0  blend_soft_crop_r8_l0.25_p2_0.40 2644 0.070472            NaN
+    0  blend_soft_crop_r8_l0.25_p2_0.50 2644 0.070496            NaN
+    0             soft_crop_r8_l0.25_p4 2644 0.072491            NaN
+    0  blend_soft_crop_r8_l0.25_p4_0.20 2644 0.070761            NaN
+    0  blend_soft_crop_r8_l0.25_p4_0.30 2644 0.070614            NaN
+    0  blend_soft_crop_r8_l0.25_p4_0.40 2644 0.070571            NaN
+    0  blend_soft_crop_r8_l0.25_p4_0.50 2644 0.070633            NaN
+    0                soft_crop_r8_l1_p1 2644 0.071708            NaN
+    0     blend_soft_crop_r8_l1_p1_0.20 2644 0.070834            NaN
+    0     blend_soft_crop_r8_l1_p1_0.30 2644 0.070680            NaN
+    0     blend_soft_crop_r8_l1_p1_0.40 2644 0.070602            NaN
+    0     blend_soft_crop_r8_l1_p1_0.50 2644 0.070598            NaN
+    0                soft_crop_r8_l1_p2 2644 0.071898            NaN
+    0     blend_soft_crop_r8_l1_p2_0.20 2644 0.070767            NaN
+    0     blend_soft_crop_r8_l1_p2_0.30 2644 0.070600            NaN
+    0     blend_soft_crop_r8_l1_p2_0.40 2644 0.070520            NaN
+    0     blend_soft_crop_r8_l1_p2_0.50 2644 0.070530            NaN
+    0                soft_crop_r8_l1_p4 2644 0.072292            NaN
+    0     blend_soft_crop_r8_l1_p4_0.20 2644 0.070771            NaN
+    0     blend_soft_crop_r8_l1_p4_0.30 2644 0.070619            NaN
+    0     blend_soft_crop_r8_l1_p4_0.40 2644 0.070565            NaN
+    0     blend_soft_crop_r8_l1_p4_0.50 2644 0.070610            NaN
+    0                 soft_all_r8_l0_p1 2644 0.072999            NaN
+    0      blend_soft_all_r8_l0_p1_0.20 2644 0.071003            NaN
+    0      blend_soft_all_r8_l0_p1_0.30 2644 0.070951            NaN
+    0      blend_soft_all_r8_l0_p1_0.40 2644 0.070986            NaN
+    0      blend_soft_all_r8_l0_p1_0.50 2644 0.071109            NaN
+    0                 soft_all_r8_l0_p2 2644 0.073303            NaN
+    0      blend_soft_all_r8_l0_p2_0.20 2644 0.071020            NaN
+    0      blend_soft_all_r8_l0_p2_0.30 2644 0.070986            NaN
+    0      blend_soft_all_r8_l0_p2_0.40 2644 0.071044            NaN
+    0      blend_soft_all_r8_l0_p2_0.50 2644 0.071195            NaN
+    0                 soft_all_r8_l0_p4 2644 0.073800            NaN
+    0      blend_soft_all_r8_l0_p4_0.20 2644 0.071070            NaN
+    0      blend_soft_all_r8_l0_p4_0.30 2644 0.071071            NaN
+    0      blend_soft_all_r8_l0_p4_0.40 2644 0.071170            NaN
+    0      blend_soft_all_r8_l0_p4_0.50 2644 0.071369            NaN
+    0              soft_all_r8_l0.25_p1 2644 0.072775            NaN
+    0   blend_soft_all_r8_l0.25_p1_0.20 2644 0.071000            NaN
+    0   blend_soft_all_r8_l0.25_p1_0.30 2644 0.070939            NaN
+    0   blend_soft_all_r8_l0.25_p1_0.40 2644 0.070960            NaN
+    0   blend_soft_all_r8_l0.25_p1_0.50 2644 0.071062            NaN
+    0              soft_all_r8_l0.25_p2 2644 0.073222            NaN
+    0   blend_soft_all_r8_l0.25_p2_0.20 2644 0.071019            NaN
+    0   blend_soft_all_r8_l0.25_p2_0.30 2644 0.070982            NaN
+    0   blend_soft_all_r8_l0.25_p2_0.40 2644 0.071035            NaN
+    0   blend_soft_all_r8_l0.25_p2_0.50 2644 0.071178            NaN
+    0              soft_all_r8_l0.25_p4 2644 0.073742            NaN
+    0   blend_soft_all_r8_l0.25_p4_0.20 2644 0.071071            NaN
+    0   blend_soft_all_r8_l0.25_p4_0.30 2644 0.071070            NaN
+    0   blend_soft_all_r8_l0.25_p4_0.40 2644 0.071166            NaN
+    0   blend_soft_all_r8_l0.25_p4_0.50 2644 0.071359            NaN
+    0                 soft_all_r8_l1_p1 2644 0.072510            NaN
+    0      blend_soft_all_r8_l1_p1_0.20 2644 0.071005            NaN
+    0      blend_soft_all_r8_l1_p1_0.30 2644 0.070935            NaN
+    0      blend_soft_all_r8_l1_p1_0.40 2644 0.070940            NaN
+    0      blend_soft_all_r8_l1_p1_0.50 2644 0.071019            NaN
+    0                 soft_all_r8_l1_p2 2644 0.072940            NaN
+    0      blend_soft_all_r8_l1_p2_0.20 2644 0.071015            NaN
+    0      blend_soft_all_r8_l1_p2_0.30 2644 0.070965            NaN
+    0      blend_soft_all_r8_l1_p2_0.40 2644 0.070999            NaN
+    0      blend_soft_all_r8_l1_p2_0.50 2644 0.071117            NaN
+    0                 soft_all_r8_l1_p4 2644 0.073523            NaN
+    0      blend_soft_all_r8_l1_p4_0.20 2644 0.071067            NaN
+    0      blend_soft_all_r8_l1_p4_0.30 2644 0.071056            NaN
+    0      blend_soft_all_r8_l1_p4_0.40 2644 0.071137            NaN
+    0      blend_soft_all_r8_l1_p4_0.50 2644 0.071310            NaN
+    0               soft_crop_r16_l0_p1 2644 0.072362            NaN
+    0    blend_soft_crop_r16_l0_p1_0.20 2644 0.070833            NaN
+    0    blend_soft_crop_r16_l0_p1_0.30 2644 0.070704            NaN
+    0    blend_soft_crop_r16_l0_p1_0.40 2644 0.070667            NaN
+    0    blend_soft_crop_r16_l0_p1_0.50 2644 0.070722            NaN
+    0               soft_crop_r16_l0_p2 2644 0.072624            NaN
+    0    blend_soft_crop_r16_l0_p2_0.20 2644 0.070860            NaN
+    0    blend_soft_crop_r16_l0_p2_0.30 2644 0.070749            NaN
+    0    blend_soft_crop_r16_l0_p2_0.40 2644 0.070734            NaN
+    0    blend_soft_crop_r16_l0_p2_0.50 2644 0.070814            NaN
+    0               soft_crop_r16_l0_p4 2644 0.072906            NaN
+    0    blend_soft_crop_r16_l0_p4_0.20 2644 0.070889            NaN
+    0    blend_soft_crop_r16_l0_p4_0.30 2644 0.070799            NaN
+    0    blend_soft_crop_r16_l0_p4_0.40 2644 0.070807            NaN
+    0    blend_soft_crop_r16_l0_p4_0.50 2644 0.070914            NaN
+    0            soft_crop_r16_l0.25_p1 2644 0.072199            NaN
+    0 blend_soft_crop_r16_l0.25_p1_0.20 2644 0.070854            NaN
+    0 blend_soft_crop_r16_l0.25_p1_0.30 2644 0.070725            NaN
+    0 blend_soft_crop_r16_l0.25_p1_0.40 2644 0.070681            NaN
+    0 blend_soft_crop_r16_l0.25_p1_0.50 2644 0.070723            NaN
+    0            soft_crop_r16_l0.25_p2 2644 0.072592            NaN
+    0 blend_soft_crop_r16_l0.25_p2_0.20 2644 0.070864            NaN
+    0 blend_soft_crop_r16_l0.25_p2_0.30 2644 0.070754            NaN
+    0 blend_soft_crop_r16_l0.25_p2_0.40 2644 0.070737            NaN
+    0 blend_soft_crop_r16_l0.25_p2_0.50 2644 0.070815            NaN
+    0            soft_crop_r16_l0.25_p4 2644 0.072900            NaN
+    0 blend_soft_crop_r16_l0.25_p4_0.20 2644 0.070893            NaN
+    0 blend_soft_crop_r16_l0.25_p4_0.30 2644 0.070803            NaN
+    0 blend_soft_crop_r16_l0.25_p4_0.40 2644 0.070812            NaN
+    0 blend_soft_crop_r16_l0.25_p4_0.50 2644 0.070919            NaN
+    0               soft_crop_r16_l1_p1 2644 0.072057            NaN
+    0    blend_soft_crop_r16_l1_p1_0.20 2644 0.070899            NaN
+    0    blend_soft_crop_r16_l1_p1_0.30 2644 0.070779            NaN
+    0    blend_soft_crop_r16_l1_p1_0.40 2644 0.070734            NaN
+    0    blend_soft_crop_r16_l1_p1_0.50 2644 0.070766            NaN
+    0               soft_crop_r16_l1_p2 2644 0.072421            NaN
+    0    blend_soft_crop_r16_l1_p2_0.20 2644 0.070884            NaN
+    0    blend_soft_crop_r16_l1_p2_0.30 2644 0.070773            NaN
+    0    blend_soft_crop_r16_l1_p2_0.40 2644 0.070749            NaN
+    0    blend_soft_crop_r16_l1_p2_0.50 2644 0.070812            NaN
+    0               soft_crop_r16_l1_p4 2644 0.072775            NaN
+    0    blend_soft_crop_r16_l1_p4_0.20 2644 0.070897            NaN
+    0    blend_soft_crop_r16_l1_p4_0.30 2644 0.070804            NaN
+    0    blend_soft_crop_r16_l1_p4_0.40 2644 0.070805            NaN
+    0    blend_soft_crop_r16_l1_p4_0.50 2644 0.070901            NaN
+    0                soft_all_r16_l0_p1 2644 0.072852            NaN
+    0     blend_soft_all_r16_l0_p1_0.20 2644 0.071041            NaN
+    0     blend_soft_all_r16_l0_p1_0.30 2644 0.070996            NaN
+    0     blend_soft_all_r16_l0_p1_0.40 2644 0.071029            NaN
+    0     blend_soft_all_r16_l0_p1_0.50 2644 0.071140            NaN
+    0                soft_all_r16_l0_p2 2644 0.073109            NaN
+    0     blend_soft_all_r16_l0_p2_0.20 2644 0.071058            NaN
+    0     blend_soft_all_r16_l0_p2_0.30 2644 0.071028            NaN
+    0     blend_soft_all_r16_l0_p2_0.40 2644 0.071080            NaN
+    0     blend_soft_all_r16_l0_p2_0.50 2644 0.071216            NaN
+    0                soft_all_r16_l0_p4 2644 0.073417            NaN
+    0     blend_soft_all_r16_l0_p4_0.20 2644 0.071070            NaN
+    0     blend_soft_all_r16_l0_p4_0.30 2644 0.071056            NaN
+    0     blend_soft_all_r16_l0_p4_0.40 2644 0.071131            NaN
+    0     blend_soft_all_r16_l0_p4_0.50 2644 0.071294            NaN
+    0             soft_all_r16_l0.25_p1 2644 0.072774            NaN
+    0  blend_soft_all_r16_l0.25_p1_0.20 2644 0.071043            NaN
+    0  blend_soft_all_r16_l0.25_p1_0.30 2644 0.070996            NaN
+    0  blend_soft_all_r16_l0.25_p1_0.40 2644 0.071025            NaN
+    0  blend_soft_all_r16_l0.25_p1_0.50 2644 0.071129            NaN
+    0             soft_all_r16_l0.25_p2 2644 0.073079            NaN
+    0  blend_soft_all_r16_l0.25_p2_0.20 2644 0.071058            NaN
+    0  blend_soft_all_r16_l0.25_p2_0.30 2644 0.071027            NaN
+    0  blend_soft_all_r16_l0.25_p2_0.40 2644 0.071077            NaN
+    0  blend_soft_all_r16_l0.25_p2_0.50 2644 0.071210            NaN
+    0             soft_all_r16_l0.25_p4 2644 0.073387            NaN
+    0  blend_soft_all_r16_l0.25_p4_0.20 2644 0.071071            NaN
+    0  blend_soft_all_r16_l0.25_p4_0.30 2644 0.071055            NaN
+    0  blend_soft_all_r16_l0.25_p4_0.40 2644 0.071129            NaN
+    0  blend_soft_all_r16_l0.25_p4_0.50 2644 0.071290            NaN
+    0                soft_all_r16_l1_p1 2644 0.072656            NaN
+    0     blend_soft_all_r16_l1_p1_0.20 2644 0.071050            NaN
+    0     blend_soft_all_r16_l1_p1_0.30 2644 0.071000            NaN
+    0     blend_soft_all_r16_l1_p1_0.40 2644 0.071022            NaN
+    0     blend_soft_all_r16_l1_p1_0.50 2644 0.071117            NaN
+    0                soft_all_r16_l1_p2 2644 0.072985            NaN
+    0     blend_soft_all_r16_l1_p2_0.20 2644 0.071057            NaN
+    0     blend_soft_all_r16_l1_p2_0.30 2644 0.071022            NaN
+    0     blend_soft_all_r16_l1_p2_0.40 2644 0.071067            NaN
+    0     blend_soft_all_r16_l1_p2_0.50 2644 0.071191            NaN
+    0                soft_all_r16_l1_p4 2644 0.073310            NaN
+    0     blend_soft_all_r16_l1_p4_0.20 2644 0.071070            NaN
+    0     blend_soft_all_r16_l1_p4_0.30 2644 0.071052            NaN
+    0     blend_soft_all_r16_l1_p4_0.40 2644 0.071120            NaN
+    0     blend_soft_all_r16_l1_p4_0.50 2644 0.071274            NaN
+    0               soft_crop_r32_l0_p1 2644 0.072033            NaN
+    0    blend_soft_crop_r32_l0_p1_0.20 2644 0.070800            NaN
+    0    blend_soft_crop_r32_l0_p1_0.30 2644 0.070647            NaN
+    0    blend_soft_crop_r32_l0_p1_0.40 2644 0.070582            NaN
+    0    blend_soft_crop_r32_l0_p1_0.50 2644 0.070606            NaN
+    0               soft_crop_r32_l0_p2 2644 0.072236            NaN
+    0    blend_soft_crop_r32_l0_p2_0.20 2644 0.070799            NaN
+    0    blend_soft_crop_r32_l0_p2_0.30 2644 0.070654            NaN
+    0    blend_soft_crop_r32_l0_p2_0.40 2644 0.070603            NaN
+    0    blend_soft_crop_r32_l0_p2_0.50 2644 0.070644            NaN
+    0               soft_crop_r32_l0_p4 2644 0.072475            NaN
+    0    blend_soft_crop_r32_l0_p4_0.20 2644 0.070797            NaN
+    0    blend_soft_crop_r32_l0_p4_0.30 2644 0.070661            NaN
+    0    blend_soft_crop_r32_l0_p4_0.40 2644 0.070624            NaN
+    0    blend_soft_crop_r32_l0_p4_0.50 2644 0.070687            NaN
+    0            soft_crop_r32_l0.25_p1 2644 0.071949            NaN
+    0 blend_soft_crop_r32_l0.25_p1_0.20 2644 0.070819            NaN
+    0 blend_soft_crop_r32_l0.25_p1_0.30 2644 0.070669            NaN
+    0 blend_soft_crop_r32_l0.25_p1_0.40 2644 0.070603            NaN
+    0 blend_soft_crop_r32_l0.25_p1_0.50 2644 0.070620            NaN
+    0            soft_crop_r32_l0.25_p2 2644 0.072210            NaN
+    0 blend_soft_crop_r32_l0.25_p2_0.20 2644 0.070803            NaN
+    0 blend_soft_crop_r32_l0.25_p2_0.30 2644 0.070658            NaN
+    0 blend_soft_crop_r32_l0.25_p2_0.40 2644 0.070605            NaN
+    0 blend_soft_crop_r32_l0.25_p2_0.50 2644 0.070644            NaN
+    0            soft_crop_r32_l0.25_p4 2644 0.072458            NaN
+    0 blend_soft_crop_r32_l0.25_p4_0.20 2644 0.070799            NaN
+    0 blend_soft_crop_r32_l0.25_p4_0.30 2644 0.070663            NaN
+    0 blend_soft_crop_r32_l0.25_p4_0.40 2644 0.070625            NaN
+    0 blend_soft_crop_r32_l0.25_p4_0.50 2644 0.070687            NaN
+    0               soft_crop_r32_l1_p1 2644 0.071882            NaN
+    0    blend_soft_crop_r32_l1_p1_0.20 2644 0.070863            NaN
+    0    blend_soft_crop_r32_l1_p1_0.30 2644 0.070724            NaN
+    0    blend_soft_crop_r32_l1_p1_0.40 2644 0.070662            NaN
+    0    blend_soft_crop_r32_l1_p1_0.50 2644 0.070676            NaN
+    0               soft_crop_r32_l1_p2 2644 0.072094            NaN
+    0    blend_soft_crop_r32_l1_p2_0.20 2644 0.070817            NaN
+    0    blend_soft_crop_r32_l1_p2_0.30 2644 0.070672            NaN
+    0    blend_soft_crop_r32_l1_p2_0.40 2644 0.070615            NaN
+    0    blend_soft_crop_r32_l1_p2_0.50 2644 0.070645            NaN
+    0               soft_crop_r32_l1_p4 2644 0.072344            NaN
+    0    blend_soft_crop_r32_l1_p4_0.20 2644 0.070800            NaN
+    0    blend_soft_crop_r32_l1_p4_0.30 2644 0.070660            NaN
+    0    blend_soft_crop_r32_l1_p4_0.40 2644 0.070615            NaN
+    0    blend_soft_crop_r32_l1_p4_0.50 2644 0.070667            NaN
+    0                soft_all_r32_l0_p1 2644 0.072786            NaN
+    0     blend_soft_all_r32_l0_p1_0.20 2644 0.071071            NaN
+    0     blend_soft_all_r32_l0_p1_0.30 2644 0.071033            NaN
+    0     blend_soft_all_r32_l0_p1_0.40 2644 0.071067            NaN
+    0     blend_soft_all_r32_l0_p1_0.50 2644 0.071175            NaN
+    0                soft_all_r32_l0_p2 2644 0.073084            NaN
+    0     blend_soft_all_r32_l0_p2_0.20 2644 0.071092            NaN
+    0     blend_soft_all_r32_l0_p2_0.30 2644 0.071072            NaN
+    0     blend_soft_all_r32_l0_p2_0.40 2644 0.071129            NaN
+    0     blend_soft_all_r32_l0_p2_0.50 2644 0.071265            NaN
+    0                soft_all_r32_l0_p4 2644 0.073516            NaN
+    0     blend_soft_all_r32_l0_p4_0.20 2644 0.071126            NaN
+    0     blend_soft_all_r32_l0_p4_0.30 2644 0.071133            NaN
+    0     blend_soft_all_r32_l0_p4_0.40 2644 0.071224            NaN
+    0     blend_soft_all_r32_l0_p4_0.50 2644 0.071400            NaN
+    0             soft_all_r32_l0.25_p1 2644 0.072738            NaN
+    0  blend_soft_all_r32_l0.25_p1_0.20 2644 0.071072            NaN
+    0  blend_soft_all_r32_l0.25_p1_0.30 2644 0.071032            NaN
+    0  blend_soft_all_r32_l0.25_p1_0.40 2644 0.071063            NaN
+    0  blend_soft_all_r32_l0.25_p1_0.50 2644 0.071166            NaN
+    0             soft_all_r32_l0.25_p2 2644 0.073059            NaN
+    0  blend_soft_all_r32_l0.25_p2_0.20 2644 0.071090            NaN
+    0  blend_soft_all_r32_l0.25_p2_0.30 2644 0.071068            NaN
+    0  blend_soft_all_r32_l0.25_p2_0.40 2644 0.071124            NaN
+    0  blend_soft_all_r32_l0.25_p2_0.50 2644 0.071257            NaN
+    0             soft_all_r32_l0.25_p4 2644 0.073490            NaN
+    0  blend_soft_all_r32_l0.25_p4_0.20 2644 0.071123            NaN
+    0  blend_soft_all_r32_l0.25_p4_0.30 2644 0.071129            NaN
+    0  blend_soft_all_r32_l0.25_p4_0.40 2644 0.071218            NaN
+    0  blend_soft_all_r32_l0.25_p4_0.50 2644 0.071392            NaN
+    0                soft_all_r32_l1_p1 2644 0.072663            NaN
+    0     blend_soft_all_r32_l1_p1_0.20 2644 0.071074            NaN
+    0     blend_soft_all_r32_l1_p1_0.30 2644 0.071032            NaN
+    0     blend_soft_all_r32_l1_p1_0.40 2644 0.071059            NaN
+    0     blend_soft_all_r32_l1_p1_0.50 2644 0.071155            NaN
+    0                soft_all_r32_l1_p2 2644 0.072984            NaN
+    0     blend_soft_all_r32_l1_p2_0.20 2644 0.071085            NaN
+    0     blend_soft_all_r32_l1_p2_0.30 2644 0.071059            NaN
+    0     blend_soft_all_r32_l1_p2_0.40 2644 0.071109            NaN
+    0     blend_soft_all_r32_l1_p2_0.50 2644 0.071235            NaN
+    0                soft_all_r32_l1_p4 2644 0.073424            NaN
+    0     blend_soft_all_r32_l1_p4_0.20 2644 0.071117            NaN
+    0     blend_soft_all_r32_l1_p4_0.30 2644 0.071118            NaN
+    0     blend_soft_all_r32_l1_p4_0.40 2644 0.071202            NaN
+    0     blend_soft_all_r32_l1_p4_0.50 2644 0.071369            NaN
+    0                          baseline 2644 0.071366            all
+    0                          baseline 1888 0.078063        history
+    0                          baseline  756 0.050933           2025
+    0                          baseline 2267 0.074696            new
+    0                          baseline  377 0.046564         shared
+    0                          baseline 1741 0.069333           near
+    0                          baseline  420 0.071708            mid
+    0                          baseline  483 0.077986    far_or_none
+    0                          baseline 1156 0.063485      source_s2
+    0                          baseline 1035 0.081564 source_landsat
+    0                          baseline  453 0.065130   source_modis
+    0              blend_post_mode_0.40 2644 0.071240            all
+    0              blend_post_mode_0.40 1888 0.077592        history
+    0              blend_post_mode_0.40  756 0.052100           2025
+    0              blend_post_mode_0.40 2267 0.074433            new
+    0              blend_post_mode_0.40  377 0.047733         shared
+    0              blend_post_mode_0.40 1741 0.069356           near
+    0              blend_post_mode_0.40  420 0.070941            mid
+    0              blend_post_mode_0.40  483 0.077892    far_or_none
+    0              blend_post_mode_0.40 1156 0.063233      source_s2
+    0              blend_post_mode_0.40 1035 0.081968 source_landsat
+    0              blend_post_mode_0.40  453 0.063778   source_modis
+    0       blend_crop_hier_n1_p67_0.40 2644 0.070447            all
+    0       blend_crop_hier_n1_p67_0.40 1888 0.077320        history
+    0       blend_crop_hier_n1_p67_0.40  756 0.049260           2025
+    0       blend_crop_hier_n1_p67_0.40 2267 0.073762            new
+    0       blend_crop_hier_n1_p67_0.40  377 0.045697         shared
+    0       blend_crop_hier_n1_p67_0.40 1741 0.068081           near
+    0       blend_crop_hier_n1_p67_0.40  420 0.071259            mid
+    0       blend_crop_hier_n1_p67_0.40  483 0.077745    far_or_none
+    0       blend_crop_hier_n1_p67_0.40 1156 0.062679      source_s2
+    0       blend_crop_hier_n1_p67_0.40 1035 0.080540 source_landsat
+    0       blend_crop_hier_n1_p67_0.40  453 0.064185   source_modis
+    0      blend_soft_all_r1_l0_p4_0.40 2644 0.070532            all
+    0      blend_soft_all_r1_l0_p4_0.40 1888 0.077312        history
+    0      blend_soft_all_r1_l0_p4_0.40  756 0.049713           2025
+    0      blend_soft_all_r1_l0_p4_0.40 2267 0.073785            new
+    0      blend_soft_all_r1_l0_p4_0.40  377 0.046385         shared
+    0      blend_soft_all_r1_l0_p4_0.40 1741 0.068327           near
+    0      blend_soft_all_r1_l0_p4_0.40  420 0.070901            mid
+    0      blend_soft_all_r1_l0_p4_0.40  483 0.077672    far_or_none
+    0      blend_soft_all_r1_l0_p4_0.40 1156 0.062638      source_s2
+    0      blend_soft_all_r1_l0_p4_0.40 1035 0.080854 source_landsat
+    0      blend_soft_all_r1_l0_p4_0.40  453 0.063935   source_modis
+    0     blend_soft_crop_r1_l0_p4_0.40 2644 0.070525            all
+    0     blend_soft_crop_r1_l0_p4_0.40 1888 0.077312        history
+    0     blend_soft_crop_r1_l0_p4_0.40  756 0.049675           2025
+    0     blend_soft_crop_r1_l0_p4_0.40 2267 0.073776            new
+    0     blend_soft_crop_r1_l0_p4_0.40  377 0.046392         shared
+    0     blend_soft_crop_r1_l0_p4_0.40 1741 0.068315           near
+    0     blend_soft_crop_r1_l0_p4_0.40  420 0.070901            mid
+    0     blend_soft_crop_r1_l0_p4_0.40  483 0.077672    far_or_none
+    0     blend_soft_crop_r1_l0_p4_0.40 1156 0.062623      source_s2
+    0     blend_soft_crop_r1_l0_p4_0.40 1035 0.080845 source_landsat
+    0     blend_soft_crop_r1_l0_p4_0.40  453 0.063945   source_modis
+    0      blend_soft_all_r2_l0_p4_0.40 2644 0.070406            all
+    0      blend_soft_all_r2_l0_p4_0.40 1888 0.077234        history
+    0      blend_soft_all_r2_l0_p4_0.40  756 0.049390           2025
+    0      blend_soft_all_r2_l0_p4_0.40 2267 0.073737            new
+    0      blend_soft_all_r2_l0_p4_0.40  377 0.045499         shared
+    0      blend_soft_all_r2_l0_p4_0.40 1741 0.068130           near
+    0      blend_soft_all_r2_l0_p4_0.40  420 0.070901            mid
+    0      blend_soft_all_r2_l0_p4_0.40  483 0.077672    far_or_none
+    0      blend_soft_all_r2_l0_p4_0.40 1156 0.062560      source_s2
+    0      blend_soft_all_r2_l0_p4_0.40 1035 0.080606 source_landsat
+    0      blend_soft_all_r2_l0_p4_0.40  453 0.064031   source_modis
+    0     blend_soft_all_r32_l0_p4_0.40 2644 0.071224            all
+    0     blend_soft_all_r32_l0_p4_0.40 1888 0.077627        history
+    0     blend_soft_all_r32_l0_p4_0.40  756 0.051891           2025
+    0     blend_soft_all_r32_l0_p4_0.40 2267 0.074459            new
+    0     blend_soft_all_r32_l0_p4_0.40  377 0.047318         shared
+    0     blend_soft_all_r32_l0_p4_0.40 1741 0.069454           near
+    0     blend_soft_all_r32_l0_p4_0.40  420 0.071177            mid
+    0     blend_soft_all_r32_l0_p4_0.40  483 0.077307    far_or_none
+    0     blend_soft_all_r32_l0_p4_0.40 1156 0.063555      source_s2
+    0     blend_soft_all_r32_l0_p4_0.40 1035 0.081519 source_landsat
+    0     blend_soft_all_r32_l0_p4_0.40  453 0.064170   source_modis
+    1                          baseline 2644 0.064468            NaN
+    1                         post_mode 2644 0.067483            NaN
+    1              blend_post_mode_0.20 2644 0.064231            NaN
+    1              blend_post_mode_0.30 2644 0.064273            NaN
+    1              blend_post_mode_0.40 2644 0.064422            NaN
+    1              blend_post_mode_0.50 2644 0.064677            NaN
+    1                  crop_hier_n1_p00 2644 0.064731            NaN
+    1       blend_crop_hier_n1_p00_0.20 2644 0.063512            NaN
+    1       blend_crop_hier_n1_p00_0.30 2644 0.063220            NaN
+    1       blend_crop_hier_n1_p00_0.40 2644 0.063055            NaN
+    1       blend_crop_hier_n1_p00_0.50 2644 0.063018            NaN
+    1                  crop_hier_n1_p67 2644 0.064840            NaN
+    1       blend_crop_hier_n1_p67_0.20 2644 0.063538            NaN
+    1       blend_crop_hier_n1_p67_0.30 2644 0.063260            NaN
+    1       blend_crop_hier_n1_p67_0.40 2644 0.063107            NaN
+    1       blend_crop_hier_n1_p67_0.50 2644 0.063081            NaN
+    1                  crop_hier_n1_p80 2644 0.064815            NaN
+    1       blend_crop_hier_n1_p80_0.20 2644 0.063535            NaN
+    1       blend_crop_hier_n1_p80_0.30 2644 0.063254            NaN
+    1       blend_crop_hier_n1_p80_0.40 2644 0.063099            NaN
+    1       blend_crop_hier_n1_p80_0.50 2644 0.063071            NaN
+    1                  crop_hier_n2_p00 2644 0.066123            NaN
+    1       blend_crop_hier_n2_p00_0.20 2644 0.063802            NaN
+    1       blend_crop_hier_n2_p00_0.30 2644 0.063656            NaN
+    1       blend_crop_hier_n2_p00_0.40 2644 0.063636            NaN
+    1       blend_crop_hier_n2_p00_0.50 2644 0.063743            NaN
+    1                  crop_hier_n2_p67 2644 0.066119            NaN
+    1       blend_crop_hier_n2_p67_0.20 2644 0.063868            NaN
+    1       blend_crop_hier_n2_p67_0.30 2644 0.063742            NaN
+    1       blend_crop_hier_n2_p67_0.40 2644 0.063735            NaN
+    1       blend_crop_hier_n2_p67_0.50 2644 0.063845            NaN
+    1                  crop_hier_n2_p80 2644 0.066239            NaN
+    1       blend_crop_hier_n2_p80_0.20 2644 0.063904            NaN
+    1       blend_crop_hier_n2_p80_0.30 2644 0.063795            NaN
+    1       blend_crop_hier_n2_p80_0.40 2644 0.063802            NaN
+    1       blend_crop_hier_n2_p80_0.50 2644 0.063925            NaN
+    1                  crop_hier_n3_p00 2644 0.066702            NaN
+    1       blend_crop_hier_n3_p00_0.20 2644 0.063966            NaN
+    1       blend_crop_hier_n3_p00_0.30 2644 0.063894            NaN
+    1       blend_crop_hier_n3_p00_0.40 2644 0.063943            NaN
+    1       blend_crop_hier_n3_p00_0.50 2644 0.064112            NaN
+    1                  crop_hier_n3_p67 2644 0.066446            NaN
+    1       blend_crop_hier_n3_p67_0.20 2644 0.063954            NaN
+    1       blend_crop_hier_n3_p67_0.30 2644 0.063869            NaN
+    1       blend_crop_hier_n3_p67_0.40 2644 0.063898            NaN
+    1       blend_crop_hier_n3_p67_0.50 2644 0.064043            NaN
+    1                  crop_hier_n3_p80 2644 0.066632            NaN
+    1       blend_crop_hier_n3_p80_0.20 2644 0.064004            NaN
+    1       blend_crop_hier_n3_p80_0.30 2644 0.063942            NaN
+    1       blend_crop_hier_n3_p80_0.40 2644 0.063993            NaN
+    1       blend_crop_hier_n3_p80_0.50 2644 0.064158            NaN
+    1                soft_crop_r1_l0_p1 2644 0.064588            NaN
+    1     blend_soft_crop_r1_l0_p1_0.20 2644 0.063651            NaN
+    1     blend_soft_crop_r1_l0_p1_0.30 2644 0.063398            NaN
+    1     blend_soft_crop_r1_l0_p1_0.40 2644 0.063251            NaN
+    1     blend_soft_crop_r1_l0_p1_0.50 2644 0.063210            NaN
+    1                soft_crop_r1_l0_p2 2644 0.064695            NaN
+    1     blend_soft_crop_r1_l0_p2_0.20 2644 0.063635            NaN
+    1     blend_soft_crop_r1_l0_p2_0.30 2644 0.063381            NaN
+    1     blend_soft_crop_r1_l0_p2_0.40 2644 0.063237            NaN
+    1     blend_soft_crop_r1_l0_p2_0.50 2644 0.063204            NaN
+    1                soft_crop_r1_l0_p4 2644 0.064943            NaN
+    1     blend_soft_crop_r1_l0_p4_0.20 2644 0.063647            NaN
+    1     blend_soft_crop_r1_l0_p4_0.30 2644 0.063407            NaN
+    1     blend_soft_crop_r1_l0_p4_0.40 2644 0.063282            NaN
+    1     blend_soft_crop_r1_l0_p4_0.50 2644 0.063272            NaN
+    1             soft_crop_r1_l0.25_p1 2644 0.064582            NaN
+    1  blend_soft_crop_r1_l0.25_p1_0.20 2644 0.063744            NaN
+    1  blend_soft_crop_r1_l0.25_p1_0.30 2644 0.063521            NaN
+    1  blend_soft_crop_r1_l0.25_p1_0.40 2644 0.063391            NaN
+    1  blend_soft_crop_r1_l0.25_p1_0.50 2644 0.063356            NaN
+    1             soft_crop_r1_l0.25_p2 2644 0.064687            NaN
+    1  blend_soft_crop_r1_l0.25_p2_0.20 2644 0.063648            NaN
+    1  blend_soft_crop_r1_l0.25_p2_0.30 2644 0.063398            NaN
+    1  blend_soft_crop_r1_l0.25_p2_0.40 2644 0.063256            NaN
+    1  blend_soft_crop_r1_l0.25_p2_0.50 2644 0.063224            NaN
+    1             soft_crop_r1_l0.25_p4 2644 0.064944            NaN
+    1  blend_soft_crop_r1_l0.25_p4_0.20 2644 0.063648            NaN
+    1  blend_soft_crop_r1_l0.25_p4_0.30 2644 0.063408            NaN
+    1  blend_soft_crop_r1_l0.25_p4_0.40 2644 0.063283            NaN
+    1  blend_soft_crop_r1_l0.25_p4_0.50 2644 0.063273            NaN
+    1                soft_crop_r1_l1_p1 2644 0.064835            NaN
+    1     blend_soft_crop_r1_l1_p1_0.20 2644 0.063899            NaN
+    1     blend_soft_crop_r1_l1_p1_0.30 2644 0.063734            NaN
+    1     blend_soft_crop_r1_l1_p1_0.40 2644 0.063650            NaN
+    1     blend_soft_crop_r1_l1_p1_0.50 2644 0.063647            NaN
+    1                soft_crop_r1_l1_p2 2644 0.064761            NaN
+    1     blend_soft_crop_r1_l1_p2_0.20 2644 0.063757            NaN
+    1     blend_soft_crop_r1_l1_p2_0.30 2644 0.063545            NaN
+    1     blend_soft_crop_r1_l1_p2_0.40 2644 0.063429            NaN
+    1     blend_soft_crop_r1_l1_p2_0.50 2644 0.063410            NaN
+    1                soft_crop_r1_l1_p4 2644 0.064955            NaN
+    1     blend_soft_crop_r1_l1_p4_0.20 2644 0.063699            NaN
+    1     blend_soft_crop_r1_l1_p4_0.30 2644 0.063475            NaN
+    1     blend_soft_crop_r1_l1_p4_0.40 2644 0.063360            NaN
+    1     blend_soft_crop_r1_l1_p4_0.50 2644 0.063355            NaN
+    1                 soft_all_r1_l0_p1 2644 0.064668            NaN
+    1      blend_soft_all_r1_l0_p1_0.20 2644 0.063664            NaN
+    1      blend_soft_all_r1_l0_p1_0.30 2644 0.063419            NaN
+    1      blend_soft_all_r1_l0_p1_0.40 2644 0.063279            NaN
+    1      blend_soft_all_r1_l0_p1_0.50 2644 0.063246            NaN
+    1                 soft_all_r1_l0_p2 2644 0.064773            NaN
+    1      blend_soft_all_r1_l0_p2_0.20 2644 0.063648            NaN
+    1      blend_soft_all_r1_l0_p2_0.30 2644 0.063401            NaN
+    1      blend_soft_all_r1_l0_p2_0.40 2644 0.063265            NaN
+    1      blend_soft_all_r1_l0_p2_0.50 2644 0.063240            NaN
+    1                 soft_all_r1_l0_p4 2644 0.065009            NaN
+    1      blend_soft_all_r1_l0_p4_0.20 2644 0.063660            NaN
+    1      blend_soft_all_r1_l0_p4_0.30 2644 0.063426            NaN
+    1      blend_soft_all_r1_l0_p4_0.40 2644 0.063307            NaN
+    1      blend_soft_all_r1_l0_p4_0.50 2644 0.063304            NaN
+    1              soft_all_r1_l0.25_p1 2644 0.064643            NaN
+    1   blend_soft_all_r1_l0.25_p1_0.20 2644 0.063754            NaN
+    1   blend_soft_all_r1_l0.25_p1_0.30 2644 0.063536            NaN
+    1   blend_soft_all_r1_l0.25_p1_0.40 2644 0.063412            NaN
+    1   blend_soft_all_r1_l0.25_p1_0.50 2644 0.063382            NaN
+    1              soft_all_r1_l0.25_p2 2644 0.064763            NaN
+    1   blend_soft_all_r1_l0.25_p2_0.20 2644 0.063661            NaN
+    1   blend_soft_all_r1_l0.25_p2_0.30 2644 0.063418            NaN
+    1   blend_soft_all_r1_l0.25_p2_0.40 2644 0.063284            NaN
+    1   blend_soft_all_r1_l0.25_p2_0.50 2644 0.063259            NaN
+    1              soft_all_r1_l0.25_p4 2644 0.065010            NaN
+    1   blend_soft_all_r1_l0.25_p4_0.20 2644 0.063660            NaN
+    1   blend_soft_all_r1_l0.25_p4_0.30 2644 0.063427            NaN
+    1   blend_soft_all_r1_l0.25_p4_0.40 2644 0.063308            NaN
+    1   blend_soft_all_r1_l0.25_p4_0.50 2644 0.063306            NaN
+    1                 soft_all_r1_l1_p1 2644 0.064866            NaN
+    1      blend_soft_all_r1_l1_p1_0.20 2644 0.063904            NaN
+    1      blend_soft_all_r1_l1_p1_0.30 2644 0.063741            NaN
+    1      blend_soft_all_r1_l1_p1_0.40 2644 0.063660            NaN
+    1      blend_soft_all_r1_l1_p1_0.50 2644 0.063660            NaN
+    1                 soft_all_r1_l1_p2 2644 0.064821            NaN
+    1      blend_soft_all_r1_l1_p2_0.20 2644 0.063766            NaN
+    1      blend_soft_all_r1_l1_p2_0.30 2644 0.063559            NaN
+    1      blend_soft_all_r1_l1_p2_0.40 2644 0.063448            NaN
+    1      blend_soft_all_r1_l1_p2_0.50 2644 0.063436            NaN
+    1                 soft_all_r1_l1_p4 2644 0.065021            NaN
+    1      blend_soft_all_r1_l1_p4_0.20 2644 0.063710            NaN
+    1      blend_soft_all_r1_l1_p4_0.30 2644 0.063493            NaN
+    1      blend_soft_all_r1_l1_p4_0.40 2644 0.063384            NaN
+    1      blend_soft_all_r1_l1_p4_0.50 2644 0.063386            NaN
+    1                soft_crop_r2_l0_p1 2644 0.064525            NaN
+    1     blend_soft_crop_r2_l0_p1_0.20 2644 0.063619            NaN
+    1     blend_soft_crop_r2_l0_p1_0.30 2644 0.063354            NaN
+    1     blend_soft_crop_r2_l0_p1_0.40 2644 0.063196            NaN
+    1     blend_soft_crop_r2_l0_p1_0.50 2644 0.063148            NaN
+    1                soft_crop_r2_l0_p2 2644 0.064569            NaN
+    1     blend_soft_crop_r2_l0_p2_0.20 2644 0.063592            NaN
+    1     blend_soft_crop_r2_l0_p2_0.30 2644 0.063320            NaN
+    1     blend_soft_crop_r2_l0_p2_0.40 2644 0.063160            NaN
+    1     blend_soft_crop_r2_l0_p2_0.50 2644 0.063114            NaN
+    1                soft_crop_r2_l0_p4 2644 0.064764            NaN
+    1     blend_soft_crop_r2_l0_p4_0.20 2644 0.063598            NaN
+    1     blend_soft_crop_r2_l0_p4_0.30 2644 0.063335            NaN
+    1     blend_soft_crop_r2_l0_p4_0.40 2644 0.063189            NaN
+    1     blend_soft_crop_r2_l0_p4_0.50 2644 0.063160            NaN
+    1             soft_crop_r2_l0.25_p1 2644 0.064506            NaN
+    1  blend_soft_crop_r2_l0.25_p1_0.20 2644 0.063706            NaN
+    1  blend_soft_crop_r2_l0.25_p1_0.30 2644 0.063468            NaN
+    1  blend_soft_crop_r2_l0.25_p1_0.40 2644 0.063326            NaN
+    1  blend_soft_crop_r2_l0.25_p1_0.50 2644 0.063281            NaN
+    1             soft_crop_r2_l0.25_p2 2644 0.064562            NaN
+    1  blend_soft_crop_r2_l0.25_p2_0.20 2644 0.063606            NaN
+    1  blend_soft_crop_r2_l0.25_p2_0.30 2644 0.063338            NaN
+    1  blend_soft_crop_r2_l0.25_p2_0.40 2644 0.063180            NaN
+    1  blend_soft_crop_r2_l0.25_p2_0.50 2644 0.063134            NaN
+    1             soft_crop_r2_l0.25_p4 2644 0.064775            NaN
+    1  blend_soft_crop_r2_l0.25_p4_0.20 2644 0.063602            NaN
+    1  blend_soft_crop_r2_l0.25_p4_0.30 2644 0.063341            NaN
+    1  blend_soft_crop_r2_l0.25_p4_0.40 2644 0.063196            NaN
+    1  blend_soft_crop_r2_l0.25_p4_0.50 2644 0.063168            NaN
+    1                soft_crop_r2_l1_p1 2644 0.064722            NaN
+    1     blend_soft_crop_r2_l1_p1_0.20 2644 0.063856            NaN
+    1     blend_soft_crop_r2_l1_p1_0.30 2644 0.063673            NaN
+    1     blend_soft_crop_r2_l1_p1_0.40 2644 0.063574            NaN
+    1     blend_soft_crop_r2_l1_p1_0.50 2644 0.063558            NaN
+    1                soft_crop_r2_l1_p2 2644 0.064612            NaN
+    1     blend_soft_crop_r2_l1_p2_0.20 2644 0.063707            NaN
+    1     blend_soft_crop_r2_l1_p2_0.30 2644 0.063473            NaN
+    1     blend_soft_crop_r2_l1_p2_0.40 2644 0.063338            NaN
+    1     blend_soft_crop_r2_l1_p2_0.50 2644 0.063303            NaN
+    1                soft_crop_r2_l1_p4 2644 0.064787            NaN
+    1     blend_soft_crop_r2_l1_p4_0.20 2644 0.063649            NaN
+    1     blend_soft_crop_r2_l1_p4_0.30 2644 0.063403            NaN
+    1     blend_soft_crop_r2_l1_p4_0.40 2644 0.063268            NaN
+    1     blend_soft_crop_r2_l1_p4_0.50 2644 0.063245            NaN
+    1                 soft_all_r2_l0_p1 2644 0.064510            NaN
+    1      blend_soft_all_r2_l0_p1_0.20 2644 0.063633            NaN
+    1      blend_soft_all_r2_l0_p1_0.30 2644 0.063372            NaN
+    1      blend_soft_all_r2_l0_p1_0.40 2644 0.063216            NaN
+    1      blend_soft_all_r2_l0_p1_0.50 2644 0.063167            NaN
+    1                 soft_all_r2_l0_p2 2644 0.064557            NaN
+    1      blend_soft_all_r2_l0_p2_0.20 2644 0.063607            NaN
+    1      blend_soft_all_r2_l0_p2_0.30 2644 0.063339            NaN
+    1      blend_soft_all_r2_l0_p2_0.40 2644 0.063181            NaN
+    1      blend_soft_all_r2_l0_p2_0.50 2644 0.063134            NaN
+    1                 soft_all_r2_l0_p4 2644 0.064755            NaN
+    1      blend_soft_all_r2_l0_p4_0.20 2644 0.063611            NaN
+    1      blend_soft_all_r2_l0_p4_0.30 2644 0.063352            NaN
+    1      blend_soft_all_r2_l0_p4_0.40 2644 0.063208            NaN
+    1      blend_soft_all_r2_l0_p4_0.50 2644 0.063180            NaN
+    1              soft_all_r2_l0.25_p1 2644 0.064518            NaN
+    1   blend_soft_all_r2_l0.25_p1_0.20 2644 0.063719            NaN
+    1   blend_soft_all_r2_l0.25_p1_0.30 2644 0.063485            NaN
+    1   blend_soft_all_r2_l0.25_p1_0.40 2644 0.063346            NaN
+    1   blend_soft_all_r2_l0.25_p1_0.50 2644 0.063303            NaN
+    1              soft_all_r2_l0.25_p2 2644 0.064556            NaN
+    1   blend_soft_all_r2_l0.25_p2_0.20 2644 0.063620            NaN
+    1   blend_soft_all_r2_l0.25_p2_0.30 2644 0.063357            NaN
+    1   blend_soft_all_r2_l0.25_p2_0.40 2644 0.063201            NaN
+    1   blend_soft_all_r2_l0.25_p2_0.50 2644 0.063155            NaN
+    1              soft_all_r2_l0.25_p4 2644 0.064766            NaN
+    1   blend_soft_all_r2_l0.25_p4_0.20 2644 0.063616            NaN
+    1   blend_soft_all_r2_l0.25_p4_0.30 2644 0.063359            NaN
+    1   blend_soft_all_r2_l0.25_p4_0.40 2644 0.063216            NaN
+    1   blend_soft_all_r2_l0.25_p4_0.50 2644 0.063189            NaN
+    1                 soft_all_r2_l1_p1 2644 0.064749            NaN
+    1      blend_soft_all_r2_l1_p1_0.20 2644 0.063865            NaN
+    1      blend_soft_all_r2_l1_p1_0.30 2644 0.063685            NaN
+    1      blend_soft_all_r2_l1_p1_0.40 2644 0.063589            NaN
+    1      blend_soft_all_r2_l1_p1_0.50 2644 0.063576            NaN
+    1                 soft_all_r2_l1_p2 2644 0.064643            NaN
+    1      blend_soft_all_r2_l1_p2_0.20 2644 0.063721            NaN
+    1      blend_soft_all_r2_l1_p2_0.30 2644 0.063493            NaN
+    1      blend_soft_all_r2_l1_p2_0.40 2644 0.063362            NaN
+    1      blend_soft_all_r2_l1_p2_0.50 2644 0.063331            NaN
+    1                 soft_all_r2_l1_p4 2644 0.064816            NaN
+    1      blend_soft_all_r2_l1_p4_0.20 2644 0.063666            NaN
+    1      blend_soft_all_r2_l1_p4_0.30 2644 0.063427            NaN
+    1      blend_soft_all_r2_l1_p4_0.40 2644 0.063297            NaN
+    1      blend_soft_all_r2_l1_p4_0.50 2644 0.063278            NaN
+    1                soft_crop_r4_l0_p1 2644 0.064819            NaN
+    1     blend_soft_crop_r4_l0_p1_0.20 2644 0.063678            NaN
+    1     blend_soft_crop_r4_l0_p1_0.30 2644 0.063442            NaN
+    1     blend_soft_crop_r4_l0_p1_0.40 2644 0.063315            NaN
+    1     blend_soft_crop_r4_l0_p1_0.50 2644 0.063296            NaN
+    1                soft_crop_r4_l0_p2 2644 0.064933            NaN
+    1     blend_soft_crop_r4_l0_p2_0.20 2644 0.063668            NaN
+    1     blend_soft_crop_r4_l0_p2_0.30 2644 0.063434            NaN
+    1     blend_soft_crop_r4_l0_p2_0.40 2644 0.063312            NaN
+    1     blend_soft_crop_r4_l0_p2_0.50 2644 0.063303            NaN
+    1                soft_crop_r4_l0_p4 2644 0.065161            NaN
+    1     blend_soft_crop_r4_l0_p4_0.20 2644 0.063680            NaN
+    1     blend_soft_crop_r4_l0_p4_0.30 2644 0.063458            NaN
+    1     blend_soft_crop_r4_l0_p4_0.40 2644 0.063353            NaN
+    1     blend_soft_crop_r4_l0_p4_0.50 2644 0.063365            NaN
+    1             soft_crop_r4_l0.25_p1 2644 0.064786            NaN
+    1  blend_soft_crop_r4_l0.25_p1_0.20 2644 0.063749            NaN
+    1  blend_soft_crop_r4_l0.25_p1_0.30 2644 0.063534            NaN
+    1  blend_soft_crop_r4_l0.25_p1_0.40 2644 0.063419            NaN
+    1  blend_soft_crop_r4_l0.25_p1_0.50 2644 0.063401            NaN
+    1             soft_crop_r4_l0.25_p2 2644 0.064920            NaN
+    1  blend_soft_crop_r4_l0.25_p2_0.20 2644 0.063679            NaN
+    1  blend_soft_crop_r4_l0.25_p2_0.30 2644 0.063447            NaN
+    1  blend_soft_crop_r4_l0.25_p2_0.40 2644 0.063327            NaN
+    1  blend_soft_crop_r4_l0.25_p2_0.50 2644 0.063317            NaN
+    1             soft_crop_r4_l0.25_p4 2644 0.065154            NaN
+    1  blend_soft_crop_r4_l0.25_p4_0.20 2644 0.063681            NaN
+    1  blend_soft_crop_r4_l0.25_p4_0.30 2644 0.063460            NaN
+    1  blend_soft_crop_r4_l0.25_p4_0.40 2644 0.063354            NaN
+    1  blend_soft_crop_r4_l0.25_p4_0.50 2644 0.063366            NaN
+    1                soft_crop_r4_l1_p1 2644 0.064919            NaN
+    1     blend_soft_crop_r4_l1_p1_0.20 2644 0.063873            NaN
+    1     blend_soft_crop_r4_l1_p1_0.30 2644 0.063704            NaN
+    1     blend_soft_crop_r4_l1_p1_0.40 2644 0.063620            NaN
+    1     blend_soft_crop_r4_l1_p1_0.50 2644 0.063623            NaN
+    1                soft_crop_r4_l1_p2 2644 0.064951            NaN
+    1     blend_soft_crop_r4_l1_p2_0.20 2644 0.063762            NaN
+    1     blend_soft_crop_r4_l1_p2_0.30 2644 0.063558            NaN
+    1     blend_soft_crop_r4_l1_p2_0.40 2644 0.063455            NaN
+    1     blend_soft_crop_r4_l1_p2_0.50 2644 0.063453            NaN
+    1                soft_crop_r4_l1_p4 2644 0.065172            NaN
+    1     blend_soft_crop_r4_l1_p4_0.20 2644 0.063725            NaN
+    1     blend_soft_crop_r4_l1_p4_0.30 2644 0.063518            NaN
+    1     blend_soft_crop_r4_l1_p4_0.40 2644 0.063422            NaN
+    1     blend_soft_crop_r4_l1_p4_0.50 2644 0.063438            NaN
+    1                 soft_all_r4_l0_p1 2644 0.065068            NaN
+    1      blend_soft_all_r4_l0_p1_0.20 2644 0.063742            NaN
+    1      blend_soft_all_r4_l0_p1_0.30 2644 0.063536            NaN
+    1      blend_soft_all_r4_l0_p1_0.40 2644 0.063437            NaN
+    1      blend_soft_all_r4_l0_p1_0.50 2644 0.063445            NaN
+    1                 soft_all_r4_l0_p2 2644 0.065176            NaN
+    1      blend_soft_all_r4_l0_p2_0.20 2644 0.063726            NaN
+    1      blend_soft_all_r4_l0_p2_0.30 2644 0.063520            NaN
+    1      blend_soft_all_r4_l0_p2_0.40 2644 0.063424            NaN
+    1      blend_soft_all_r4_l0_p2_0.50 2644 0.063441            NaN
+    1                 soft_all_r4_l0_p4 2644 0.065409            NaN
+    1      blend_soft_all_r4_l0_p4_0.20 2644 0.063737            NaN
+    1      blend_soft_all_r4_l0_p4_0.30 2644 0.063543            NaN
+    1      blend_soft_all_r4_l0_p4_0.40 2644 0.063465            NaN
+    1      blend_soft_all_r4_l0_p4_0.50 2644 0.063503            NaN
+    1              soft_all_r4_l0.25_p1 2644 0.065009            NaN
+    1   blend_soft_all_r4_l0.25_p1_0.20 2644 0.063804            NaN
+    1   blend_soft_all_r4_l0.25_p1_0.30 2644 0.063615            NaN
+    1   blend_soft_all_r4_l0.25_p1_0.40 2644 0.063524            NaN
+    1   blend_soft_all_r4_l0.25_p1_0.50 2644 0.063531            NaN
+    1              soft_all_r4_l0.25_p2 2644 0.065153            NaN
+    1   blend_soft_all_r4_l0.25_p2_0.20 2644 0.063735            NaN
+    1   blend_soft_all_r4_l0.25_p2_0.30 2644 0.063531            NaN
+    1   blend_soft_all_r4_l0.25_p2_0.40 2644 0.063436            NaN
+    1   blend_soft_all_r4_l0.25_p2_0.50 2644 0.063451            NaN
+    1              soft_all_r4_l0.25_p4 2644 0.065390            NaN
+    1   blend_soft_all_r4_l0.25_p4_0.20 2644 0.063737            NaN
+    1   blend_soft_all_r4_l0.25_p4_0.30 2644 0.063543            NaN
+    1   blend_soft_all_r4_l0.25_p4_0.40 2644 0.063463            NaN
+    1   blend_soft_all_r4_l0.25_p4_0.50 2644 0.063500            NaN
+    1                 soft_all_r4_l1_p1 2644 0.065089            NaN
+    1      blend_soft_all_r4_l1_p1_0.20 2644 0.063912            NaN
+    1      blend_soft_all_r4_l1_p1_0.30 2644 0.063760            NaN
+    1      blend_soft_all_r4_l1_p1_0.40 2644 0.063695            NaN
+    1      blend_soft_all_r4_l1_p1_0.50 2644 0.063715            NaN
+    1                 soft_all_r4_l1_p2 2644 0.065148            NaN
+    1      blend_soft_all_r4_l1_p2_0.20 2644 0.063810            NaN
+    1      blend_soft_all_r4_l1_p2_0.30 2644 0.063629            NaN
+    1      blend_soft_all_r4_l1_p2_0.40 2644 0.063548            NaN
+    1      blend_soft_all_r4_l1_p2_0.50 2644 0.063567            NaN
+    1                 soft_all_r4_l1_p4 2644 0.065390            NaN
+    1      blend_soft_all_r4_l1_p4_0.20 2644 0.063777            NaN
+    1      blend_soft_all_r4_l1_p4_0.30 2644 0.063595            NaN
+    1      blend_soft_all_r4_l1_p4_0.40 2644 0.063523            NaN
+    1      blend_soft_all_r4_l1_p4_0.50 2644 0.063562            NaN
+    1                soft_crop_r8_l0_p1 2644 0.064692            NaN
+    1     blend_soft_crop_r8_l0_p1_0.20 2644 0.063655            NaN
+    1     blend_soft_crop_r8_l0_p1_0.30 2644 0.063407            NaN
+    1     blend_soft_crop_r8_l0_p1_0.40 2644 0.063267            NaN
+    1     blend_soft_crop_r8_l0_p1_0.50 2644 0.063235            NaN
+    1                soft_crop_r8_l0_p2 2644 0.064791            NaN
+    1     blend_soft_crop_r8_l0_p2_0.20 2644 0.063642            NaN
+    1     blend_soft_crop_r8_l0_p2_0.30 2644 0.063393            NaN
+    1     blend_soft_crop_r8_l0_p2_0.40 2644 0.063257            NaN
+    1     blend_soft_crop_r8_l0_p2_0.50 2644 0.063234            NaN
+    1                soft_crop_r8_l0_p4 2644 0.064974            NaN
+    1     blend_soft_crop_r8_l0_p4_0.20 2644 0.063647            NaN
+    1     blend_soft_crop_r8_l0_p4_0.30 2644 0.063407            NaN
+    1     blend_soft_crop_r8_l0_p4_0.40 2644 0.063284            NaN
+    1     blend_soft_crop_r8_l0_p4_0.50 2644 0.063277            NaN
+    1             soft_crop_r8_l0.25_p1 2644 0.064659            NaN
+    1  blend_soft_crop_r8_l0.25_p1_0.20 2644 0.063728            NaN
+    1  blend_soft_crop_r8_l0.25_p1_0.30 2644 0.063502            NaN
+    1  blend_soft_crop_r8_l0.25_p1_0.40 2644 0.063374            NaN
+    1  blend_soft_crop_r8_l0.25_p1_0.50 2644 0.063344            NaN
+    1             soft_crop_r8_l0.25_p2 2644 0.064784            NaN
+    1  blend_soft_crop_r8_l0.25_p2_0.20 2644 0.063654            NaN
+    1  blend_soft_crop_r8_l0.25_p2_0.30 2644 0.063409            NaN
+    1  blend_soft_crop_r8_l0.25_p2_0.40 2644 0.063275            NaN
+    1  blend_soft_crop_r8_l0.25_p2_0.50 2644 0.063251            NaN
+    1             soft_crop_r8_l0.25_p4 2644 0.064979            NaN
+    1  blend_soft_crop_r8_l0.25_p4_0.20 2644 0.063650            NaN
+    1  blend_soft_crop_r8_l0.25_p4_0.30 2644 0.063412            NaN
+    1  blend_soft_crop_r8_l0.25_p4_0.40 2644 0.063290            NaN
+    1  blend_soft_crop_r8_l0.25_p4_0.50 2644 0.063284            NaN
+    1                soft_crop_r8_l1_p1 2644 0.064814            NaN
+    1     blend_soft_crop_r8_l1_p1_0.20 2644 0.063856            NaN
+    1     blend_soft_crop_r8_l1_p1_0.30 2644 0.063677            NaN
+    1     blend_soft_crop_r8_l1_p1_0.40 2644 0.063583            NaN
+    1     blend_soft_crop_r8_l1_p1_0.50 2644 0.063575            NaN
+    1                soft_crop_r8_l1_p2 2644 0.064833            NaN
+    1     blend_soft_crop_r8_l1_p2_0.20 2644 0.063742            NaN
+    1     blend_soft_crop_r8_l1_p2_0.30 2644 0.063528            NaN
+    1     blend_soft_crop_r8_l1_p2_0.40 2644 0.063413            NaN
+    1     blend_soft_crop_r8_l1_p2_0.50 2644 0.063400            NaN
+    1                soft_crop_r8_l1_p4 2644 0.065013            NaN
+    1     blend_soft_crop_r8_l1_p4_0.20 2644 0.063697            NaN
+    1     blend_soft_crop_r8_l1_p4_0.30 2644 0.063475            NaN
+    1     blend_soft_crop_r8_l1_p4_0.40 2644 0.063364            NaN
+    1     blend_soft_crop_r8_l1_p4_0.50 2644 0.063364            NaN
+    1                 soft_all_r8_l0_p1 2644 0.065780            NaN
+    1      blend_soft_all_r8_l0_p1_0.20 2644 0.063947            NaN
+    1      blend_soft_all_r8_l0_p1_0.30 2644 0.063834            NaN
+    1      blend_soft_all_r8_l0_p1_0.40 2644 0.063819            NaN
+    1      blend_soft_all_r8_l0_p1_0.50 2644 0.063904            NaN
+    1                 soft_all_r8_l0_p2 2644 0.065933            NaN
+    1      blend_soft_all_r8_l0_p2_0.20 2644 0.063929            NaN
+    1      blend_soft_all_r8_l0_p2_0.30 2644 0.063816            NaN
+    1      blend_soft_all_r8_l0_p2_0.40 2644 0.063808            NaN
+    1      blend_soft_all_r8_l0_p2_0.50 2644 0.063905            NaN
+    1                 soft_all_r8_l0_p4 2644 0.066202            NaN
+    1      blend_soft_all_r8_l0_p4_0.20 2644 0.063928            NaN
+    1      blend_soft_all_r8_l0_p4_0.30 2644 0.063825            NaN
+    1      blend_soft_all_r8_l0_p4_0.40 2644 0.063834            NaN
+    1      blend_soft_all_r8_l0_p4_0.50 2644 0.063955            NaN
+    1              soft_all_r8_l0.25_p1 2644 0.065675            NaN
+    1   blend_soft_all_r8_l0.25_p1_0.20 2644 0.063972            NaN
+    1   blend_soft_all_r8_l0.25_p1_0.30 2644 0.063862            NaN
+    1   blend_soft_all_r8_l0.25_p1_0.40 2644 0.063846            NaN
+    1   blend_soft_all_r8_l0.25_p1_0.50 2644 0.063922            NaN
+    1              soft_all_r8_l0.25_p2 2644 0.065899            NaN
+    1   blend_soft_all_r8_l0.25_p2_0.20 2644 0.063938            NaN
+    1   blend_soft_all_r8_l0.25_p2_0.30 2644 0.063826            NaN
+    1   blend_soft_all_r8_l0.25_p2_0.40 2644 0.063818            NaN
+    1   blend_soft_all_r8_l0.25_p2_0.50 2644 0.063912            NaN
+    1              soft_all_r8_l0.25_p4 2644 0.066192            NaN
+    1   blend_soft_all_r8_l0.25_p4_0.20 2644 0.063941            NaN
+    1   blend_soft_all_r8_l0.25_p4_0.30 2644 0.063842            NaN
+    1   blend_soft_all_r8_l0.25_p4_0.40 2644 0.063853            NaN
+    1   blend_soft_all_r8_l0.25_p4_0.50 2644 0.063974            NaN
+    1                 soft_all_r8_l1_p1 2644 0.065594            NaN
+    1      blend_soft_all_r8_l1_p1_0.20 2644 0.064019            NaN
+    1      blend_soft_all_r8_l1_p1_0.30 2644 0.063921            NaN
+    1      blend_soft_all_r8_l1_p1_0.40 2644 0.063908            NaN
+    1      blend_soft_all_r8_l1_p1_0.50 2644 0.063980            NaN
+    1                 soft_all_r8_l1_p2 2644 0.065822            NaN
+    1      blend_soft_all_r8_l1_p2_0.20 2644 0.063971            NaN
+    1      blend_soft_all_r8_l1_p2_0.30 2644 0.063867            NaN
+    1      blend_soft_all_r8_l1_p2_0.40 2644 0.063860            NaN
+    1      blend_soft_all_r8_l1_p2_0.50 2644 0.063949            NaN
+    1                 soft_all_r8_l1_p4 2644 0.066193            NaN
+    1      blend_soft_all_r8_l1_p4_0.20 2644 0.063973            NaN
+    1      blend_soft_all_r8_l1_p4_0.30 2644 0.063884            NaN
+    1      blend_soft_all_r8_l1_p4_0.40 2644 0.063901            NaN
+    1      blend_soft_all_r8_l1_p4_0.50 2644 0.064024            NaN
+    1               soft_crop_r16_l0_p1 2644 0.065513            NaN
+    1    blend_soft_crop_r16_l0_p1_0.20 2644 0.063869            NaN
+    1    blend_soft_crop_r16_l0_p1_0.30 2644 0.063720            NaN
+    1    blend_soft_crop_r16_l0_p1_0.40 2644 0.063673            NaN
+    1    blend_soft_crop_r16_l0_p1_0.50 2644 0.063729            NaN
+    1               soft_crop_r16_l0_p2 2644 0.065867            NaN
+    1    blend_soft_crop_r16_l0_p2_0.20 2644 0.063903            NaN
+    1    blend_soft_crop_r16_l0_p2_0.30 2644 0.063779            NaN
+    1    blend_soft_crop_r16_l0_p2_0.40 2644 0.063761            NaN
+    1    blend_soft_crop_r16_l0_p2_0.50 2644 0.063851            NaN
+    1               soft_crop_r16_l0_p4 2644 0.066297            NaN
+    1    blend_soft_crop_r16_l0_p4_0.20 2644 0.063947            NaN
+    1    blend_soft_crop_r16_l0_p4_0.30 2644 0.063854            NaN
+    1    blend_soft_crop_r16_l0_p4_0.40 2644 0.063873            NaN
+    1    blend_soft_crop_r16_l0_p4_0.50 2644 0.064004            NaN
+    1            soft_crop_r16_l0.25_p1 2644 0.065432            NaN
+    1 blend_soft_crop_r16_l0.25_p1_0.20 2644 0.063903            NaN
+    1 blend_soft_crop_r16_l0.25_p1_0.30 2644 0.063762            NaN
+    1 blend_soft_crop_r16_l0.25_p1_0.40 2644 0.063717            NaN
+    1 blend_soft_crop_r16_l0.25_p1_0.50 2644 0.063767            NaN
+    1            soft_crop_r16_l0.25_p2 2644 0.065832            NaN
+    1 blend_soft_crop_r16_l0.25_p2_0.20 2644 0.063907            NaN
+    1 blend_soft_crop_r16_l0.25_p2_0.30 2644 0.063782            NaN
+    1 blend_soft_crop_r16_l0.25_p2_0.40 2644 0.063763            NaN
+    1 blend_soft_crop_r16_l0.25_p2_0.50 2644 0.063850            NaN
+    1            soft_crop_r16_l0.25_p4 2644 0.066259            NaN
+    1 blend_soft_crop_r16_l0.25_p4_0.20 2644 0.063946            NaN
+    1 blend_soft_crop_r16_l0.25_p4_0.30 2644 0.063851            NaN
+    1 blend_soft_crop_r16_l0.25_p4_0.40 2644 0.063867            NaN
+    1 blend_soft_crop_r16_l0.25_p4_0.50 2644 0.063995            NaN
+    1               soft_crop_r16_l1_p1 2644 0.065398            NaN
+    1    blend_soft_crop_r16_l1_p1_0.20 2644 0.063967            NaN
+    1    blend_soft_crop_r16_l1_p1_0.30 2644 0.063845            NaN
+    1    blend_soft_crop_r16_l1_p1_0.40 2644 0.063810            NaN
+    1    blend_soft_crop_r16_l1_p1_0.50 2644 0.063861            NaN
+    1               soft_crop_r16_l1_p2 2644 0.065744            NaN
+    1    blend_soft_crop_r16_l1_p2_0.20 2644 0.063937            NaN
+    1    blend_soft_crop_r16_l1_p2_0.30 2644 0.063819            NaN
+    1    blend_soft_crop_r16_l1_p2_0.40 2644 0.063800            NaN
+    1    blend_soft_crop_r16_l1_p2_0.50 2644 0.063881            NaN
+    1               soft_crop_r16_l1_p4 2644 0.066148            NaN
+    1    blend_soft_crop_r16_l1_p4_0.20 2644 0.063951            NaN
+    1    blend_soft_crop_r16_l1_p4_0.30 2644 0.063853            NaN
+    1    blend_soft_crop_r16_l1_p4_0.40 2644 0.063863            NaN
+    1    blend_soft_crop_r16_l1_p4_0.50 2644 0.063981            NaN
+    1                soft_all_r16_l0_p1 2644 0.066345            NaN
+    1     blend_soft_all_r16_l0_p1_0.20 2644 0.064133            NaN
+    1     blend_soft_all_r16_l0_p1_0.30 2644 0.064099            NaN
+    1     blend_soft_all_r16_l0_p1_0.40 2644 0.064156            NaN
+    1     blend_soft_all_r16_l0_p1_0.50 2644 0.064302            NaN
+    1                soft_all_r16_l0_p2 2644 0.066697            NaN
+    1     blend_soft_all_r16_l0_p2_0.20 2644 0.064164            NaN
+    1     blend_soft_all_r16_l0_p2_0.30 2644 0.064154            NaN
+    1     blend_soft_all_r16_l0_p2_0.40 2644 0.064239            NaN
+    1     blend_soft_all_r16_l0_p2_0.50 2644 0.064419            NaN
+    1                soft_all_r16_l0_p4 2644 0.067102            NaN
+    1     blend_soft_all_r16_l0_p4_0.20 2644 0.064191            NaN
+    1     blend_soft_all_r16_l0_p4_0.30 2644 0.064205            NaN
+    1     blend_soft_all_r16_l0_p4_0.40 2644 0.064322            NaN
+    1     blend_soft_all_r16_l0_p4_0.50 2644 0.064540            NaN
+    1             soft_all_r16_l0.25_p1 2644 0.066271            NaN
+    1  blend_soft_all_r16_l0.25_p1_0.20 2644 0.064138            NaN
+    1  blend_soft_all_r16_l0.25_p1_0.30 2644 0.064103            NaN
+    1  blend_soft_all_r16_l0.25_p1_0.40 2644 0.064156            NaN
+    1  blend_soft_all_r16_l0.25_p1_0.50 2644 0.064296            NaN
+    1             soft_all_r16_l0.25_p2 2644 0.066647            NaN
+    1  blend_soft_all_r16_l0.25_p2_0.20 2644 0.064160            NaN
+    1  blend_soft_all_r16_l0.25_p2_0.30 2644 0.064147            NaN
+    1  blend_soft_all_r16_l0.25_p2_0.40 2644 0.064228            NaN
+    1  blend_soft_all_r16_l0.25_p2_0.50 2644 0.064403            NaN
+    1             soft_all_r16_l0.25_p4 2644 0.067034            NaN
+    1  blend_soft_all_r16_l0.25_p4_0.20 2644 0.064183            NaN
+    1  blend_soft_all_r16_l0.25_p4_0.30 2644 0.064192            NaN
+    1  blend_soft_all_r16_l0.25_p4_0.40 2644 0.064302            NaN
+    1  blend_soft_all_r16_l0.25_p4_0.50 2644 0.064514            NaN
+    1                soft_all_r16_l1_p1 2644 0.066163            NaN
+    1     blend_soft_all_r16_l1_p1_0.20 2644 0.064149            NaN
+    1     blend_soft_all_r16_l1_p1_0.30 2644 0.064114            NaN
+    1     blend_soft_all_r16_l1_p1_0.40 2644 0.064162            NaN
+    1     blend_soft_all_r16_l1_p1_0.50 2644 0.064293            NaN
+    1                soft_all_r16_l1_p2 2644 0.066522            NaN
+    1     blend_soft_all_r16_l1_p2_0.20 2644 0.064153            NaN
+    1     blend_soft_all_r16_l1_p2_0.30 2644 0.064133            NaN
+    1     blend_soft_all_r16_l1_p2_0.40 2644 0.064205            NaN
+    1     blend_soft_all_r16_l1_p2_0.50 2644 0.064369            NaN
+    1                soft_all_r16_l1_p4 2644 0.066894            NaN
+    1     blend_soft_all_r16_l1_p4_0.20 2644 0.064166            NaN
+    1     blend_soft_all_r16_l1_p4_0.30 2644 0.064164            NaN
+    1     blend_soft_all_r16_l1_p4_0.40 2644 0.064262            NaN
+    1     blend_soft_all_r16_l1_p4_0.50 2644 0.064460            NaN
+    1               soft_crop_r32_l0_p1 2644 0.065333            NaN
+    1    blend_soft_crop_r32_l0_p1_0.20 2644 0.063846            NaN
+    1    blend_soft_crop_r32_l0_p1_0.30 2644 0.063683            NaN
+    1    blend_soft_crop_r32_l0_p1_0.40 2644 0.063621            NaN
+    1    blend_soft_crop_r32_l0_p1_0.50 2644 0.063659            NaN
+    1               soft_crop_r32_l0_p2 2644 0.065567            NaN
+    1    blend_soft_crop_r32_l0_p2_0.20 2644 0.063856            NaN
+    1    blend_soft_crop_r32_l0_p2_0.30 2644 0.063705            NaN
+    1    blend_soft_crop_r32_l0_p2_0.40 2644 0.063660            NaN
+    1    blend_soft_crop_r32_l0_p2_0.50 2644 0.063719            NaN
+    1               soft_crop_r32_l0_p4 2644 0.065854            NaN
+    1    blend_soft_crop_r32_l0_p4_0.20 2644 0.063866            NaN
+    1    blend_soft_crop_r32_l0_p4_0.30 2644 0.063730            NaN
+    1    blend_soft_crop_r32_l0_p4_0.40 2644 0.063705            NaN
+    1    blend_soft_crop_r32_l0_p4_0.50 2644 0.063791            NaN
+    1            soft_crop_r32_l0.25_p1 2644 0.065263            NaN
+    1 blend_soft_crop_r32_l0.25_p1_0.20 2644 0.063871            NaN
+    1 blend_soft_crop_r32_l0.25_p1_0.30 2644 0.063713            NaN
+    1 blend_soft_crop_r32_l0.25_p1_0.40 2644 0.063651            NaN
+    1 blend_soft_crop_r32_l0.25_p1_0.50 2644 0.063684            NaN
+    1            soft_crop_r32_l0.25_p2 2644 0.065537            NaN
+    1 blend_soft_crop_r32_l0.25_p2_0.20 2644 0.063858            NaN
+    1 blend_soft_crop_r32_l0.25_p2_0.30 2644 0.063708            NaN
+    1 blend_soft_crop_r32_l0.25_p2_0.40 2644 0.063661            NaN
+    1 blend_soft_crop_r32_l0.25_p2_0.50 2644 0.063718            NaN
+    1            soft_crop_r32_l0.25_p4 2644 0.065833            NaN
+    1 blend_soft_crop_r32_l0.25_p4_0.20 2644 0.063868            NaN
+    1 blend_soft_crop_r32_l0.25_p4_0.30 2644 0.063731            NaN
+    1 blend_soft_crop_r32_l0.25_p4_0.40 2644 0.063705            NaN
+    1 blend_soft_crop_r32_l0.25_p4_0.50 2644 0.063789            NaN
+    1               soft_crop_r32_l1_p1 2644 0.065224            NaN
+    1    blend_soft_crop_r32_l1_p1_0.20 2644 0.063925            NaN
+    1    blend_soft_crop_r32_l1_p1_0.30 2644 0.063784            NaN
+    1    blend_soft_crop_r32_l1_p1_0.40 2644 0.063729            NaN
+    1    blend_soft_crop_r32_l1_p1_0.50 2644 0.063763            NaN
+    1               soft_crop_r32_l1_p2 2644 0.065444            NaN
+    1    blend_soft_crop_r32_l1_p2_0.20 2644 0.063875            NaN
+    1    blend_soft_crop_r32_l1_p2_0.30 2644 0.063726            NaN
+    1    blend_soft_crop_r32_l1_p2_0.40 2644 0.063676            NaN
+    1    blend_soft_crop_r32_l1_p2_0.50 2644 0.063726            NaN
+    1               soft_crop_r32_l1_p4 2644 0.065768            NaN
+    1    blend_soft_crop_r32_l1_p4_0.20 2644 0.063872            NaN
+    1    blend_soft_crop_r32_l1_p4_0.30 2644 0.063734            NaN
+    1    blend_soft_crop_r32_l1_p4_0.40 2644 0.063705            NaN
+    1    blend_soft_crop_r32_l1_p4_0.50 2644 0.063783            NaN
+    1                soft_all_r32_l0_p1 2644 0.066391            NaN
+    1     blend_soft_all_r32_l0_p1_0.20 2644 0.064179            NaN
+    1     blend_soft_all_r32_l0_p1_0.30 2644 0.064162            NaN
+    1     blend_soft_all_r32_l0_p1_0.40 2644 0.064230            NaN
+    1     blend_soft_all_r32_l0_p1_0.50 2644 0.064384            NaN
+    1                soft_all_r32_l0_p2 2644 0.066640            NaN
+    1     blend_soft_all_r32_l0_p2_0.20 2644 0.064176            NaN
+    1     blend_soft_all_r32_l0_p2_0.30 2644 0.064167            NaN
+    1     blend_soft_all_r32_l0_p2_0.40 2644 0.064251            NaN
+    1     blend_soft_all_r32_l0_p2_0.50 2644 0.064426            NaN
+    1                soft_all_r32_l0_p4 2644 0.067127            NaN
+    1     blend_soft_all_r32_l0_p4_0.20 2644 0.064195            NaN
+    1     blend_soft_all_r32_l0_p4_0.30 2644 0.064211            NaN
+    1     blend_soft_all_r32_l0_p4_0.40 2644 0.064330            NaN
+    1     blend_soft_all_r32_l0_p4_0.50 2644 0.064551            NaN
+    1             soft_all_r32_l0.25_p1 2644 0.066361            NaN
+    1  blend_soft_all_r32_l0.25_p1_0.20 2644 0.064186            NaN
+    1  blend_soft_all_r32_l0.25_p1_0.30 2644 0.064170            NaN
+    1  blend_soft_all_r32_l0.25_p1_0.40 2644 0.064237            NaN
+    1  blend_soft_all_r32_l0.25_p1_0.50 2644 0.064388            NaN
+    1             soft_all_r32_l0.25_p2 2644 0.066609            NaN
+    1  blend_soft_all_r32_l0.25_p2_0.20 2644 0.064174            NaN
+    1  blend_soft_all_r32_l0.25_p2_0.30 2644 0.064163            NaN
+    1  blend_soft_all_r32_l0.25_p2_0.40 2644 0.064245            NaN
+    1  blend_soft_all_r32_l0.25_p2_0.50 2644 0.064417            NaN
+    1             soft_all_r32_l0.25_p4 2644 0.067087            NaN
+    1  blend_soft_all_r32_l0.25_p4_0.20 2644 0.064190            NaN
+    1  blend_soft_all_r32_l0.25_p4_0.30 2644 0.064204            NaN
+    1  blend_soft_all_r32_l0.25_p4_0.40 2644 0.064319            NaN
+    1  blend_soft_all_r32_l0.25_p4_0.50 2644 0.064536            NaN
+    1                soft_all_r32_l1_p1 2644 0.066310            NaN
+    1     blend_soft_all_r32_l1_p1_0.20 2644 0.064196            NaN
+    1     blend_soft_all_r32_l1_p1_0.30 2644 0.064181            NaN
+    1     blend_soft_all_r32_l1_p1_0.40 2644 0.064247            NaN
+    1     blend_soft_all_r32_l1_p1_0.50 2644 0.064394            NaN
+    1                soft_all_r32_l1_p2 2644 0.066538            NaN
+    1     blend_soft_all_r32_l1_p2_0.20 2644 0.064173            NaN
+    1     blend_soft_all_r32_l1_p2_0.30 2644 0.064160            NaN
+    1     blend_soft_all_r32_l1_p2_0.40 2644 0.064237            NaN
+    1     blend_soft_all_r32_l1_p2_0.50 2644 0.064403            NaN
+    1                soft_all_r32_l1_p4 2644 0.066993            NaN
+    1     blend_soft_all_r32_l1_p4_0.20 2644 0.064182            NaN
+    1     blend_soft_all_r32_l1_p4_0.30 2644 0.064189            NaN
+    1     blend_soft_all_r32_l1_p4_0.40 2644 0.064297            NaN
+    1     blend_soft_all_r32_l1_p4_0.50 2644 0.064504            NaN
+    1                          baseline 2644 0.064468            all
+    1                          baseline 1888 0.068017        history
+    1                          baseline  756 0.054607           2025
+    1                          baseline 2267 0.066470            new
+    1                          baseline  377 0.050789         shared
+    1                          baseline 1706 0.058551           near
+    1                          baseline  441 0.076887            mid
+    1                          baseline  497 0.071394    far_or_none
+    1                          baseline 1181 0.072000      source_s2
+    1                          baseline 1002 0.054415 source_landsat
+    1                          baseline  461 0.064192   source_modis
+    1              blend_post_mode_0.40 2644 0.064422            all
+    1              blend_post_mode_0.40 1888 0.067840        history
+    1              blend_post_mode_0.40  756 0.054964           2025
+    1              blend_post_mode_0.40 2267 0.066372            new
+    1              blend_post_mode_0.40  377 0.051149         shared
+    1              blend_post_mode_0.40 1706 0.058564           near
+    1              blend_post_mode_0.40  441 0.076505            mid
+    1              blend_post_mode_0.40  497 0.071501    far_or_none
+    1              blend_post_mode_0.40 1181 0.071856      source_s2
+    1              blend_post_mode_0.40 1002 0.054987 source_landsat
+    1              blend_post_mode_0.40  461 0.063273   source_modis
+    1       blend_crop_hier_n1_p67_0.40 2644 0.063107            all
+    1       blend_crop_hier_n1_p67_0.40 1888 0.066669        history
+    1       blend_crop_hier_n1_p67_0.40  756 0.053180           2025
+    1       blend_crop_hier_n1_p67_0.40 2267 0.065125            new
+    1       blend_crop_hier_n1_p67_0.40  377 0.049253         shared
+    1       blend_crop_hier_n1_p67_0.40 1706 0.056593           near
+    1       blend_crop_hier_n1_p67_0.40  441 0.075853            mid
+    1       blend_crop_hier_n1_p67_0.40  497 0.071324    far_or_none
+    1       blend_crop_hier_n1_p67_0.40 1181 0.071138      source_s2
+    1       blend_crop_hier_n1_p67_0.40 1002 0.052807 source_landsat
+    1       blend_crop_hier_n1_p67_0.40  461 0.061769   source_modis
+    1      blend_soft_all_r1_l0_p4_0.40 2644 0.063307            all
+    1      blend_soft_all_r1_l0_p4_0.40 1888 0.066847        history
+    1      blend_soft_all_r1_l0_p4_0.40  756 0.053452           2025
+    1      blend_soft_all_r1_l0_p4_0.40 2267 0.065339            new
+    1      blend_soft_all_r1_l0_p4_0.40  377 0.049353         shared
+    1      blend_soft_all_r1_l0_p4_0.40 1706 0.056799           near
+    1      blend_soft_all_r1_l0_p4_0.40  441 0.076247            mid
+    1      blend_soft_all_r1_l0_p4_0.40  497 0.071333    far_or_none
+    1      blend_soft_all_r1_l0_p4_0.40 1181 0.070980      source_s2
+    1      blend_soft_all_r1_l0_p4_0.40 1002 0.053536 source_landsat
+    1      blend_soft_all_r1_l0_p4_0.40  461 0.062044   source_modis
+    1     blend_soft_crop_r1_l0_p4_0.40 2644 0.063282            all
+    1     blend_soft_crop_r1_l0_p4_0.40 1888 0.066847        history
+    1     blend_soft_crop_r1_l0_p4_0.40  756 0.053348           2025
+    1     blend_soft_crop_r1_l0_p4_0.40 2267 0.065330            new
+    1     blend_soft_crop_r1_l0_p4_0.40  377 0.049200         shared
+    1     blend_soft_crop_r1_l0_p4_0.40 1706 0.056759           near
+    1     blend_soft_crop_r1_l0_p4_0.40  441 0.076238            mid
+    1     blend_soft_crop_r1_l0_p4_0.40  497 0.071333    far_or_none
+    1     blend_soft_crop_r1_l0_p4_0.40 1181 0.070949      source_s2
+    1     blend_soft_crop_r1_l0_p4_0.40 1002 0.053524 source_landsat
+    1     blend_soft_crop_r1_l0_p4_0.40  461 0.062008   source_modis
+    1      blend_soft_all_r2_l0_p4_0.40 2644 0.063208            all
+    1      blend_soft_all_r2_l0_p4_0.40 1888 0.066746        history
+    1      blend_soft_all_r2_l0_p4_0.40  756 0.053357           2025
+    1      blend_soft_all_r2_l0_p4_0.40 2267 0.065223            new
+    1      blend_soft_all_r2_l0_p4_0.40  377 0.049392         shared
+    1      blend_soft_all_r2_l0_p4_0.40 1706 0.056639           near
+    1      blend_soft_all_r2_l0_p4_0.40  441 0.076216            mid
+    1      blend_soft_all_r2_l0_p4_0.40  497 0.071333    far_or_none
+    1      blend_soft_all_r2_l0_p4_0.40 1181 0.070958      source_s2
+    1      blend_soft_all_r2_l0_p4_0.40 1002 0.053158 source_landsat
+    1      blend_soft_all_r2_l0_p4_0.40  461 0.062237   source_modis
+    1     blend_soft_all_r32_l0_p4_0.40 2644 0.064330            all
+    1     blend_soft_all_r32_l0_p4_0.40 1888 0.067834        history
+    1     blend_soft_all_r32_l0_p4_0.40  756 0.054607           2025
+    1     blend_soft_all_r32_l0_p4_0.40 2267 0.066326            new
+    1     blend_soft_all_r32_l0_p4_0.40  377 0.050697         shared
+    1     blend_soft_all_r32_l0_p4_0.40 1706 0.058464           near
+    1     blend_soft_all_r32_l0_p4_0.40  441 0.076526            mid
+    1     blend_soft_all_r32_l0_p4_0.40  497 0.071319    far_or_none
+    1     blend_soft_all_r32_l0_p4_0.40 1181 0.071898      source_s2
+    1     blend_soft_all_r32_l0_p4_0.40 1002 0.054562 source_landsat
+    1     blend_soft_all_r32_l0_p4_0.40  461 0.063414   source_modis
+70404                          baseline 2644 0.069475            NaN
+70404                         post_mode 2644 0.072044            NaN
+70404              blend_post_mode_0.20 2644 0.069176            NaN
+70404              blend_post_mode_0.30 2644 0.069181            NaN
+70404              blend_post_mode_0.40 2644 0.069289            NaN
+70404              blend_post_mode_0.50 2644 0.069499            NaN
+70404                  crop_hier_n1_p00 2644 0.070378            NaN
+70404       blend_crop_hier_n1_p00_0.20 2644 0.068693            NaN
+70404       blend_crop_hier_n1_p00_0.30 2644 0.068481            NaN
+70404       blend_crop_hier_n1_p00_0.40 2644 0.068391            NaN
+70404       blend_crop_hier_n1_p00_0.50 2644 0.068422            NaN
+70404                  crop_hier_n1_p67 2644 0.070311            NaN
+70404       blend_crop_hier_n1_p67_0.20 2644 0.068682            NaN
+70404       blend_crop_hier_n1_p67_0.30 2644 0.068464            NaN
+70404       blend_crop_hier_n1_p67_0.40 2644 0.068368            NaN
+70404       blend_crop_hier_n1_p67_0.50 2644 0.068392            NaN
+70404                  crop_hier_n1_p80 2644 0.070277            NaN
+70404       blend_crop_hier_n1_p80_0.20 2644 0.068680            NaN
+70404       blend_crop_hier_n1_p80_0.30 2644 0.068460            NaN
+70404       blend_crop_hier_n1_p80_0.40 2644 0.068361            NaN
+70404       blend_crop_hier_n1_p80_0.50 2644 0.068383            NaN
+70404                  crop_hier_n2_p00 2644 0.071310            NaN
+70404       blend_crop_hier_n2_p00_0.20 2644 0.068909            NaN
+70404       blend_crop_hier_n2_p00_0.30 2644 0.068802            NaN
+70404       blend_crop_hier_n2_p00_0.40 2644 0.068812            NaN
+70404       blend_crop_hier_n2_p00_0.50 2644 0.068941            NaN
+70404                  crop_hier_n2_p67 2644 0.071394            NaN
+70404       blend_crop_hier_n2_p67_0.20 2644 0.068970            NaN
+70404       blend_crop_hier_n2_p67_0.30 2644 0.068885            NaN
+70404       blend_crop_hier_n2_p67_0.40 2644 0.068912            NaN
+70404       blend_crop_hier_n2_p67_0.50 2644 0.069052            NaN
+70404                  crop_hier_n2_p80 2644 0.071359            NaN
+70404       blend_crop_hier_n2_p80_0.20 2644 0.068986            NaN
+70404       blend_crop_hier_n2_p80_0.30 2644 0.068905            NaN
+70404       blend_crop_hier_n2_p80_0.40 2644 0.068933            NaN
+70404       blend_crop_hier_n2_p80_0.50 2644 0.069070            NaN
+70404                  crop_hier_n3_p00 2644 0.071616            NaN
+70404       blend_crop_hier_n3_p00_0.20 2644 0.068978            NaN
+70404       blend_crop_hier_n3_p00_0.30 2644 0.068904            NaN
+70404       blend_crop_hier_n3_p00_0.40 2644 0.068947            NaN
+70404       blend_crop_hier_n3_p00_0.50 2644 0.069107            NaN
+70404                  crop_hier_n3_p67 2644 0.071494            NaN
+70404       blend_crop_hier_n3_p67_0.20 2644 0.069003            NaN
+70404       blend_crop_hier_n3_p67_0.30 2644 0.068933            NaN
+70404       blend_crop_hier_n3_p67_0.40 2644 0.068973            NaN
+70404       blend_crop_hier_n3_p67_0.50 2644 0.069124            NaN
+70404                  crop_hier_n3_p80 2644 0.071437            NaN
+70404       blend_crop_hier_n3_p80_0.20 2644 0.069015            NaN
+70404       blend_crop_hier_n3_p80_0.30 2644 0.068946            NaN
+70404       blend_crop_hier_n3_p80_0.40 2644 0.068985            NaN
+70404       blend_crop_hier_n3_p80_0.50 2644 0.069132            NaN
+70404                soft_crop_r1_l0_p1 2644 0.070150            NaN
+70404     blend_soft_crop_r1_l0_p1_0.20 2644 0.068796            NaN
+70404     blend_soft_crop_r1_l0_p1_0.30 2644 0.068608            NaN
+70404     blend_soft_crop_r1_l0_p1_0.40 2644 0.068522            NaN
+70404     blend_soft_crop_r1_l0_p1_0.50 2644 0.068540            NaN
+70404                soft_crop_r1_l0_p2 2644 0.070064            NaN
+70404     blend_soft_crop_r1_l0_p2_0.20 2644 0.068728            NaN
+70404     blend_soft_crop_r1_l0_p2_0.30 2644 0.068516            NaN
+70404     blend_soft_crop_r1_l0_p2_0.40 2644 0.068412            NaN
+70404     blend_soft_crop_r1_l0_p2_0.50 2644 0.068418            NaN
+70404                soft_crop_r1_l0_p4 2644 0.070215            NaN
+70404     blend_soft_crop_r1_l0_p4_0.20 2644 0.068717            NaN
+70404     blend_soft_crop_r1_l0_p4_0.30 2644 0.068507            NaN
+70404     blend_soft_crop_r1_l0_p4_0.40 2644 0.068410            NaN
+70404     blend_soft_crop_r1_l0_p4_0.50 2644 0.068429            NaN
+70404             soft_crop_r1_l0.25_p1 2644 0.070037            NaN
+70404  blend_soft_crop_r1_l0.25_p1_0.20 2644 0.068872            NaN
+70404  blend_soft_crop_r1_l0.25_p1_0.30 2644 0.068703            NaN
+70404  blend_soft_crop_r1_l0.25_p1_0.40 2644 0.068625            NaN
+70404  blend_soft_crop_r1_l0.25_p1_0.50 2644 0.068637            NaN
+70404             soft_crop_r1_l0.25_p2 2644 0.070034            NaN
+70404  blend_soft_crop_r1_l0.25_p2_0.20 2644 0.068739            NaN
+70404  blend_soft_crop_r1_l0.25_p2_0.30 2644 0.068529            NaN
+70404  blend_soft_crop_r1_l0.25_p2_0.40 2644 0.068425            NaN
+70404  blend_soft_crop_r1_l0.25_p2_0.50 2644 0.068428            NaN
+70404             soft_crop_r1_l0.25_p4 2644 0.070217            NaN
+70404  blend_soft_crop_r1_l0.25_p4_0.20 2644 0.068718            NaN
+70404  blend_soft_crop_r1_l0.25_p4_0.30 2644 0.068508            NaN
+70404  blend_soft_crop_r1_l0.25_p4_0.40 2644 0.068412            NaN
+70404  blend_soft_crop_r1_l0.25_p4_0.50 2644 0.068431            NaN
+70404                soft_crop_r1_l1_p1 2644 0.070142            NaN
+70404     blend_soft_crop_r1_l1_p1_0.20 2644 0.069000            NaN
+70404     blend_soft_crop_r1_l1_p1_0.30 2644 0.068877            NaN
+70404     blend_soft_crop_r1_l1_p1_0.40 2644 0.068829            NaN
+70404     blend_soft_crop_r1_l1_p1_0.50 2644 0.068859            NaN
+70404                soft_crop_r1_l1_p2 2644 0.069941            NaN
+70404     blend_soft_crop_r1_l1_p2_0.20 2644 0.068825            NaN
+70404     blend_soft_crop_r1_l1_p2_0.30 2644 0.068638            NaN
+70404     blend_soft_crop_r1_l1_p2_0.40 2644 0.068545            NaN
+70404     blend_soft_crop_r1_l1_p2_0.50 2644 0.068545            NaN
+70404                soft_crop_r1_l1_p4 2644 0.070176            NaN
+70404     blend_soft_crop_r1_l1_p4_0.20 2644 0.068765            NaN
+70404     blend_soft_crop_r1_l1_p4_0.30 2644 0.068568            NaN
+70404     blend_soft_crop_r1_l1_p4_0.40 2644 0.068479            NaN
+70404     blend_soft_crop_r1_l1_p4_0.50 2644 0.068496            NaN
+70404                 soft_all_r1_l0_p1 2644 0.070033            NaN
+70404      blend_soft_all_r1_l0_p1_0.20 2644 0.068778            NaN
+70404      blend_soft_all_r1_l0_p1_0.30 2644 0.068580            NaN
+70404      blend_soft_all_r1_l0_p1_0.40 2644 0.068484            NaN
+70404      blend_soft_all_r1_l0_p1_0.50 2644 0.068490            NaN
+70404                 soft_all_r1_l0_p2 2644 0.069934            NaN
+70404      blend_soft_all_r1_l0_p2_0.20 2644 0.068709            NaN
+70404      blend_soft_all_r1_l0_p2_0.30 2644 0.068485            NaN
+70404      blend_soft_all_r1_l0_p2_0.40 2644 0.068369            NaN
+70404      blend_soft_all_r1_l0_p2_0.50 2644 0.068362            NaN
+70404                 soft_all_r1_l0_p4 2644 0.070070            NaN
+70404      blend_soft_all_r1_l0_p4_0.20 2644 0.068695            NaN
+70404      blend_soft_all_r1_l0_p4_0.30 2644 0.068472            NaN
+70404      blend_soft_all_r1_l0_p4_0.40 2644 0.068362            NaN
+70404      blend_soft_all_r1_l0_p4_0.50 2644 0.068366            NaN
+70404              soft_all_r1_l0.25_p1 2644 0.069944            NaN
+70404   blend_soft_all_r1_l0.25_p1_0.20 2644 0.068857            NaN
+70404   blend_soft_all_r1_l0.25_p1_0.30 2644 0.068680            NaN
+70404   blend_soft_all_r1_l0.25_p1_0.40 2644 0.068593            NaN
+70404   blend_soft_all_r1_l0.25_p1_0.50 2644 0.068596            NaN
+70404              soft_all_r1_l0.25_p2 2644 0.069908            NaN
+70404   blend_soft_all_r1_l0.25_p2_0.20 2644 0.068720            NaN
+70404   blend_soft_all_r1_l0.25_p2_0.30 2644 0.068499            NaN
+70404   blend_soft_all_r1_l0.25_p2_0.40 2644 0.068384            NaN
+70404   blend_soft_all_r1_l0.25_p2_0.50 2644 0.068374            NaN
+70404              soft_all_r1_l0.25_p4 2644 0.070073            NaN
+70404   blend_soft_all_r1_l0.25_p4_0.20 2644 0.068697            NaN
+70404   blend_soft_all_r1_l0.25_p4_0.30 2644 0.068475            NaN
+70404   blend_soft_all_r1_l0.25_p4_0.40 2644 0.068365            NaN
+70404   blend_soft_all_r1_l0.25_p4_0.50 2644 0.068370            NaN
+70404                 soft_all_r1_l1_p1 2644 0.070082            NaN
+70404      blend_soft_all_r1_l1_p1_0.20 2644 0.068990            NaN
+70404      blend_soft_all_r1_l1_p1_0.30 2644 0.068861            NaN
+70404      blend_soft_all_r1_l1_p1_0.40 2644 0.068808            NaN
+70404      blend_soft_all_r1_l1_p1_0.50 2644 0.068831            NaN
+70404                 soft_all_r1_l1_p2 2644 0.069838            NaN
+70404      blend_soft_all_r1_l1_p2_0.20 2644 0.068808            NaN
+70404      blend_soft_all_r1_l1_p2_0.30 2644 0.068612            NaN
+70404      blend_soft_all_r1_l1_p2_0.40 2644 0.068509            NaN
+70404      blend_soft_all_r1_l1_p2_0.50 2644 0.068500            NaN
+70404                 soft_all_r1_l1_p4 2644 0.070040            NaN
+70404      blend_soft_all_r1_l1_p4_0.20 2644 0.068744            NaN
+70404      blend_soft_all_r1_l1_p4_0.30 2644 0.068536            NaN
+70404      blend_soft_all_r1_l1_p4_0.40 2644 0.068433            NaN
+70404      blend_soft_all_r1_l1_p4_0.50 2644 0.068438            NaN
+70404                soft_crop_r2_l0_p1 2644 0.070332            NaN
+70404     blend_soft_crop_r2_l0_p1_0.20 2644 0.068808            NaN
+70404     blend_soft_crop_r2_l0_p1_0.30 2644 0.068632            NaN
+70404     blend_soft_crop_r2_l0_p1_0.40 2644 0.068560            NaN
+70404     blend_soft_crop_r2_l0_p1_0.50 2644 0.068595            NaN
+70404                soft_crop_r2_l0_p2 2644 0.070207            NaN
+70404     blend_soft_crop_r2_l0_p2_0.20 2644 0.068739            NaN
+70404     blend_soft_crop_r2_l0_p2_0.30 2644 0.068535            NaN
+70404     blend_soft_crop_r2_l0_p2_0.40 2644 0.068442            NaN
+70404     blend_soft_crop_r2_l0_p2_0.50 2644 0.068461            NaN
+70404                soft_crop_r2_l0_p4 2644 0.070263            NaN
+70404     blend_soft_crop_r2_l0_p4_0.20 2644 0.068713            NaN
+70404     blend_soft_crop_r2_l0_p4_0.30 2644 0.068504            NaN
+70404     blend_soft_crop_r2_l0_p4_0.40 2644 0.068410            NaN
+70404     blend_soft_crop_r2_l0_p4_0.50 2644 0.068432            NaN
+70404             soft_crop_r2_l0.25_p1 2644 0.070160            NaN
+70404  blend_soft_crop_r2_l0.25_p1_0.20 2644 0.068870            NaN
+70404  blend_soft_crop_r2_l0.25_p1_0.30 2644 0.068706            NaN
+70404  blend_soft_crop_r2_l0.25_p1_0.40 2644 0.068636            NaN
+70404  blend_soft_crop_r2_l0.25_p1_0.50 2644 0.068658            NaN
+70404             soft_crop_r2_l0.25_p2 2644 0.070184            NaN
+70404  blend_soft_crop_r2_l0.25_p2_0.20 2644 0.068751            NaN
+70404  blend_soft_crop_r2_l0.25_p2_0.30 2644 0.068551            NaN
+70404  blend_soft_crop_r2_l0.25_p2_0.40 2644 0.068459            NaN
+70404  blend_soft_crop_r2_l0.25_p2_0.50 2644 0.068477            NaN
+70404             soft_crop_r2_l0.25_p4 2644 0.070265            NaN
+70404  blend_soft_crop_r2_l0.25_p4_0.20 2644 0.068717            NaN
+70404  blend_soft_crop_r2_l0.25_p4_0.30 2644 0.068509            NaN
+70404  blend_soft_crop_r2_l0.25_p4_0.40 2644 0.068416            NaN
+70404  blend_soft_crop_r2_l0.25_p4_0.50 2644 0.068438            NaN
+70404                soft_crop_r2_l1_p1 2644 0.070150            NaN
+70404     blend_soft_crop_r2_l1_p1_0.20 2644 0.068982            NaN
+70404     blend_soft_crop_r2_l1_p1_0.30 2644 0.068852            NaN
+70404     blend_soft_crop_r2_l1_p1_0.40 2644 0.068802            NaN
+70404     blend_soft_crop_r2_l1_p1_0.50 2644 0.068831            NaN
+70404                soft_crop_r2_l1_p2 2644 0.070067            NaN
+70404     blend_soft_crop_r2_l1_p2_0.20 2644 0.068830            NaN
+70404     blend_soft_crop_r2_l1_p2_0.30 2644 0.068650            NaN
+70404     blend_soft_crop_r2_l1_p2_0.40 2644 0.068566            NaN
+70404     blend_soft_crop_r2_l1_p2_0.50 2644 0.068578            NaN
+70404                soft_crop_r2_l1_p4 2644 0.070296            NaN
+70404     blend_soft_crop_r2_l1_p4_0.20 2644 0.068776            NaN
+70404     blend_soft_crop_r2_l1_p4_0.30 2644 0.068587            NaN
+70404     blend_soft_crop_r2_l1_p4_0.40 2644 0.068507            NaN
+70404     blend_soft_crop_r2_l1_p4_0.50 2644 0.068536            NaN
+70404                 soft_all_r2_l0_p1 2644 0.070286            NaN
+70404      blend_soft_all_r2_l0_p1_0.20 2644 0.068813            NaN
+70404      blend_soft_all_r2_l0_p1_0.30 2644 0.068635            NaN
+70404      blend_soft_all_r2_l0_p1_0.40 2644 0.068562            NaN
+70404      blend_soft_all_r2_l0_p1_0.50 2644 0.068592            NaN
+70404                 soft_all_r2_l0_p2 2644 0.070129            NaN
+70404      blend_soft_all_r2_l0_p2_0.20 2644 0.068735            NaN
+70404      blend_soft_all_r2_l0_p2_0.30 2644 0.068527            NaN
+70404      blend_soft_all_r2_l0_p2_0.40 2644 0.068428            NaN
+70404      blend_soft_all_r2_l0_p2_0.50 2644 0.068440            NaN
+70404                 soft_all_r2_l0_p4 2644 0.070173            NaN
+70404      blend_soft_all_r2_l0_p4_0.20 2644 0.068704            NaN
+70404      blend_soft_all_r2_l0_p4_0.30 2644 0.068488            NaN
+70404      blend_soft_all_r2_l0_p4_0.40 2644 0.068387            NaN
+70404      blend_soft_all_r2_l0_p4_0.50 2644 0.068400            NaN
+70404              soft_all_r2_l0.25_p1 2644 0.070131            NaN
+70404   blend_soft_all_r2_l0.25_p1_0.20 2644 0.068872            NaN
+70404   blend_soft_all_r2_l0.25_p1_0.30 2644 0.068708            NaN
+70404   blend_soft_all_r2_l0.25_p1_0.40 2644 0.068636            NaN
+70404   blend_soft_all_r2_l0.25_p1_0.50 2644 0.068656            NaN
+70404              soft_all_r2_l0.25_p2 2644 0.070111            NaN
+70404   blend_soft_all_r2_l0.25_p2_0.20 2644 0.068748            NaN
+70404   blend_soft_all_r2_l0.25_p2_0.30 2644 0.068544            NaN
+70404   blend_soft_all_r2_l0.25_p2_0.40 2644 0.068447            NaN
+70404   blend_soft_all_r2_l0.25_p2_0.50 2644 0.068458            NaN
+70404              soft_all_r2_l0.25_p4 2644 0.070175            NaN
+70404   blend_soft_all_r2_l0.25_p4_0.20 2644 0.068709            NaN
+70404   blend_soft_all_r2_l0.25_p4_0.30 2644 0.068494            NaN
+70404   blend_soft_all_r2_l0.25_p4_0.40 2644 0.068393            NaN
+70404   blend_soft_all_r2_l0.25_p4_0.50 2644 0.068408            NaN
+70404                 soft_all_r2_l1_p1 2644 0.070131            NaN
+70404      blend_soft_all_r2_l1_p1_0.20 2644 0.068980            NaN
+70404      blend_soft_all_r2_l1_p1_0.30 2644 0.068850            NaN
+70404      blend_soft_all_r2_l1_p1_0.40 2644 0.068798            NaN
+70404      blend_soft_all_r2_l1_p1_0.50 2644 0.068825            NaN
+70404                 soft_all_r2_l1_p2 2644 0.070023            NaN
+70404      blend_soft_all_r2_l1_p2_0.20 2644 0.068828            NaN
+70404      blend_soft_all_r2_l1_p2_0.30 2644 0.068645            NaN
+70404      blend_soft_all_r2_l1_p2_0.40 2644 0.068557            NaN
+70404      blend_soft_all_r2_l1_p2_0.50 2644 0.068565            NaN
+70404                 soft_all_r2_l1_p4 2644 0.070241            NaN
+70404      blend_soft_all_r2_l1_p4_0.20 2644 0.068773            NaN
+70404      blend_soft_all_r2_l1_p4_0.30 2644 0.068581            NaN
+70404      blend_soft_all_r2_l1_p4_0.40 2644 0.068497            NaN
+70404      blend_soft_all_r2_l1_p4_0.50 2644 0.068521            NaN
+70404                soft_crop_r4_l0_p1 2644 0.070407            NaN
+70404     blend_soft_crop_r4_l0_p1_0.20 2644 0.068832            NaN
+70404     blend_soft_crop_r4_l0_p1_0.30 2644 0.068666            NaN
+70404     blend_soft_crop_r4_l0_p1_0.40 2644 0.068604            NaN
+70404     blend_soft_crop_r4_l0_p1_0.50 2644 0.068646            NaN
+70404                soft_crop_r4_l0_p2 2644 0.070534            NaN
+70404     blend_soft_crop_r4_l0_p2_0.20 2644 0.068811            NaN
+70404     blend_soft_crop_r4_l0_p2_0.30 2644 0.068643            NaN
+70404     blend_soft_crop_r4_l0_p2_0.40 2644 0.068585            NaN
+70404     blend_soft_crop_r4_l0_p2_0.50 2644 0.068638            NaN
+70404                soft_crop_r4_l0_p4 2644 0.070789            NaN
+70404     blend_soft_crop_r4_l0_p4_0.20 2644 0.068817            NaN
+70404     blend_soft_crop_r4_l0_p4_0.30 2644 0.068661            NaN
+70404     blend_soft_crop_r4_l0_p4_0.40 2644 0.068621            NaN
+70404     blend_soft_crop_r4_l0_p4_0.50 2644 0.068697            NaN
+70404             soft_crop_r4_l0.25_p1 2644 0.070295            NaN
+70404  blend_soft_crop_r4_l0.25_p1_0.20 2644 0.068889            NaN
+70404  blend_soft_crop_r4_l0.25_p1_0.30 2644 0.068736            NaN
+70404  blend_soft_crop_r4_l0.25_p1_0.40 2644 0.068677            NaN
+70404  blend_soft_crop_r4_l0.25_p1_0.50 2644 0.068713            NaN
+70404             soft_crop_r4_l0.25_p2 2644 0.070483            NaN
+70404  blend_soft_crop_r4_l0.25_p2_0.20 2644 0.068818            NaN
+70404  blend_soft_crop_r4_l0.25_p2_0.30 2644 0.068650            NaN
+70404  blend_soft_crop_r4_l0.25_p2_0.40 2644 0.068590            NaN
+70404  blend_soft_crop_r4_l0.25_p2_0.50 2644 0.068638            NaN
+70404             soft_crop_r4_l0.25_p4 2644 0.070758            NaN
+70404  blend_soft_crop_r4_l0.25_p4_0.20 2644 0.068817            NaN
+70404  blend_soft_crop_r4_l0.25_p4_0.30 2644 0.068659            NaN
+70404  blend_soft_crop_r4_l0.25_p4_0.40 2644 0.068616            NaN
+70404  blend_soft_crop_r4_l0.25_p4_0.50 2644 0.068689            NaN
+70404                soft_crop_r4_l1_p1 2644 0.070287            NaN
+70404     blend_soft_crop_r4_l1_p1_0.20 2644 0.068988            NaN
+70404     blend_soft_crop_r4_l1_p1_0.30 2644 0.068866            NaN
+70404     blend_soft_crop_r4_l1_p1_0.40 2644 0.068825            NaN
+70404     blend_soft_crop_r4_l1_p1_0.50 2644 0.068867            NaN
+70404                soft_crop_r4_l1_p2 2644 0.070393            NaN
+70404     blend_soft_crop_r4_l1_p2_0.20 2644 0.068886            NaN
+70404     blend_soft_crop_r4_l1_p2_0.30 2644 0.068736            NaN
+70404     blend_soft_crop_r4_l1_p2_0.40 2644 0.068684            NaN
+70404     blend_soft_crop_r4_l1_p2_0.50 2644 0.068728            NaN
+70404                soft_crop_r4_l1_p4 2644 0.070705            NaN
+70404     blend_soft_crop_r4_l1_p4_0.20 2644 0.068863            NaN
+70404     blend_soft_crop_r4_l1_p4_0.30 2644 0.068718            NaN
+70404     blend_soft_crop_r4_l1_p4_0.40 2644 0.068681            NaN
+70404     blend_soft_crop_r4_l1_p4_0.50 2644 0.068752            NaN
+70404                 soft_all_r4_l0_p1 2644 0.070378            NaN
+70404      blend_soft_all_r4_l0_p1_0.20 2644 0.068855            NaN
+70404      blend_soft_all_r4_l0_p1_0.30 2644 0.068694            NaN
+70404      blend_soft_all_r4_l0_p1_0.40 2644 0.068635            NaN
+70404      blend_soft_all_r4_l0_p1_0.50 2644 0.068676            NaN
+70404                 soft_all_r4_l0_p2 2644 0.070501            NaN
+70404      blend_soft_all_r4_l0_p2_0.20 2644 0.068828            NaN
+70404      blend_soft_all_r4_l0_p2_0.30 2644 0.068664            NaN
+70404      blend_soft_all_r4_l0_p2_0.40 2644 0.068607            NaN
+70404      blend_soft_all_r4_l0_p2_0.50 2644 0.068658            NaN
+70404                 soft_all_r4_l0_p4 2644 0.070777            NaN
+70404      blend_soft_all_r4_l0_p4_0.20 2644 0.068832            NaN
+70404      blend_soft_all_r4_l0_p4_0.30 2644 0.068680            NaN
+70404      blend_soft_all_r4_l0_p4_0.40 2644 0.068642            NaN
+70404      blend_soft_all_r4_l0_p4_0.50 2644 0.068718            NaN
+70404              soft_all_r4_l0.25_p1 2644 0.070283            NaN
+70404   blend_soft_all_r4_l0.25_p1_0.20 2644 0.068906            NaN
+70404   blend_soft_all_r4_l0.25_p1_0.30 2644 0.068758            NaN
+70404   blend_soft_all_r4_l0.25_p1_0.40 2644 0.068702            NaN
+70404   blend_soft_all_r4_l0.25_p1_0.50 2644 0.068739            NaN
+70404              soft_all_r4_l0.25_p2 2644 0.070448            NaN
+70404   blend_soft_all_r4_l0.25_p2_0.20 2644 0.068835            NaN
+70404   blend_soft_all_r4_l0.25_p2_0.30 2644 0.068671            NaN
+70404   blend_soft_all_r4_l0.25_p2_0.40 2644 0.068612            NaN
+70404   blend_soft_all_r4_l0.25_p2_0.50 2644 0.068659            NaN
+70404              soft_all_r4_l0.25_p4 2644 0.070741            NaN
+70404   blend_soft_all_r4_l0.25_p4_0.20 2644 0.068834            NaN
+70404   blend_soft_all_r4_l0.25_p4_0.30 2644 0.068681            NaN
+70404   blend_soft_all_r4_l0.25_p4_0.40 2644 0.068641            NaN
+70404   blend_soft_all_r4_l0.25_p4_0.50 2644 0.068714            NaN
+70404                 soft_all_r4_l1_p1 2644 0.070288            NaN
+70404      blend_soft_all_r4_l1_p1_0.20 2644 0.068997            NaN
+70404      blend_soft_all_r4_l1_p1_0.30 2644 0.068878            NaN
+70404      blend_soft_all_r4_l1_p1_0.40 2644 0.068839            NaN
+70404      blend_soft_all_r4_l1_p1_0.50 2644 0.068881            NaN
+70404                 soft_all_r4_l1_p2 2644 0.070371            NaN
+70404      blend_soft_all_r4_l1_p2_0.20 2644 0.068898            NaN
+70404      blend_soft_all_r4_l1_p2_0.30 2644 0.068750            NaN
+70404      blend_soft_all_r4_l1_p2_0.40 2644 0.068698            NaN
+70404      blend_soft_all_r4_l1_p2_0.50 2644 0.068742            NaN
+70404                 soft_all_r4_l1_p4 2644 0.070684            NaN
+70404      blend_soft_all_r4_l1_p4_0.20 2644 0.068875            NaN
+70404      blend_soft_all_r4_l1_p4_0.30 2644 0.068733            NaN
+70404      blend_soft_all_r4_l1_p4_0.40 2644 0.068697            NaN
+70404      blend_soft_all_r4_l1_p4_0.50 2644 0.068767            NaN
+70404                soft_crop_r8_l0_p1 2644 0.070260            NaN
+70404     blend_soft_crop_r8_l0_p1_0.20 2644 0.068815            NaN
+70404     blend_soft_crop_r8_l0_p1_0.30 2644 0.068638            NaN
+70404     blend_soft_crop_r8_l0_p1_0.40 2644 0.068563            NaN
+70404     blend_soft_crop_r8_l0_p1_0.50 2644 0.068591            NaN
+70404                soft_crop_r8_l0_p2 2644 0.070298            NaN
+70404     blend_soft_crop_r8_l0_p2_0.20 2644 0.068784            NaN
+70404     blend_soft_crop_r8_l0_p2_0.30 2644 0.068598            NaN
+70404     blend_soft_crop_r8_l0_p2_0.40 2644 0.068520            NaN
+70404     blend_soft_crop_r8_l0_p2_0.50 2644 0.068550            NaN
+70404                soft_crop_r8_l0_p4 2644 0.070472            NaN
+70404     blend_soft_crop_r8_l0_p4_0.20 2644 0.068779            NaN
+70404     blend_soft_crop_r8_l0_p4_0.30 2644 0.068598            NaN
+70404     blend_soft_crop_r8_l0_p4_0.40 2644 0.068529            NaN
+70404     blend_soft_crop_r8_l0_p4_0.50 2644 0.068574            NaN
+70404             soft_crop_r8_l0.25_p1 2644 0.070160            NaN
+70404  blend_soft_crop_r8_l0.25_p1_0.20 2644 0.068871            NaN
+70404  blend_soft_crop_r8_l0.25_p1_0.30 2644 0.068707            NaN
+70404  blend_soft_crop_r8_l0.25_p1_0.40 2644 0.068637            NaN
+70404  blend_soft_crop_r8_l0.25_p1_0.50 2644 0.068660            NaN
+70404             soft_crop_r8_l0.25_p2 2644 0.070253            NaN
+70404  blend_soft_crop_r8_l0.25_p2_0.20 2644 0.068791            NaN
+70404  blend_soft_crop_r8_l0.25_p2_0.30 2644 0.068606            NaN
+70404  blend_soft_crop_r8_l0.25_p2_0.40 2644 0.068526            NaN
+70404  blend_soft_crop_r8_l0.25_p2_0.50 2644 0.068552            NaN
+70404             soft_crop_r8_l0.25_p4 2644 0.070430            NaN
+70404  blend_soft_crop_r8_l0.25_p4_0.20 2644 0.068774            NaN
+70404  blend_soft_crop_r8_l0.25_p4_0.30 2644 0.068590            NaN
+70404  blend_soft_crop_r8_l0.25_p4_0.40 2644 0.068518            NaN
+70404  blend_soft_crop_r8_l0.25_p4_0.50 2644 0.068559            NaN
+70404                soft_crop_r8_l1_p1 2644 0.070177            NaN
+70404     blend_soft_crop_r8_l1_p1_0.20 2644 0.068970            NaN
+70404     blend_soft_crop_r8_l1_p1_0.30 2644 0.068839            NaN
+70404     blend_soft_crop_r8_l1_p1_0.40 2644 0.068788            NaN
+70404     blend_soft_crop_r8_l1_p1_0.50 2644 0.068819            NaN
+70404                soft_crop_r8_l1_p2 2644 0.070186            NaN
+70404     blend_soft_crop_r8_l1_p2_0.20 2644 0.068861            NaN
+70404     blend_soft_crop_r8_l1_p2_0.30 2644 0.068696            NaN
+70404     blend_soft_crop_r8_l1_p2_0.40 2644 0.068625            NaN
+70404     blend_soft_crop_r8_l1_p2_0.50 2644 0.068649            NaN
+70404                soft_crop_r8_l1_p4 2644 0.070374            NaN
+70404     blend_soft_crop_r8_l1_p4_0.20 2644 0.068816            NaN
+70404     blend_soft_crop_r8_l1_p4_0.30 2644 0.068643            NaN
+70404     blend_soft_crop_r8_l1_p4_0.40 2644 0.068576            NaN
+70404     blend_soft_crop_r8_l1_p4_0.50 2644 0.068615            NaN
+70404                 soft_all_r8_l0_p1 2644 0.070994            NaN
+70404      blend_soft_all_r8_l0_p1_0.20 2644 0.069033            NaN
+70404      blend_soft_all_r8_l0_p1_0.30 2644 0.068952            NaN
+70404      blend_soft_all_r8_l0_p1_0.40 2644 0.068966            NaN
+70404      blend_soft_all_r8_l0_p1_0.50 2644 0.069073            NaN
+70404                 soft_all_r8_l0_p2 2644 0.071021            NaN
+70404      blend_soft_all_r8_l0_p2_0.20 2644 0.069002            NaN
+70404      blend_soft_all_r8_l0_p2_0.30 2644 0.068912            NaN
+70404      blend_soft_all_r8_l0_p2_0.40 2644 0.068921            NaN
+70404      blend_soft_all_r8_l0_p2_0.50 2644 0.069030            NaN
+70404                 soft_all_r8_l0_p4 2644 0.071217            NaN
+70404      blend_soft_all_r8_l0_p4_0.20 2644 0.068991            NaN
+70404      blend_soft_all_r8_l0_p4_0.30 2644 0.068906            NaN
+70404      blend_soft_all_r8_l0_p4_0.40 2644 0.068926            NaN
+70404      blend_soft_all_r8_l0_p4_0.50 2644 0.069051            NaN
+70404              soft_all_r8_l0.25_p1 2644 0.070831            NaN
+70404   blend_soft_all_r8_l0.25_p1_0.20 2644 0.069047            NaN
+70404   blend_soft_all_r8_l0.25_p1_0.30 2644 0.068964            NaN
+70404   blend_soft_all_r8_l0.25_p1_0.40 2644 0.068970            NaN
+70404   blend_soft_all_r8_l0.25_p1_0.50 2644 0.069063            NaN
+70404              soft_all_r8_l0.25_p2 2644 0.070947            NaN
+70404   blend_soft_all_r8_l0.25_p2_0.20 2644 0.069000            NaN
+70404   blend_soft_all_r8_l0.25_p2_0.30 2644 0.068907            NaN
+70404   blend_soft_all_r8_l0.25_p2_0.40 2644 0.068911            NaN
+70404   blend_soft_all_r8_l0.25_p2_0.50 2644 0.069013            NaN
+70404              soft_all_r8_l0.25_p4 2644 0.071148            NaN
+70404   blend_soft_all_r8_l0.25_p4_0.20 2644 0.068985            NaN
+70404   blend_soft_all_r8_l0.25_p4_0.30 2644 0.068896            NaN
+70404   blend_soft_all_r8_l0.25_p4_0.40 2644 0.068910            NaN
+70404   blend_soft_all_r8_l0.25_p4_0.50 2644 0.069029            NaN
+70404                 soft_all_r8_l1_p1 2644 0.070674            NaN
+70404      blend_soft_all_r8_l1_p1_0.20 2644 0.069079            NaN
+70404      blend_soft_all_r8_l1_p1_0.30 2644 0.069000            NaN
+70404      blend_soft_all_r8_l1_p1_0.40 2644 0.069002            NaN
+70404      blend_soft_all_r8_l1_p1_0.50 2644 0.069083            NaN
+70404                 soft_all_r8_l1_p2 2644 0.070701            NaN
+70404      blend_soft_all_r8_l1_p2_0.20 2644 0.069002            NaN
+70404      blend_soft_all_r8_l1_p2_0.30 2644 0.068900            NaN
+70404      blend_soft_all_r8_l1_p2_0.40 2644 0.068889            NaN
+70404      blend_soft_all_r8_l1_p2_0.50 2644 0.068969            NaN
+70404                 soft_all_r8_l1_p4 2644 0.070903            NaN
+70404      blend_soft_all_r8_l1_p4_0.20 2644 0.068971            NaN
+70404      blend_soft_all_r8_l1_p4_0.30 2644 0.068867            NaN
+70404      blend_soft_all_r8_l1_p4_0.40 2644 0.068863            NaN
+70404      blend_soft_all_r8_l1_p4_0.50 2644 0.068958            NaN
+70404               soft_crop_r16_l0_p1 2644 0.070292            NaN
+70404    blend_soft_crop_r16_l0_p1_0.20 2644 0.068890            NaN
+70404    blend_soft_crop_r16_l0_p1_0.30 2644 0.068738            NaN
+70404    blend_soft_crop_r16_l0_p1_0.40 2644 0.068679            NaN
+70404    blend_soft_crop_r16_l0_p1_0.50 2644 0.068715            NaN
+70404               soft_crop_r16_l0_p2 2644 0.070352            NaN
+70404    blend_soft_crop_r16_l0_p2_0.20 2644 0.068868            NaN
+70404    blend_soft_crop_r16_l0_p2_0.30 2644 0.068711            NaN
+70404    blend_soft_crop_r16_l0_p2_0.40 2644 0.068652            NaN
+70404    blend_soft_crop_r16_l0_p2_0.50 2644 0.068692            NaN
+70404               soft_crop_r16_l0_p4 2644 0.070527            NaN
+70404    blend_soft_crop_r16_l0_p4_0.20 2644 0.068858            NaN
+70404    blend_soft_crop_r16_l0_p4_0.30 2644 0.068705            NaN
+70404    blend_soft_crop_r16_l0_p4_0.40 2644 0.068655            NaN
+70404    blend_soft_crop_r16_l0_p4_0.50 2644 0.068710            NaN
+70404            soft_crop_r16_l0.25_p1 2644 0.070222            NaN
+70404 blend_soft_crop_r16_l0.25_p1_0.20 2644 0.068923            NaN
+70404 blend_soft_crop_r16_l0.25_p1_0.30 2644 0.068777            NaN
+70404 blend_soft_crop_r16_l0.25_p1_0.40 2644 0.068721            NaN
+70404 blend_soft_crop_r16_l0.25_p1_0.50 2644 0.068752            NaN
+70404            soft_crop_r16_l0.25_p2 2644 0.070326            NaN
+70404 blend_soft_crop_r16_l0.25_p2_0.20 2644 0.068873            NaN
+70404 blend_soft_crop_r16_l0.25_p2_0.30 2644 0.068716            NaN
+70404 blend_soft_crop_r16_l0.25_p2_0.40 2644 0.068656            NaN
+70404 blend_soft_crop_r16_l0.25_p2_0.50 2644 0.068694            NaN
+70404            soft_crop_r16_l0.25_p4 2644 0.070514            NaN
+70404 blend_soft_crop_r16_l0.25_p4_0.20 2644 0.068860            NaN
+70404 blend_soft_crop_r16_l0.25_p4_0.30 2644 0.068707            NaN
+70404 blend_soft_crop_r16_l0.25_p4_0.40 2644 0.068657            NaN
+70404 blend_soft_crop_r16_l0.25_p4_0.50 2644 0.068711            NaN
+70404               soft_crop_r16_l1_p1 2644 0.070228            NaN
+70404    blend_soft_crop_r16_l1_p1_0.20 2644 0.068987            NaN
+70404    blend_soft_crop_r16_l1_p1_0.30 2644 0.068862            NaN
+70404    blend_soft_crop_r16_l1_p1_0.40 2644 0.068818            NaN
+70404    blend_soft_crop_r16_l1_p1_0.50 2644 0.068854            NaN
+70404               soft_crop_r16_l1_p2 2644 0.070252            NaN
+70404    blend_soft_crop_r16_l1_p2_0.20 2644 0.068903            NaN
+70404    blend_soft_crop_r16_l1_p2_0.30 2644 0.068753            NaN
+70404    blend_soft_crop_r16_l1_p2_0.40 2644 0.068695            NaN
+70404    blend_soft_crop_r16_l1_p2_0.50 2644 0.068728            NaN
+70404               soft_crop_r16_l1_p4 2644 0.070458            NaN
+70404    blend_soft_crop_r16_l1_p4_0.20 2644 0.068877            NaN
+70404    blend_soft_crop_r16_l1_p4_0.30 2644 0.068726            NaN
+70404    blend_soft_crop_r16_l1_p4_0.40 2644 0.068676            NaN
+70404    blend_soft_crop_r16_l1_p4_0.50 2644 0.068726            NaN
+70404                soft_all_r16_l0_p1 2644 0.070901            NaN
+70404     blend_soft_all_r16_l0_p1_0.20 2644 0.069097            NaN
+70404     blend_soft_all_r16_l0_p1_0.30 2644 0.069032            NaN
+70404     blend_soft_all_r16_l0_p1_0.40 2644 0.069052            NaN
+70404     blend_soft_all_r16_l0_p1_0.50 2644 0.069155            NaN
+70404                soft_all_r16_l0_p2 2644 0.070928            NaN
+70404     blend_soft_all_r16_l0_p2_0.20 2644 0.069064            NaN
+70404     blend_soft_all_r16_l0_p2_0.30 2644 0.068991            NaN
+70404     blend_soft_all_r16_l0_p2_0.40 2644 0.069006            NaN
+70404     blend_soft_all_r16_l0_p2_0.50 2644 0.069109            NaN
+70404                soft_all_r16_l0_p4 2644 0.071203            NaN
+70404     blend_soft_all_r16_l0_p4_0.20 2644 0.069063            NaN
+70404     blend_soft_all_r16_l0_p4_0.30 2644 0.068999            NaN
+70404     blend_soft_all_r16_l0_p4_0.40 2644 0.069032            NaN
+70404     blend_soft_all_r16_l0_p4_0.50 2644 0.069160            NaN
+70404             soft_all_r16_l0.25_p1 2644 0.070856            NaN
+70404  blend_soft_all_r16_l0.25_p1_0.20 2644 0.069108            NaN
+70404  blend_soft_all_r16_l0.25_p1_0.30 2644 0.069045            NaN
+70404  blend_soft_all_r16_l0.25_p1_0.40 2644 0.069064            NaN
+70404  blend_soft_all_r16_l0.25_p1_0.50 2644 0.069163            NaN
+70404             soft_all_r16_l0.25_p2 2644 0.070907            NaN
+70404  blend_soft_all_r16_l0.25_p2_0.20 2644 0.069064            NaN
+70404  blend_soft_all_r16_l0.25_p2_0.30 2644 0.068990            NaN
+70404  blend_soft_all_r16_l0.25_p2_0.40 2644 0.069004            NaN
+70404  blend_soft_all_r16_l0.25_p2_0.50 2644 0.069106            NaN
+70404             soft_all_r16_l0.25_p4 2644 0.071188            NaN
+70404  blend_soft_all_r16_l0.25_p4_0.20 2644 0.069062            NaN
+70404  blend_soft_all_r16_l0.25_p4_0.30 2644 0.068997            NaN
+70404  blend_soft_all_r16_l0.25_p4_0.40 2644 0.069029            NaN
+70404  blend_soft_all_r16_l0.25_p4_0.50 2644 0.069155            NaN
+70404                soft_all_r16_l1_p1 2644 0.070819            NaN
+70404     blend_soft_all_r16_l1_p1_0.20 2644 0.069131            NaN
+70404     blend_soft_all_r16_l1_p1_0.30 2644 0.069074            NaN
+70404     blend_soft_all_r16_l1_p1_0.40 2644 0.069095            NaN
+70404     blend_soft_all_r16_l1_p1_0.50 2644 0.069192            NaN
+70404                soft_all_r16_l1_p2 2644 0.070849            NaN
+70404     blend_soft_all_r16_l1_p2_0.20 2644 0.069070            NaN
+70404     blend_soft_all_r16_l1_p2_0.30 2644 0.068995            NaN
+70404     blend_soft_all_r16_l1_p2_0.40 2644 0.069006            NaN
+70404     blend_soft_all_r16_l1_p2_0.50 2644 0.069103            NaN
+70404                soft_all_r16_l1_p4 2644 0.071157            NaN
+70404     blend_soft_all_r16_l1_p4_0.20 2644 0.069064            NaN
+70404     blend_soft_all_r16_l1_p4_0.30 2644 0.068999            NaN
+70404     blend_soft_all_r16_l1_p4_0.40 2644 0.069029            NaN
+70404     blend_soft_all_r16_l1_p4_0.50 2644 0.069153            NaN
+70404               soft_crop_r32_l0_p1 2644 0.070440            NaN
+70404    blend_soft_crop_r32_l0_p1_0.20 2644 0.068918            NaN
+70404    blend_soft_crop_r32_l0_p1_0.30 2644 0.068780            NaN
+70404    blend_soft_crop_r32_l0_p1_0.40 2644 0.068736            NaN
+70404    blend_soft_crop_r32_l0_p1_0.50 2644 0.068787            NaN
+70404               soft_crop_r32_l0_p2 2644 0.070338            NaN
+70404    blend_soft_crop_r32_l0_p2_0.20 2644 0.068858            NaN
+70404    blend_soft_crop_r32_l0_p2_0.30 2644 0.068696            NaN
+70404    blend_soft_crop_r32_l0_p2_0.40 2644 0.068635            NaN
+70404    blend_soft_crop_r32_l0_p2_0.50 2644 0.068673            NaN
+70404               soft_crop_r32_l0_p4 2644 0.070343            NaN
+70404    blend_soft_crop_r32_l0_p4_0.20 2644 0.068808            NaN
+70404    blend_soft_crop_r32_l0_p4_0.30 2644 0.068632            NaN
+70404    blend_soft_crop_r32_l0_p4_0.40 2644 0.068561            NaN
+70404    blend_soft_crop_r32_l0_p4_0.50 2644 0.068596            NaN
+70404            soft_crop_r32_l0.25_p1 2644 0.070359            NaN
+70404 blend_soft_crop_r32_l0.25_p1_0.20 2644 0.068940            NaN
+70404 blend_soft_crop_r32_l0.25_p1_0.30 2644 0.068806            NaN
+70404 blend_soft_crop_r32_l0.25_p1_0.40 2644 0.068761            NaN
+70404 blend_soft_crop_r32_l0.25_p1_0.50 2644 0.068806            NaN
+70404            soft_crop_r32_l0.25_p2 2644 0.070314            NaN
+70404 blend_soft_crop_r32_l0.25_p2_0.20 2644 0.068861            NaN
+70404 blend_soft_crop_r32_l0.25_p2_0.30 2644 0.068700            NaN
+70404 blend_soft_crop_r32_l0.25_p2_0.40 2644 0.068638            NaN
+70404 blend_soft_crop_r32_l0.25_p2_0.50 2644 0.068674            NaN
+70404            soft_crop_r32_l0.25_p4 2644 0.070338            NaN
+70404 blend_soft_crop_r32_l0.25_p4_0.20 2644 0.068812            NaN
+70404 blend_soft_crop_r32_l0.25_p4_0.30 2644 0.068636            NaN
+70404 blend_soft_crop_r32_l0.25_p4_0.40 2644 0.068566            NaN
+70404 blend_soft_crop_r32_l0.25_p4_0.50 2644 0.068601            NaN
+70404               soft_crop_r32_l1_p1 2644 0.070311            NaN
+70404    blend_soft_crop_r32_l1_p1_0.20 2644 0.068988            NaN
+70404    blend_soft_crop_r32_l1_p1_0.30 2644 0.068867            NaN
+70404    blend_soft_crop_r32_l1_p1_0.40 2644 0.068828            NaN
+70404    blend_soft_crop_r32_l1_p1_0.50 2644 0.068872            NaN
+70404               soft_crop_r32_l1_p2 2644 0.070218            NaN
+70404    blend_soft_crop_r32_l1_p2_0.20 2644 0.068879            NaN
+70404    blend_soft_crop_r32_l1_p2_0.30 2644 0.068720            NaN
+70404    blend_soft_crop_r32_l1_p2_0.40 2644 0.068655            NaN
+70404    blend_soft_crop_r32_l1_p2_0.50 2644 0.068683            NaN
+70404               soft_crop_r32_l1_p4 2644 0.070290            NaN
+70404    blend_soft_crop_r32_l1_p4_0.20 2644 0.068824            NaN
+70404    blend_soft_crop_r32_l1_p4_0.30 2644 0.068650            NaN
+70404    blend_soft_crop_r32_l1_p4_0.40 2644 0.068579            NaN
+70404    blend_soft_crop_r32_l1_p4_0.50 2644 0.068610            NaN
+70404                soft_all_r32_l0_p1 2644 0.071225            NaN
+70404     blend_soft_all_r32_l0_p1_0.20 2644 0.069216            NaN
+70404     blend_soft_all_r32_l0_p1_0.30 2644 0.069201            NaN
+70404     blend_soft_all_r32_l0_p1_0.40 2644 0.069264            NaN
+70404     blend_soft_all_r32_l0_p1_0.50 2644 0.069403            NaN
+70404                soft_all_r32_l0_p2 2644 0.071121            NaN
+70404     blend_soft_all_r32_l0_p2_0.20 2644 0.069143            NaN
+70404     blend_soft_all_r32_l0_p2_0.30 2644 0.069102            NaN
+70404     blend_soft_all_r32_l0_p2_0.40 2644 0.069144            NaN
+70404     blend_soft_all_r32_l0_p2_0.50 2644 0.069269            NaN
+70404                soft_all_r32_l0_p4 2644 0.071392            NaN
+70404     blend_soft_all_r32_l0_p4_0.20 2644 0.069127            NaN
+70404     blend_soft_all_r32_l0_p4_0.30 2644 0.069092            NaN
+70404     blend_soft_all_r32_l0_p4_0.40 2644 0.069148            NaN
+70404     blend_soft_all_r32_l0_p4_0.50 2644 0.069297            NaN
+70404             soft_all_r32_l0.25_p1 2644 0.071193            NaN
+70404  blend_soft_all_r32_l0.25_p1_0.20 2644 0.069218            NaN
+70404  blend_soft_all_r32_l0.25_p1_0.30 2644 0.069203            NaN
+70404  blend_soft_all_r32_l0.25_p1_0.40 2644 0.069263            NaN
+70404  blend_soft_all_r32_l0.25_p1_0.50 2644 0.069400            NaN
+70404             soft_all_r32_l0.25_p2 2644 0.071099            NaN
+70404  blend_soft_all_r32_l0.25_p2_0.20 2644 0.069141            NaN
+70404  blend_soft_all_r32_l0.25_p2_0.30 2644 0.069098            NaN
+70404  blend_soft_all_r32_l0.25_p2_0.40 2644 0.069139            NaN
+70404  blend_soft_all_r32_l0.25_p2_0.50 2644 0.069262            NaN
+70404             soft_all_r32_l0.25_p4 2644 0.071373            NaN
+70404  blend_soft_all_r32_l0.25_p4_0.20 2644 0.069126            NaN
+70404  blend_soft_all_r32_l0.25_p4_0.30 2644 0.069089            NaN
+70404  blend_soft_all_r32_l0.25_p4_0.40 2644 0.069144            NaN
+70404  blend_soft_all_r32_l0.25_p4_0.50 2644 0.069291            NaN
+70404                soft_all_r32_l1_p1 2644 0.071147            NaN
+70404     blend_soft_all_r32_l1_p1_0.20 2644 0.069223            NaN
+70404     blend_soft_all_r32_l1_p1_0.30 2644 0.069208            NaN
+70404     blend_soft_all_r32_l1_p1_0.40 2644 0.069267            NaN
+70404     blend_soft_all_r32_l1_p1_0.50 2644 0.069399            NaN
+70404                soft_all_r32_l1_p2 2644 0.071040            NaN
+70404     blend_soft_all_r32_l1_p2_0.20 2644 0.069136            NaN
+70404     blend_soft_all_r32_l1_p2_0.30 2644 0.069090            NaN
+70404     blend_soft_all_r32_l1_p2_0.40 2644 0.069126            NaN
+70404     blend_soft_all_r32_l1_p2_0.50 2644 0.069244            NaN
+70404                soft_all_r32_l1_p4 2644 0.071331            NaN
+70404     blend_soft_all_r32_l1_p4_0.20 2644 0.069123            NaN
+70404     blend_soft_all_r32_l1_p4_0.30 2644 0.069084            NaN
+70404     blend_soft_all_r32_l1_p4_0.40 2644 0.069136            NaN
+70404     blend_soft_all_r32_l1_p4_0.50 2644 0.069279            NaN
+70404                          baseline 2644 0.069475            all
+70404                          baseline 1888 0.063944        history
+70404                          baseline  756 0.081668           2025
+70404                          baseline 2267 0.071175            new
+70404                          baseline  377 0.058216         shared
+70404                          baseline 1718 0.070994           near
+70404                          baseline  425 0.070071            mid
+70404                          baseline  501 0.063439    far_or_none
+70404                          baseline 1170 0.067203      source_s2
+70404                          baseline 1003 0.072209 source_landsat
+70404                          baseline  471 0.069090   source_modis
+70404              blend_post_mode_0.40 2644 0.069289            all
+70404              blend_post_mode_0.40 1888 0.063582        history
+70404              blend_post_mode_0.40  756 0.081821           2025
+70404              blend_post_mode_0.40 2267 0.070980            new
+70404              blend_post_mode_0.40  377 0.058088         shared
+70404              blend_post_mode_0.40 1718 0.071079           near
+70404              blend_post_mode_0.40  425 0.068831            mid
+70404              blend_post_mode_0.40  501 0.063189    far_or_none
+70404              blend_post_mode_0.40 1170 0.066853      source_s2
+70404              blend_post_mode_0.40 1003 0.073032 source_landsat
+70404              blend_post_mode_0.40  471 0.067008   source_modis
+70404       blend_crop_hier_n1_p67_0.40 2644 0.068368            all
+70404       blend_crop_hier_n1_p67_0.40 1888 0.062998        history
+70404       blend_crop_hier_n1_p67_0.40  756 0.080223           2025
+70404       blend_crop_hier_n1_p67_0.40 2267 0.069977            new
+70404       blend_crop_hier_n1_p67_0.40  377 0.057752         shared
+70404       blend_crop_hier_n1_p67_0.40 1718 0.069776           near
+70404       blend_crop_hier_n1_p67_0.40  425 0.068786            mid
+70404       blend_crop_hier_n1_p67_0.40  501 0.062913    far_or_none
+70404       blend_crop_hier_n1_p67_0.40 1170 0.066326      source_s2
+70404       blend_crop_hier_n1_p67_0.40 1003 0.070965 source_landsat
+70404       blend_crop_hier_n1_p67_0.40  471 0.067724   source_modis
+70404      blend_soft_all_r1_l0_p4_0.40 2644 0.068362            all
+70404      blend_soft_all_r1_l0_p4_0.40 1888 0.063013        history
+70404      blend_soft_all_r1_l0_p4_0.40  756 0.080178           2025
+70404      blend_soft_all_r1_l0_p4_0.40 2267 0.070007            new
+70404      blend_soft_all_r1_l0_p4_0.40  377 0.057490         shared
+70404      blend_soft_all_r1_l0_p4_0.40 1718 0.069745           near
+70404      blend_soft_all_r1_l0_p4_0.40  425 0.068738            mid
+70404      blend_soft_all_r1_l0_p4_0.40  501 0.063047    far_or_none
+70404      blend_soft_all_r1_l0_p4_0.40 1170 0.066129      source_s2
+70404      blend_soft_all_r1_l0_p4_0.40 1003 0.071326 source_landsat
+70404      blend_soft_all_r1_l0_p4_0.40  471 0.067365   source_modis
+70404     blend_soft_crop_r1_l0_p4_0.40 2644 0.068410            all
+70404     blend_soft_crop_r1_l0_p4_0.40 1888 0.063013        history
+70404     blend_soft_crop_r1_l0_p4_0.40  756 0.080321           2025
+70404     blend_soft_crop_r1_l0_p4_0.40 2267 0.070034            new
+70404     blend_soft_crop_r1_l0_p4_0.40  377 0.057689         shared
+70404     blend_soft_crop_r1_l0_p4_0.40 1718 0.069818           near
+70404     blend_soft_crop_r1_l0_p4_0.40  425 0.068734            mid
+70404     blend_soft_crop_r1_l0_p4_0.40  501 0.063047    far_or_none
+70404     blend_soft_crop_r1_l0_p4_0.40 1170 0.066207      source_s2
+70404     blend_soft_crop_r1_l0_p4_0.40 1003 0.071300 source_landsat
+70404     blend_soft_crop_r1_l0_p4_0.40  471 0.067507   source_modis
+70404      blend_soft_all_r2_l0_p4_0.40 2644 0.068387            all
+70404      blend_soft_all_r2_l0_p4_0.40 1888 0.063062        history
+70404      blend_soft_all_r2_l0_p4_0.40  756 0.080154           2025
+70404      blend_soft_all_r2_l0_p4_0.40 2267 0.070025            new
+70404      blend_soft_all_r2_l0_p4_0.40  377 0.057561         shared
+70404      blend_soft_all_r2_l0_p4_0.40 1718 0.069782           near
+70404      blend_soft_all_r2_l0_p4_0.40  425 0.068738            mid
+70404      blend_soft_all_r2_l0_p4_0.40  501 0.063047    far_or_none
+70404      blend_soft_all_r2_l0_p4_0.40 1170 0.066115      source_s2
+70404      blend_soft_all_r2_l0_p4_0.40 1003 0.071193 source_landsat
+70404      blend_soft_all_r2_l0_p4_0.40  471 0.067835   source_modis
+70404     blend_soft_all_r32_l0_p4_0.40 2644 0.069148            all
+70404     blend_soft_all_r32_l0_p4_0.40 1888 0.063479        history
+70404     blend_soft_all_r32_l0_p4_0.40  756 0.081605           2025
+70404     blend_soft_all_r32_l0_p4_0.40 2267 0.070835            new
+70404     blend_soft_all_r32_l0_p4_0.40  377 0.057985         shared
+70404     blend_soft_all_r32_l0_p4_0.40 1718 0.070811           near
+70404     blend_soft_all_r32_l0_p4_0.40  425 0.068806            mid
+70404     blend_soft_all_r32_l0_p4_0.40  501 0.063434    far_or_none
+70404     blend_soft_all_r32_l0_p4_0.40 1170 0.067093      source_s2
+70404     blend_soft_all_r32_l0_p4_0.40 1003 0.072524 source_landsat
+70404     blend_soft_all_r32_l0_p4_0.40  471 0.066775   source_modis
+
+Final separate candidate: `outputs/model_dani_source_expert_route_v2_submission.csv`
+SHA256: `728153e07d98de92e561fcd155ae12ac2091805b669e2aab79ea740a42f6b440`
+
+Elapsed seconds: 264.2
+No existing candidate or input file was overwritten.

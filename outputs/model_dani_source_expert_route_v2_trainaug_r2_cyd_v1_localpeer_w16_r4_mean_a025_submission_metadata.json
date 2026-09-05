@@ -1,0 +1,16 @@
+{
+  "candidate": "model_dani_source_expert_route_v2_trainaug_r2_cyd_v1_localpeer_w16_r4_mean_a025_submission.csv",
+  "formula": "base=trainaug_r2_cyd_v1; pred=clip(base+0.25*visible 16-day AOI seasonal residual mean from same-date/same-crop ID-radius4 peers)",
+  "rows": 3112,
+  "finite": true,
+  "unique_keys": 3112,
+  "alpha": 0.25,
+  "local_feature_finite": 3084,
+  "local_feature_coverage": 0.9910025706940874,
+  "local_feature_mean": 0.0011182075943232859,
+  "local_feature_std": 0.047801244211221755,
+  "base_sha256": "cb4119f23a6dc986ee4e7da26290791032b852e5929b2cf922f041bc18030795",
+  "candidate_sha256": "f116f0455d8fd2589f87d3141dd63e156fb1cf0fe504aedd999a48b9acbf5668",
+  "production_baseline_overwritten": false,
+  "no_upload": true
+}

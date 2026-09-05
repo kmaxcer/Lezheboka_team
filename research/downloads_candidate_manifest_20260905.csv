@@ -1,0 +1,47 @@
+container,path,size,sha256,member
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,0,crc32:00000000,agropulse_max_score/
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,41,crc32:c54d4383,agropulse_max_score/.gitignore
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,240,crc32:a08263ab,agropulse_max_score/Dockerfile
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,10447,crc32:f51b2049,agropulse_max_score/README.md
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,4104,crc32:acedd9b5,agropulse_max_score/app.py
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,0,crc32:00000000,agropulse_max_score/data/
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,8216663,crc32:b0edef31,agropulse_max_score/data/private_features.csv
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,15182258,crc32:c4b05d0d,agropulse_max_score/data/train_dataset.csv
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,0,crc32:00000000,agropulse_max_score/outputs/
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,45223,crc32:59788092,agropulse_max_score/outputs/detected_anomalies.csv
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,1724805,crc32:6967eeaf,agropulse_max_score/outputs/ndvi_model.joblib
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,122494,crc32:aceec0ed,agropulse_max_score/outputs/submission.csv
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,0,crc32:00000000,agropulse_max_score/reports/
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,536,crc32:24baccdc,agropulse_max_score/reports/eda_summary.json
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,615,crc32:5a840f8b,agropulse_max_score/reports/experiment_results.csv
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,0,crc32:00000000,agropulse_max_score/reports/figures/
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,72168,crc32:62004a49,agropulse_max_score/reports/figures/01_missingness.png
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,46992,crc32:6eeda4c4,agropulse_max_score/reports/figures/02_target_distribution.png
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,40596,crc32:df119ae1,agropulse_max_score/reports/figures/03_gap_blocks.png
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,131689,crc32:fc45efc9,agropulse_max_score/reports/figures/04_example_timeseries.png
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,133579,crc32:8d8b9134,agropulse_max_score/reports/figures/05_correlations.png
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,69765,crc32:00f3ee2b,agropulse_max_score/reports/figures/06_experiments.png
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,131050,crc32:01e81f56,agropulse_max_score/reports/figures/07_anomaly_example.png
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,10490,crc32:d1b9a507,agropulse_max_score/reports/research_report.md
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,593606,crc32:39cc98f9,agropulse_max_score/reports/research_report.pdf
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,149,crc32:9f199855,agropulse_max_score/requirements.txt
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,0,crc32:00000000,agropulse_max_score/scripts/
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,17537,crc32:78b8bb8e,agropulse_max_score/scripts/build_report_pdf.py
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,7201,crc32:91f4a68d,agropulse_max_score/scripts/run_eda.py
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,990,crc32:e46360bb,agropulse_max_score/scripts/train_and_predict.py
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,0,crc32:00000000,agropulse_max_score/src/
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,0,crc32:00000000,agropulse_max_score/src/agropulse/
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,216,crc32:066e1ed1,agropulse_max_score/src/agropulse/__init__.py
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,3989,crc32:1b39c6a4,agropulse_max_score/src/agropulse/anomalies.py
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,15234,crc32:b7dad8e6,agropulse_max_score/src/agropulse/pipeline.py
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,0,crc32:00000000,agropulse_max_score/tests/
+C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,899,crc32:537b0f20,agropulse_max_score/tests/test_contract.py
+C:\Users\kmaxc\Downloads\doc-1788536686.zip,C:\Users\kmaxc\Downloads\doc-1788536686.zip,705,crc32:91060dab,__MACOSX/._train_dataset.csv
+C:\Users\kmaxc\Downloads\doc-1788536686.zip,C:\Users\kmaxc\Downloads\doc-1788536686.zip,15182258,crc32:c4b05d0d,train_dataset.csv
+filesystem,C:\Users\kmaxc\Downloads\Telegram Desktop\agropulse_max_score.zip,8337771,7dc26de16af3f9c0b524c843697abe750d5f04dbbf739dc003db7dc551ed2e98,
+filesystem,C:\Users\kmaxc\Downloads\Telegram Desktop\submission.csv,122494,67fd76f6a08e4670a9c40370e949adc7cf613fb95b6d9f5f7775859a4dc3653b,
+filesystem,C:\Users\kmaxc\Downloads\submission (1).csv,68905,907d06829c8da0c8351e5291c2eea2c70274d0d06893f594fd64785d5b3ff867,
+filesystem,C:\Users\kmaxc\Downloads\submission (2).csv,68899,62bc856d0642fda8055e8a37451d8509b6111b6a2dcfc9232ebc08481d2e4098,
+filesystem,C:\Users\kmaxc\Downloads\submission (3).csv,68899,e687a41790858be08b293ac3eba1c4f44fdbd894187049bbf3b73b9901bc1522,
+filesystem,C:\Users\kmaxc\Downloads\submission.csv,177182,c2bcce35e6d5b0a3520c52caec680187b2ccbd9799e584da1cf86a57cec47ae6,
+filesystem,C:\Users\kmaxc\Downloads\submission_fixed.csv,68899,5a3b99cef34060b383b0ba64b5993093c590726b0ea28f571c4a1c8263d1a454,

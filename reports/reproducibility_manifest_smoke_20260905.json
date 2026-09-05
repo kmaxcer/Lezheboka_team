@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "command": "scripts/reproducibility_audit.py",
+  "python": "3.14.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "pandas": "3.0.5",
+  "numpy": "2.5.2",
+  "inputs": {
+    "train": {
+      "path": "C:\\Users\\kmaxc\\Documents\\Codex\\2026-09-04\\ml\\work\\cosmo_latest_20260904\\train_dataset.csv",
+      "sha256": "a75e530d0fb51581ad6800f84b3875233778801491f02236917862faf9b424ec",
+      "rows": 99955,
+      "columns": [
+        "anon_polygon_id",
+        "date",
+        "s2_ndvi",
+        "s2_evi",
+        "s2_ndwi",
+        "landsat_ndvi",
+        "landsat_evi",
+        "landsat_ndwi",
+        "modis_ndvi",
+        "modis_evi",
+        "era5_temp_c",
+        "era5_precip_mm",
+        "year",
+        "primary_ndvi",
+        "doy",
+        "ndvi_climatology_mean",
+        "ndvi_climatology_std",
+        "ndvi_zscore",
+        "n_reference_years",
+        "status",
+        "crop_type"
+      ]
+    },
+    "private": {
+      "path": "C:\\Users\\kmaxc\\Documents\\Codex\\2026-09-04\\ml\\work\\cosmo_latest_20260904\\private_features.csv",
+      "sha256": "3c5c0e27eef8266bcf6dce09c9b556c073cee3902c065a94e4ea7a59edb00993",
+      "rows": 57185,
+      "columns": [
+        "anon_polygon_id",
+        "date",
+        "s2_ndvi",
+        "s2_evi",
+        "s2_ndwi",
+        "landsat_ndvi",
+        "landsat_evi",
+        "landsat_ndwi",
+        "modis_ndvi",
+        "modis_evi",
+        "era5_temp_c",
+        "era5_precip_mm",
+        "year",
+        "primary_ndvi",
+        "doy",
+        "ndvi_climatology_mean",
+        "ndvi_climatology_std",
+        "n_reference_years",
+        "is_synthetic_gap",
+        "crop_type"
+      ]
+    }
+  },
+  "synthetic_gap_rows": 3112,
+  "candidate": {
+    "path": "C:\\Users\\kmaxc\\PycharmProjects\\hack\\_1\\_lezheboka\\outputs\\model_dani_oldgt_robust_blend_localgamma006_jointdiag_w040_20260905_submission.csv",
+    "sha256": "590bbf0e3f103577483e3292ccc57fb1d185ee861f61488e3e0bcbe5e4771e76",
+    "rows": 3112,
+    "columns": [
+      "anon_polygon_id",
+      "date",
+      "primary_ndvi_pred"
+    ],
+    "unique_keys": 3112,
+    "finite": true,
+    "prediction_min": 0.0108965085,
+    "prediction_max": 0.91075763892
+  },
+  "ground_truth": null
+}

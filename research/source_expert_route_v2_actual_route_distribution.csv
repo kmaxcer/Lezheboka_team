@@ -1,0 +1,11 @@
+route,s2,landsat,modis
+post_mode,1439,1060,613
+crop_hier_n1_p00,1397,1173,542
+crop_hier_n1_p67,1384,1176,552
+crop_hier_n1_p80,1388,1170,554
+crop_hier_n2_p00,1383,1206,523
+crop_hier_n2_p67,1363,1189,560
+crop_hier_n2_p80,1377,1175,560
+crop_hier_n3_p00,1365,1190,557
+crop_hier_n3_p67,1364,1161,587
+crop_hier_n3_p80,1382,1144,586

@@ -1,0 +1,12 @@
+{
+  "candidate": "model_dani_extwide40_v3_30_peerblend12_history_submission.csv",
+  "formula": "ext40 + 0.12*(peer-ext40) for year<2025; 2025 untouched",
+  "rows": 3112,
+  "history_rows": 2187,
+  "year2025_rows": 925,
+  "peer_rows": 3112,
+  "base_sha256": "5ec1d9c6ad4531a0c1983ea9582b385fab72f9359305306663223bb626644e32",
+  "peer_apply_sha256": "b21c0243698e6769b62942890e9f439b3797fdb356746a297b29b43f2091e487",
+  "candidate_sha256": "8362c1280266b56b334725f6bd2e3346b75d9b65f0781ab0110914be259d8948",
+  "production_baseline_overwritten": false
+}

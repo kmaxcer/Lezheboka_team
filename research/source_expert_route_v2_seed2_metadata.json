@@ -1,0 +1,12 @@
+{
+  "seed": 2,
+  "rows": 2644,
+  "private_hidden": 3112,
+  "private_sha256": "3c5c0e27eef8266bcf6dce09c9b556c073cee3902c065a94e4ea7a59edb00993",
+  "seconds": 256.4,
+  "artifacts": [
+    "source_expert_route_v2_seed2_rows.csv",
+    "source_expert_route_v2_seed2_metrics.csv",
+    "source_expert_route_v2_seed2_slices.csv"
+  ]
+}

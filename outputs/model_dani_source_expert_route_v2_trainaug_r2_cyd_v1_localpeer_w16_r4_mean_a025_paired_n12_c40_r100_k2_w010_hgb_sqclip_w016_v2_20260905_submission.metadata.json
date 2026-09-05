@@ -1,0 +1,8 @@
+{
+  "formula": "pair10=finite(peer)?0.90*base08+0.10*paired(n12_c40_r100_k2):base08; final=clip(0.84*pair10+0.16*hgb_sq_clip,[-0.2,1.1])",
+  "rows": 3112,
+  "coverage_hgb": 1.0,
+  "coverage_peer": 0.7538560411311054,
+  "sha256": "67e862defced50417dad639aaa25e09d1ec48a36f3ba04be293b5ea5782f17c8",
+  "upload_performed": false
+}

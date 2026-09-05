@@ -1,0 +1,5 @@
+block 1 8663
+block 2 8663
+block 3 8663
+query 3112
+{'model': 'regular', 'n': 3112, 'rmse': nan, 'mae': nan, 'pred_mean': 0.37888538753608475}

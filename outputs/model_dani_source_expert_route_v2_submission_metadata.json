@@ -1,0 +1,10 @@
+{
+  "candidate": "model_dani_source_expert_route_v2_submission.csv",
+  "formula": "0.60*history_peer12 + 0.40*source_expert[crop-aware same-date route; n>=1,purity>=0.67]",
+  "rows": 3112,
+  "actual_gaps": 3112,
+  "sha256": "728153e07d98de92e561fcd155ae12ac2091805b669e2aab79ea740a42f6b440",
+  "finite": true,
+  "unique_keys": 3112,
+  "production_baseline_overwritten": false
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "command": "scripts/reproducibility_audit.py",
+  "python": "3.14.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "pandas": "3.0.5",
+  "numpy": "2.5.2",
+  "inputs": {
+    "train": {
+      "path": "C:\\Users\\kmaxc\\Documents\\Codex\\2026-09-04\\ml\\work\\cosmo_latest_20260904\\train_dataset.csv",
+      "sha256": "a75e530d0fb51581ad6800f84b3875233778801491f02236917862faf9b424ec",
+      "rows": 99955,
+      "columns": [
+        "anon_polygon_id",
+        "date",
+        "s2_ndvi",
+        "s2_evi",
+        "s2_ndwi",
+        "landsat_ndvi",
+        "landsat_evi",
+        "landsat_ndwi",
+        "modis_ndvi",
+        "modis_evi",
+        "era5_temp_c",
+        "era5_precip_mm",
+        "year",
+        "primary_ndvi",
+        "doy",
+        "ndvi_climatology_mean",
+        "ndvi_climatology_std",
+        "ndvi_zscore",
+        "n_reference_years",
+        "status",
+        "crop_type"
+      ]
+    },
+    "private": {
+      "path": "C:\\Users\\kmaxc\\PycharmProjects\\hack\\_1\\_lezheboka\\research\\data_update_20260905_1350\\test_features.csv",
+      "sha256": "f7ba087818175ea644fc9fe652c6a3874b5bfcde7df197d3e7541cb95876f855",
+      "rows": 49190,
+      "columns": [
+        "anon_polygon_id",
+        "date",
+        "s2_ndvi",
+        "s2_evi",
+        "s2_ndwi",
+        "landsat_ndvi",
+        "landsat_evi",
+        "landsat_ndwi",
+        "modis_ndvi",
+        "modis_evi",
+        "era5_temp_c",
+        "era5_precip_mm",
+        "year",
+        "primary_ndvi",
+        "doy",
+        "n_reference_years",
+        "is_synthetic_gap",
+        "crop_type"
+      ]
+    }
+  },
+  "synthetic_gap_rows": 2323,
+  "candidate": {
+    "path": "C:\\Users\\kmaxc\\PycharmProjects\\hack\\_1\\_lezheboka\\outputs\\test_20260905_1350\\model_newtest_extended_hgb_wide_20260905.csv",
+    "sha256": "65cde19191bc2a74afa01fe4d5db94ac25d1016838a3cffc8c5a7ba4576a9fc7",
+    "rows": 2323,
+    "columns": [
+      "anon_polygon_id",
+      "date",
+      "primary_ndvi_pred"
+    ],
+    "unique_keys": 2323,
+    "finite": true,
+    "prediction_min": 0.078315292,
+    "prediction_max": 0.909607606
+  },
+  "ground_truth": null
+}

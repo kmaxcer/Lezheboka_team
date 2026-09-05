@@ -1,0 +1,23 @@
+{
+  "seed": 43,
+  "fraction": 0.15,
+  "eligible_rows": 20753,
+  "hidden_rows_declared": 3112,
+  "hidden_rows_replayed": 3112,
+  "exact_match": true,
+  "mismatch_rows": 0,
+  "private_rows": 57185,
+  "private_sha256": "3c5c0e27eef8266bcf6dce09c9b556c073cee3902c065a94e4ea7a59edb00993",
+  "hidden_dynamic_all_null": true,
+  "hidden_dynamic_missing_share": 1.0,
+  "hidden_dates": 1319,
+  "hidden_aoi": 78,
+  "known_target_rows": 17641,
+  "declared_eligible_rows": 20753,
+  "seed_scan_best_non43": {
+    "seed": 63,
+    "overlap": 516,
+    "mismatch": 5192,
+    "exact": false
+  }
+}

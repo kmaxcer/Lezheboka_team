@@ -1,0 +1,15 @@
+{
+  "dataset": "C:\\Users\\kmaxc\\Documents\\Codex\\2026-09-04\\ml\\work\\cosmo_latest_20260904",
+  "actual_gap_n": 3112,
+  "outer_n": 2644,
+  "features": 39,
+  "train_rows": 32816,
+  "event_formula": "abs(y - AOI/30-day median) + 0.35 robust weather z + 0.6 neighbour jump; weights applied only to pseudo training labels",
+  "best_outer_scheme": "uniform",
+  "metrics_path": "C:\\Users\\kmaxc\\PycharmProjects\\hack\\_1\\_lezheboka\\research\\stable_event_weight_probe_20260905_metrics.csv",
+  "slices_path": "C:\\Users\\kmaxc\\PycharmProjects\\hack\\_1\\_lezheboka\\research\\stable_event_weight_probe_20260905_slices.csv",
+  "gt_sha256": "50d694a92187b7e8a2fca8a2b72458d9a8042726bd9d85634eb7a85fa5174088",
+  "submission_created": false,
+  "upload_performed": false,
+  "seconds": 118.0
+}

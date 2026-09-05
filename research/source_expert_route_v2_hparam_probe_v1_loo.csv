@@ -1,0 +1,13 @@
+variant,held_seed,selected,train_rmse,test_rmse,test_base
+current_refit,0,delta_src_cohort_year_trainaug,0.0653420435,0.0701669495,0.0713661302
+current_refit,1,delta_src_cohort_year_trainaug,0.0677752866,0.0628623920,0.0644679552
+current_refit,2,delta_src_cohort_year_trainaug,0.0670892176,0.0650327565,0.0668046092
+current_refit,70404,delta_src_cohort_year_trainaug,0.0660917054,0.0680279958,0.0694751110
+alt_reg32,0,delta_src_cohort_year_trainaug,0.0655514313,0.0702048631,0.0713661302
+alt_reg32,1,delta_src_cohort_year_trainaug,0.0679238404,0.0630773254,0.0644679552
+alt_reg32,2,delta_src_cohort_year_trainaug,0.0672287185,0.0652732064,0.0668046092
+alt_reg32,70404,delta_src_cohort_year_trainaug,0.0662522031,0.0682028591,0.0694751110
+alt_smooth48,0,delta_src_cohort_year_trainaug,0.0655121862,0.0702538724,0.0713661302
+alt_smooth48,1,delta_src_cohort_year_trainaug,0.0679454528,0.0629395943,0.0644679552
+alt_smooth48,2,delta_src_cohort_year_trainaug,0.0671903193,0.0653263283,0.0668046092
+alt_smooth48,70404,delta_src_a050,0.0662393219,0.0682275993,0.0694751110

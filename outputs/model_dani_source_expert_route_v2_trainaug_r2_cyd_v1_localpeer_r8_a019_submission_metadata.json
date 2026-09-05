@@ -1,0 +1,14 @@
+{
+  "candidate": "model_dani_source_expert_route_v2_trainaug_r2_cyd_v1_localpeer_r8_a019_submission.csv",
+  "formula": "base=trainaug_r2_cyd_v1; pred=clip(base+0.19*r8 crop same-date/same-crop ID-radius8 inverse-distance residual mean)",
+  "rows": 3112,
+  "finite": true,
+  "unique_keys": 3112,
+  "local_feature_finite": 3112,
+  "local_feature_coverage": 1.0,
+  "state_feature_finite": 3112,
+  "base_sha256": "cb4119f23a6dc986ee4e7da26290791032b852e5929b2cf922f041bc18030795",
+  "candidate_sha256": "f56f58e7bac1cb5389f34e3d2094a8a75e34cd1e205c7de3a97954847606c00b",
+  "production_baseline_overwritten": false,
+  "no_upload": true
+}

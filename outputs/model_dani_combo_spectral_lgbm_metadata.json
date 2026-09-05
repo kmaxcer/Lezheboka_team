@@ -1,0 +1,15 @@
+{
+  "candidate": "model_dani_extwide40_v3_30_spectral40_history_lgbm10_submission.csv",
+  "rows": 3112,
+  "spectral_weight_history": 0.4,
+  "lgbm_weight_all": 0.1,
+  "routing": "spectral history<2025; LGBM all years",
+  "base_sha256": "5ec1d9c6ad4531a0c1983ea9582b385fab72f9359305306663223bb626644e32",
+  "lgbm_sha256": "8045e11a91e83653a1338b400dbfe6930ca9511c4242e548b02c56f2d3931a71",
+  "spectral_checkpoint_sha256": "c451001dc7f9778dda708e4ec7315c5c70fdca918607ea9324983dea607d48c0",
+  "output_sha256": "ff57553cd7bafd4430c6cdf9998eef5fbc1db26071592059b9b036af97a6c61d",
+  "min": 0.060951123,
+  "max": 0.891097772,
+  "mean": 0.3785877765205656,
+  "production_baseline_overwritten": false
+}

@@ -1,0 +1,7 @@
+{
+  "base": "model_dani_lag40_peer10_extwide40_v3_30_spectral50_historyonly_submission.csv",
+  "factor": 0.5,
+  "sha256": "ad8995cb42a9463451efb6a9fa79b335c738c00784bae096e6befdb19afb2b93",
+  "source_coverage": 0.9826478149100257,
+  "confidence_median": 1.0
+}

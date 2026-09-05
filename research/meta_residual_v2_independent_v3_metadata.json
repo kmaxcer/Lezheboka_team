@@ -1,0 +1,13 @@
+{
+  "mask_seeds": [
+    0,
+    1
+  ],
+  "rows": 5288,
+  "hidden_rows": 3112,
+  "private_sha256": "3c5c0e27eef8266bcf6dce09c9b556c073cee3902c065a94e4ea7a59edb00993",
+  "train_sha256": "a75e530d0fb51581ad6800f84b3875233778801491f02236917862faf9b424ec",
+  "v3_component": ".7*ext40+.3*v3",
+  "seconds": 303.2,
+  "production_baseline_overwritten": false
+}

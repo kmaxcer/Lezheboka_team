@@ -1,0 +1,14 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    70404
+  ],
+  "variants": [
+    "current_refit",
+    "alt_reg32",
+    "alt_smooth48"
+  ],
+  "production_baseline_overwritten": false
+}

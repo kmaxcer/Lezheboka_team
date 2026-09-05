@@ -1,0 +1,17 @@
+exact2019 done
+exact2020 done
+exact2021 done
+exact2022 done
+exact2023 done
+exact2024 done
+random0 done
+random1 done
+random2 done
+                n      rmse
+method                     
+poly12d2   9046.0  0.079837
+poly16d3   9046.0  0.079952
+poly8d1    9046.0  0.080764
+poly4d1    9046.0  0.082929
+linear8d1  9046.0  0.085760
+seconds 575.6

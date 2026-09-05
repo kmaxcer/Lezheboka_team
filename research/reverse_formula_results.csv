@@ -1,0 +1,41 @@
+check,scope,metric,value,notes
+shape,train,n_rows,99955,archive train_dataset.csv
+shape,train,n_columns,21,archive train_dataset.csv
+shape,private,n_rows,57185,archive private_features.csv
+shape,private,n_columns,20,archive private_features.csv
+target_priority,train,known_rows,30520,s2_ndvi then landsat_ndvi then modis_ndvi
+target_priority,train,max_abs_error,0.0,primary_ndvi equals first non-null sensor to floating precision
+target_priority,private,known_rows,17641,s2_ndvi then landsat_ndvi then modis_ndvi
+target_priority,private,max_abs_error,0.0,primary_ndvi equals first non-null sensor to floating precision
+mask_replay,private,eligible_rows,20753,primary_ndvi.notna OR is_synthetic_gap
+mask_replay,private,hidden_rows,3112,int(0.15*eligible_rows)
+mask_replay,private,seed,43,np.random.default_rng(seed).choice without replacement
+mask_replay,private,replay_mismatch_rows,0,exact hidden membership replay
+key_overlap,train_private,anon_polygon_id_date_rows,0,merge on anon_polygon_id/date
+duplicate_features,train,known_exact_duplicate_groups,0,all shared non-ID fields excluding target-derived columns
+duplicate_features,private,known_exact_duplicate_groups,0,all shared non-ID fields excluding target-derived columns
+duplicate_features,combined,known_exact_duplicate_groups,0,all shared non-ID fields excluding target-derived columns
+duplicate_date_target,combined,multirow_date_target_groups,0,rounded target 12 decimals
+strict_groups,combined,multirow_groups,8869,date+rounded weather+crop+sensor mask
+strict_groups,combined,multirow_rows,27140,date+rounded weather+crop+sensor mask
+strict_groups,combined,median_target_std,0.08517775143116414,within-group target dispersion
+strict_groups,combined,mean_target_std,0.11334916031443665,within-group target dispersion
+strict_groups,combined,exact_single_target_share,0.0,no repeated target transfer
+weather_trajectory,train,exact_aoi_pairs,10,full available weather trajectories
+weather_trajectory,private_train,exact_aoi_pairs,5,common train-era dates; both temp and precip exact
+weather_target_analog,private_train,n_pairs,5,exact weather pairs with target overlap
+weather_target_analog,private_train,min_target_corr,0.2426718543929749,exact-weather analogs
+weather_target_analog,private_train,max_target_corr,0.5642692681146106,exact-weather analogs
+weather_target_analog,private_train,min_target_rmse,0.2054750832141825,exact-weather analogs
+weather_target_analog,private_train,max_target_rmse,0.3111847723807783,exact-weather analogs
+zscore_formula,train,known_rows,30520,(primary-clim_mean)/clim_std
+zscore_formula,train,max_abs_error,3.197442310920451e-14,exact deterministic formula
+sensor_relation,train,s2_evi_robust_r2,0.8876096302157238,central 98 percent y fit; not exact
+sensor_relation,train,s2_ndwi_robust_r2,0.9190024351749871,central 98 percent y fit; not exact
+sensor_relation,train,landsat_evi_robust_r2,0.9118986356551151,central 98 percent y fit; not exact
+sensor_relation,train,landsat_ndwi_robust_r2,0.9550388355456472,central 98 percent y fit; not exact
+sensor_relation,train,modis_evi_robust_r2,0.9232506471436803,central 98 percent y fit; not exact
+sensor_relation,train,s2_evi_abs_max,172860808899.13223,pathological ratio outlier
+rng_stream,private,seed43_max_abs_residual_corr,0.00349,approx; eligible/private/full-grid alignments all near zero
+rng_stream,private,scan_max_abs_residual_corr,0.032,approx; seeds 0..100 and small stride scan
+rng_stream,private,conclusion,0.0,no target-value stream recovered
