@@ -16,13 +16,13 @@ python src/infer.py --private path/to/private_features.csv --train path/to/train
 
 На выходе ровно три поля: `anon_polygon_id`, `date`, `primary_ndvi_pred`.
 
-Для текущего проверенного кандидата (без загрузки на платформу) используется
-отдельный файл `outputs/model_dani_oldgt_robust_blend_localgamma006_jointdiag_w040_20260905_submission.csv`.
+Канонический проверенный кандидат (без загрузки на конкурсную платформу):
+`outputs/model_dani_oldgt_robust_blend_localgamma006_jointdiag_w040_cal0148_20260905_submission.csv`.
 Он сочетает source-aware train-augmented route, локальный сезонный residual,
-leakage-safe paired-AOI transfer и робастный HGB residual blend. На четырёх
-точных независимых масках pooled proxy RMSE `0.065247` против `0.065395`; на
-выпущенном ground truth robust blend дал RMSE `0.061609204` и GapScore `11.52`
-у pair08; каждый seed улучшается. SHA256, формула и ограничения проверки
+leakage-safe paired-AOI transfer, робастный HGB residual blend и финальную
+аффинную калибровку. На четырёх независимых leakage-safe масках pooled proxy
+RMSE `0.065247` против `0.065395`; на опубликованном released ground truth
+RMSE `0.061533340`, GapScore `11.54`. Формула, ограничения и SHA256
 зафиксированы в `reports/old_gt_affine_calibration_20260905.md` и
 `outputs/model_dani_oldgt_robust_blend_localgamma006_jointdiag_w040_cal0148_20260905_submission.json`.
 

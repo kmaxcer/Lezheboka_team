@@ -32,6 +32,8 @@ tmp_*
 submission*.csv
 _exp_current_submission.csv
 1E-12
+gcm-diagnose.log
+research/outlier_donor_probe_20260905_v1_*
 research/*.html
 research/*.htm
 research/*.pkl
